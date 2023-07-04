@@ -7,6 +7,7 @@ import { FaArrowRight, FaImage, FaRegCalendarAlt } from "react-icons/fa";
 import { MdSecurity } from "react-icons/md";
 import { TfiWorld } from "react-icons/tfi";
 import "tailwindcss/tailwind.css"; // Import Tailwind CSS styles
+import Navbar from "./Navbar";
 
 const Hero: React.FC = () => {
   const handleContextMenu = (event: React.MouseEvent<HTMLImageElement>) => {
@@ -23,9 +24,9 @@ const Hero: React.FC = () => {
         quality={100}
         onContextMenu={handleContextMenu}
         priority
-        className="absolute z-50 h-[20vh] w-screen max-w-full md:h-auto"
+        className="absolute z-50 h-[20vh] w-screen border-red-700 max-w-full md:h-auto"
       ></Image>
-      <div className="font-sans h-[160vh] w-screen overflow-hidden bg-HeroBackground pt-12">
+      <div className="font-sans h-[160vh] w-screen overflow-hidden border-red-700 border-2 bg-HeroBackground pt-12">
         <div className="relative z-0 w-screen pl-[20px] md:pl-[117px]">
           <div className="absolute bottom-0 left-0  h-[35%] w-screen bg-gradient-to-t from-[#1F3B68] to-transparent blur-3xl"></div>
           {/* <div className="absolute bottom-[-30%] left-0 h-[35%] w-screen bg-gradient-to-b from-[#1F3B68] to-transparent blur-3xl"></div> */}
@@ -37,7 +38,8 @@ const Hero: React.FC = () => {
           <div className="absolute bottom-[-10px] left-0 z-10 h-[10%] w-screen bg-gradient-to-t from-[#1F3B68] to-transparent blur-lg"></div>
           <div className="absolute bottom-[-30%] left-0 z-10 h-[30%] w-screen bg-gradient-to-b from-[#1F3B68] to-transparent blur-lg"></div>
           <div className="absolute bottom-[-30%] left-0 z-10 h-[30%] w-screen bg-gradient-to-b from-[#1F3B68] to-transparent blur-lg"></div>
-          <div className="absolute bottom-[-55%] left-0 z-10 h-[50%] w-screen bg-gradient-to-t from-[#021739] to-transparent blur-3xl"></div> */}
+        <div className="absolute bottom-[-55%] left-0 z-10 h-[50%] w-screen bg-gradient-to-t from-[#021739] to-transparent blur-3xl"></div> */}
+            <Navbar />
           <div className="mg-[50px] flex justify-around lg:gap-[70px]">
             <div className="flex-shrink-0">
               <Image
