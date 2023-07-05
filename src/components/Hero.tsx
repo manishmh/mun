@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
                 <h1 className="text-xl font-semibold leading-6">
                   Get inside in The
                   <br />
-                  Philosopher's Mind
+                  Philosopher Mind
                 </h1>
                 <button className="mt-5 rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
                   REGISTER NOW
@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
               </h1>
               <p className="w-[70%] text-xs">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                Ipsum has been the industrs standard dummy text ever since the 1500s, when an
                 unknown printer took a galley of type and scrambled it to make a type specimen book.
                 It has survived not only five centuries, but also the leap into electronic
                 typesetting, remaining essentially unchanged.
@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
             <h1 className="text-3xl font-bold">WHO WE ARE</h1>
             <p className="text-xs mt-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s, when an unknown
+              has been the  standard dummy text ever since the 1500s, when an unknown
               printer took a galley of type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into electronic typesetting,
               remaining essentially unchanged.
