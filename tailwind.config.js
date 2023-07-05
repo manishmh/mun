@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    './node_modules/flowbite-react/**/*.js',
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -13,7 +14,12 @@ module.exports = {
       HeroBackground: "linear-gradient(180deg, #060911 7.95%, #1F3B68 100.38%, #060911 100%)",
       buttonBackground: "linear-gradient(90deg, #445DB6 0%, #7860C5 100%);",
       },
+      colors: {
+        'carouselBackground':'#E2DDF4',
+        'carouselText':'#143A81',
+        'carouselHead':'#445DB6',
+      }
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }
