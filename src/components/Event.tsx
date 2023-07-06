@@ -1,97 +1,54 @@
-'use client'
-
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import Image from "next/image";
+import EventDetail from "./EventDetail";
 
-const Event: React.FC = () => {
-    const handleContextMenu = (event: React.MouseEvent<HTMLImageElement>) => {
-      event.preventDefault();
-    };
-
-
-return (
-    <>
-      <Image
-        src="/hero/GroupTop.png"
-        alt=""
-        width={1920}
+const Event = () => {
+  return (
+    <div className="lg:h-screen py-8 lg:py-0 bg-EventBackground max-h-[800px]">
+      <Image 
+        src="/hero/GroupTop.png" 
+        alt="" 
+        width={1920} 
         height={1080}
-        quality={100}
-        onContextMenu={handleContextMenu}
-        priority
-        className="absolute z-50 h-[20vh] w-screen max-w-full md:h-auto"
-      ></Image>
-      <div className="font-sans h-[160vh] w-screen overflow-hidden bg-HeroBackground pt-12">
-        <div className="relative z-0 w-screen pl-[20px] md:pl-[117px]">
-          <div className="absolute bottom-0 left-0  h-[35%] w-screen bg-gradient-to-t from-[#1F3B68] to-transparent blur-3xl">
+        className="w-screen absolute"
+      >
+      </Image>
+      <div className="w-screen max-w-[1440px] flex justify-center items-center h-full mx-auto px-4 xl:px-0">
+        <div className="flex flex-row justify-center sm:gap-[30px] xl:gap-[50px]">
+          <div className="flex flex-col gap-10 justify-center max-w-[700px]">
+            <EventDetail 
+              day={14} 
+              year="JULY, 2023" 
+              title="KEYNOTE ADDRESS" 
+              paragraph="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s"
+            />
+            <EventDetail 
+              day={14} 
+              year="JULY, 2023" 
+              title="KEYNOTE ADDRESS" 
+              paragraph="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s"
+            />
+            <EventDetail 
+              day={14} 
+              year="JULY, 2023" 
+              title="KEYNOTE ADDRESS" 
+              paragraph="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s"
+            />
           </div>
-        </div>
-        <div className="z-30 flex items-center justify-evenly px-[100px] pt-8 text-3xl text-white first-letter">
-            <div>
-              <div className="relative left-36 top-5">
-                <Image
-                  src="/event/Component 1.png"
-                  alt=""
-                  width={200}
-                  height={200}></Image>
-              </div>
-              <div className="relative left-36 top-48">
-                <Image
-                  src="/event/Component 2.png"
-                  alt=""
-                  width={200}
-                  height={200}></Image>
-              </div>
-              <div className="relative left-36 top-96">
-                <Image
-                  src="/event/Component 3.png"
-                  alt=""
-                  width={200}
-                  height={200}></Image>
-              </div>
-            </div>
-            <div>
-              <div className="relative left-40 top-5">
-                <h2>KEYNOTE ADDRESS</h2>
-                <p className="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, enim?</p>
-                <button className="primary"></button>
-              </div>
-              <div className="relative left-40 top-48">
-              <h2>KEYNOTE ADDRESS</h2>
-                <p className="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, enim?</p>
-                <button className="primary"></button>
-              </div>
-              <div className="relative left-40 top-96">
-              <h2>KEYNOTE ADDRESS</h2>
-                <p className="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, enim?</p>
-                <button className="primary"></button>
-              </div>
-            </div>
-          <div className="relative top-40"> 
-            <Image
-              src="/event/business-executives-participating-business-meeting 1.png"
-              alt=""
-              width={550}
-              height={380}>
+          <div className="">
+            <Image 
+              src="/event/EventMeeting.png" 
+              alt="" 
+              width={1920} 
+              height={1080}
+              className="h-full w-full min-w-[300px] sm:max-h-[500px] lg:max-h-[600px] xl:max-h-auto"
+            >
             </Image>
           </div>
         </div>
-        
-  </div>
-    <div className="absolute bottom-[-320%] z-50 w-screen max-w-full">
-          <Image
-            src="/hero/GroupBottom.png"
-            alt=""
-            width={1920}
-            height={1080}
-            quality={100}
-            onContextMenu={handleContextMenu}
-            className="z-1 h-[55vh]"
-          ></Image>
-        </div>
-    </>
-  );
+      </div>
+    </div>
+  )
 };
 
 export default Event;
