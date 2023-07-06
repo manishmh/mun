@@ -1,5 +1,8 @@
 import Hero from "@/components/Hero";
 import PageCarousel from "../components/PageCarousel";
+import Timer from "@/components/Timer";
+import Event from "@/components/Event";
+
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
@@ -7,6 +10,8 @@ export default function Home() {
     <div className='overflow-x-hidden'>
       <Navbar />
       <Hero />
+      <Timer />
+      <Event />
       <PageCarousel/>
     </div>
   )
