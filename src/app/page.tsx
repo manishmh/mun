@@ -3,10 +3,12 @@ import PageCarousel from "../components/PageCarousel";
 import Timer from "@/components/Timer";
 import Event from "@/components/Event";
 
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <div className='overflow-x-hidden'>
+      <Navbar />
       <Hero />
       <Timer />
       <Event />
