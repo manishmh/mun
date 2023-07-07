@@ -91,7 +91,7 @@ const Hero = () => {
               </button>
             </Link>
           </div>
-          <div className="flex text-[40px] z-50">
+          <div className="flex text-[40px] z-40">
             <Link href="https://www.google.com" target="_blank">
               <TfiWorld className="border-r-none h-20 w-20 border-2 border-r-0 border-[#445DB6] px-4 py-4 bg-buttonBackground" />
             </Link>

@@ -1,6 +1,5 @@
 'use client';
 import { Carousel } from 'flowbite-react';
-import vectorCover from '../../public/hero/GroupBottom.png'
 import Image from 'next/image';
 
 const PageCarousel = () => {
@@ -42,17 +41,6 @@ const PageCarousel = () => {
 
 	return (
 		<div className='bg-cover bg-carouselBackground'>
-			    <Image
-        alt="Mountains"
-        src={vectorCover}
-        placeholder="blur"
-        quality={100}
-        fill
-        sizes="100vw"
-        style={{
-          objectFit: 'cover',
-        }}
-      />
 			<div className='h-96 max-w-7xl mx-auto'><Carousel>
 				{carouselData.map(n => <div className='flex h-full w-full items-center justify-center' key={n.id}>
 					<div className='h-full w-full'>
