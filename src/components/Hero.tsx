@@ -4,12 +4,12 @@ import React from "react";
 import { FaArrowRight, FaImage, FaRegCalendarAlt } from "react-icons/fa";
 import { MdSecurity } from "react-icons/md";
 import { TfiWorld } from "react-icons/tfi";
-import HeroMobileView from "./HeroMobileView";
+// import HeroMobileView from "./HeroMobileView";
 
 const Hero = () => {
   return (
     <>
-    <HeroMobileView />
+    {/* <HeroMobileView /> */}
     <div className="font-sans w-screen h[150vh] bg-HeroBackground overflow-x-hidden z-[-10] hidden sm:block">
       <Image
         src="/hero/GroupTop.png"
