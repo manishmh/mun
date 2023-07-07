@@ -6,35 +6,35 @@ import Image from 'next/image';
 const PageCarousel = () => {
 
 	const carouselData = [{
-		title: 'rogan',
-		description: 'Lorem ipsum sit dolor por favour',
+		title: 'Kshitij Singh',
+		description: 'Secretary General',
 		position: 'Head Coach',
 		image: 'slide1.png',
 		id: 1
 	}, {
-		title: 'Logan Piecer',
-		description: 'Lorem ipsum sit dolor por favour',
+		title: 'Satyajeet Das',
+		description: 'Deputy Secretary General',
 		position: 'Head Coach',
 		image: 'slide2.png',
 		id: 2
 	},
 	{
-		title: 'Poison Saver',
-		description: 'Lorem ipsum sit dolor por favour',
+		title: 'Ayush Kumar Srivastav',
+		description: 'Director General',
 		position: 'Head Coach',
 		image: 'slide2.png',
 		id: 3
 	},
 	{
-		title: 'Poison Saver',
-		description: 'Lorem ipsum sit dolor por favour',
+		title: 'Shubhaditya Roy',
+		description: 'Deputy Director General',
 		position: 'Head Coach',
 		image: 'slide2.png',
 		id: 4
 	},
 	{
-		title: 'Poison Saver',
-		description: 'Lorem ipsum sit dolor por favour',
+		title: 'Shivram Krishna',
+		description: 'Charge D Affairs',
 		position: 'Head Coach',
 		image: 'slide2.png',
 		id: 5
