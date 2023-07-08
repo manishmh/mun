@@ -15,10 +15,10 @@ const Timer: React.FC = () => {
     <>
       <div className="font-sans w-screen py-28 overflow-hidden bg-carouselBackground pt-12">
         <div className="max-w-7xl mx-auto">
-          <h1 className="pb-5 pyy-36 text-3xl text-center font-bold text-transparent mx-auto max-w-5xl bg-clip-text bg-gradient-to-r from-[#061124] via-[#143A81] to-[#061125]">
+          <h1 className="py-8 text-3xl text-center font-bold text-transparent mx-auto max-w-5xl bg-clip-text bg-gradient-to-r from-[#061124] via-[#143A81] to-[#061125]">
             JOIN US FOR OUR UPCOMING EVENT!
           </h1>
-          <h1 className="pb-5 flex items-center justify-center text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#445DB6] to-[#7860C5]">The Future of Technology Conference</h1>
+          <h1 className="pb-5 py-8 text-center text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#445DB6] to-[#7860C5]">The Future of Technology Conference</h1>
           <div className="p-10 flex items-center justify-center text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#445DB6] to-[#7860C5]">
             <CountdownTimer targetDate={targetDate} />
           </div>
