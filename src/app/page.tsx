@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import PageCarousel from "../components/PageCarousel";
 import Timer from "@/components/Timer";
 import Event from "@/components/Event";
-
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
       <Timer />
       <Event />
       <PageCarousel/>
+      <Footer />
     </div>
   )
 }
