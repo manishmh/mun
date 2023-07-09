@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import logo from '../../public/logo2.png'
 import Image from "next/image";
+import Link from 'next/link';
 
 const Navbar = () => {
 
@@ -23,15 +24,16 @@ const Navbar = () => {
   })
 
   return (
-    <div className={`w-screen transition duration-300 ease-in-out fixed z-50 ${navbar ? 'top-0 bg-red-500 text-black' : 'top-10'} left-0 right-0`}>
-      <div className={`flex mx-auto py-4 max-w-7xl justify-between items-center `}>
-        <div><Image src={logo} alt="MUN LOGO" className='w-[90px] h-[90px]' /></div>
-        <ul className="flex gap-28"><li>About</li>
-          <li>Event</li>
-          <li>Speaker</li>
-          <li><button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
+    <div className={`w-screen transition duration-300 ease-in-out fixed z-50 ${navbar ? 'top-0 backdrop-blur-md' : ''} left-0 right-0`}>
+      <div className={`flex mx-auto ${navbar ? 'py-2' : 'py-4'} max-w-7xl justify-between items-center`}>
+        <div><Link href='/'><Image src={logo} alt="MUN LOGO" className={`${navbar ? 'w-[60px] h-[60px]' : 'w-[90px] h-[90px]'}`} /></Link></div>
+        <ul className="flex gap-28">
+          <Link href="about">About</Link>
+          <Link href='/'>Event</Link>
+          <Link href='/'>Speaker</Link>
+          <Link href='/'><button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
             REGISTER NOW
-          </button></li>
+          </button></Link>
         </ul>
       </div>
     </div>
