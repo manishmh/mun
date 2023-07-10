@@ -16,6 +16,10 @@ module.exports = {
       buttonBackground: "linear-gradient(90deg, #445DB6 0%, #7860C5 100%);",
       MobileHeader: "linear-gradient(180deg, #445DB6 0%, #7860C5 100%);",
       },
+        screens: {
+        "3xl": "1440px",
+        "4xl": "1990px",
+      },
       colors: {
         'carouselBackground':'#E2DDF4',
         'carouselText':'#143A81',
