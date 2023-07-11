@@ -9,7 +9,6 @@ import { TfiWorld } from "react-icons/tfi";
 const Hero = () => {
   return (
     <>
-    {/* <HeroMobileView /> */}
     <div className="font-sans w-screen h[150vh] bg-HeroBackground overflow-x-hidden z-[-10] hidden sm:block">
       <Image
         src="/hero/GroupTop.png"
@@ -33,9 +32,11 @@ const Hero = () => {
             ></Image>
             <div className="absolute max-w-[1440px] left-0 bottom-0 -translate-y-[5vh] md:-translate-y-[70px] translate-x-[30px] md:translate-x-[70px] z-20 text-white">
               <h1 className="text-lg lg:text-xl font-semibold leading-6">
-                Get inside in The
+                Minds Converge
                 <br />
-                Philosophers Mind
+                Ideas Collide
+                <br />
+                Change Takes Shape
               </h1>
               <Link href="/contact">
                 <button className="text-base lg:text-lg mt-3 lg:mt-5 rounded-full border-none bg-buttonBackground px-3 lg:px-4 py-1 outline-none">
@@ -93,16 +94,16 @@ const Hero = () => {
           </div>
           <div className="flex text-[40px] z-40">
             <Link href="https://www.google.com" target="_blank">
-              <TfiWorld className="border-r-none h-20 w-20 border-2 border-r-0 border-[#445DB6] px-4 py-4 bg-buttonBackground" />
+              <TfiWorld className="border-r-none h-20 w-20 border-2 border-r-0 border-[#AF693B] px-4 py-4 bg-buttonBackground" />
             </Link>
             <Link href="https://www.google.com" target="_blank">
-              <FaRegCalendarAlt className="h-20 w-20 border-2 border-r-0 border-[#445DB6] px-4 py-4" />
+              <FaRegCalendarAlt className="h-20 w-20 border-2 border-r-0 border-[#AF693B] px-4 py-4" />
             </Link>
             <Link href="https://www.google.com" target="_blank">
-              <FaImage className="h-20 w-20 border-2 border-r-0 border-[#445DB6] px-4 py-4" />
+              <FaImage className="h-20 w-20 border-2 border-r-0 border-[#AF693B] px-4 py-4" />
             </Link>
             <Link href="https://www.google.com" target="_blank">
-              <MdSecurity className="h-20 w-20 border-2 border-[#445DB6] px-4 py-4" />
+              <MdSecurity className="h-20 w-20 border-2 border-[#AF693B] px-4 py-4" />
             </Link>
           </div>
         </div>

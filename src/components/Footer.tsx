@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <>
       <div className=" bg-[url('/footer/back.png')] w-full h-full bg-no-repeat bg-cover" >
         
-        <footer className="g-gradient-to-b from-black to-black via-blue-900 mx-auto px-4 py-6 rounded-lg" style={{ margin: "0 10%" }}>
+        <footer className="g-gradient-to-b w-full max-w-7xl from-black to-black via-blue-900 mx-auto px-4 py-6 rounded-lg">
           <div className="container mx-auto">
             <div className="flex flex-col">
               <div className="flex justify-center">
