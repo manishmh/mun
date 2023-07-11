@@ -33,9 +33,11 @@ const Hero = () => {
             ></Image>
             <div className="absolute max-w-[1440px] left-0 bottom-0 -translate-y-[5vh] md:-translate-y-[70px] translate-x-[30px] md:translate-x-[70px] z-20 text-white">
               <h1 className="text-lg lg:text-xl font-semibold leading-6">
-                Get inside in The
+                Minds Converge
                 <br />
-                Philosophers Mind
+                Ideas Collide
+                <br />
+                Change Takes Shape
               </h1>
               <Link href="/contact">
                 <button className="text-base lg:text-lg mt-3 lg:mt-5 rounded-full border-none bg-buttonBackground px-3 lg:px-4 py-1 outline-none">
