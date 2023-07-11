@@ -10,9 +10,9 @@ type EventDetailProps = {
 const EventDetail = ({ day, year, title, paragraph }: EventDetailProps) => {
   return (
     <div className="flex sm:gap-4 xl:gap-8">
-        <div className="rounded-full lg:w-[132px] sm:w-[100px] sm:h-[100px] md:w-[115px] md:h-[115px] flex-shrink-0 lg:h-[132px] bg-gradient-to-b from-[#445DB6] to-[#7860C5] p-[2px]">
-            <div className="h-full w-full rounded-full flex flex-col items-center justify-center bg-gradient-to-b from-[#011a41] to-[#1F3B68]">
-                <span className="sm:text-2xl md:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-[#445DB6] to-[#7860C5] text-transparent bg-clip-text">{day}</span>
+        <div className="rounded-full lg:w-[132px] sm:w-[100px] sm:h-[100px] md:w-[115px] md:h-[115px] flex-shrink-0 lg:h-[132px] bg-gradient-to-b from-[#B0693B] to-[#C0896A] p-[2px]">
+            <div className="h-full w-full rounded-full flex flex-col items-center justify-center bg-gradient-to-b from-[#093338] to-[#1A4D54]">
+                <span className="sm:text-2xl md:text-3xl x1A4D54l:text-4xl font-bold bg-gradient-to-r from-[#B0693B] to-[#C0896A] text-transparent bg-clip-text">{day}</span>
                 <span className="sm:text-xs lg:text-sm">{year}</span>
             </div>
         </div>

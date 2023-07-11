@@ -11,10 +11,11 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      HeroBackground: "linear-gradient(180deg, #060911 7.95%, #1F3B68 53.38%, #060911 100%)",
-      EventBackground: "linear-gradient(180deg, #060911 7.95%, #1F3B68 47.38%, #060911 100%)",
-      buttonBackground: "linear-gradient(90deg, #445DB6 0%, #7860C5 100%);",
+      HeroBackground: "linear-gradient(180deg, #001212 7.95%, #1A4D54 53.43%, #001212 85.60%);",
+      EventBackground: "linear-gradient(180deg, #001212 7.95%, #1A4D54 47.43%, #001212 100%);",
+      buttonBackground: "linear-gradient(90deg, #B0693B 0%, #C0896A 48.23%, #AF693B 100%)",
       MobileHeader: "linear-gradient(180deg, #445DB6 0%, #7860C5 100%);",
+      textBG: "linear-gradient(180deg, #001212 7.95%, #1A4D54 47.43%, #001212 100%);"
       },
         screens: {
         "3xl": "1440px",
