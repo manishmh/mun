@@ -25,3 +25,37 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+
+@keyframes from-top {
+  from { 
+    opacity: 0;
+    transform: translateY(-50px);
+    }
+  to { 
+    opacity: 1; 
+    transform: translateY(-30px);
+  }
+}
+
+.animate-fade-in {
+  animation-name: from-top;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes from-bottom {
+  from { 
+    opacity: 0;
+    transform: translateY(10px);
+    }
+  to { 
+    opacity: 1; 
+    transform: translateY(-30px);
+  }
+}
+
+.animate-from-bottom {
+  animation-name: from-bottom;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}

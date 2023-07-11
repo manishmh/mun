@@ -4,7 +4,7 @@ import EventDetail from "./EventDetail";
 
 const Event = () => {
   return (
-    <div className="lg:h-screen py-8 lg:py-0 bg-EventBackground max-h-[800px]">
+    <div className="lg:h-screen py-8 lg:py-0 bg-HeroBackground max-h-[800px]">
       <Image 
         src="/hero/GroupTop.png" 
         alt="" 
