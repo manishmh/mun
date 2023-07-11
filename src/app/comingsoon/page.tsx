@@ -11,7 +11,10 @@ const commingsoon = () => {
       <div className="flex flex-col items-center justify-center min-h-screen">
       <Link href='/'><Image src={logo} alt="MUN LOGO" className={  'w-[60px] h-[60px] lg:h-[90px] lg:w-[90px]'} /></Link>
               <img src="/Error/plugs_1.png" alt="Image" className="mt-8" />
-        <Link href='/'><button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
+
+              <p></p>
+        
+        <Link href='/'><button className="rounded-full border-none bg-buttonBackground mt-12 px-4 py-1 outline-none">
           REGISTER NOW
         </button></Link>
       </div>
