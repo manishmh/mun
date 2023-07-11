@@ -39,7 +39,8 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white">Email</h4>
-                <p className="text-white">sample@kiit.ac.in</p>
+                <p className="text-white">
+                <a href="mailto:kiitmun@gmail.com">kiitmun@gmail.com</a> </p>
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white">Social Media</h4>
