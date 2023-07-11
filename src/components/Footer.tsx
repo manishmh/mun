@@ -27,9 +27,9 @@ const Footer: React.FC = () => {
             <div className="flex justify-between mt-6">
               <div>
                 <h4 className="text-lg font-bold text-white">PHONE</h4>
-                <p className="text-white">+91 99999 99999</p>
-                <p className="text-white">+91 99999 99999</p>
-                <p className="text-white">+91 99999 99999</p>
+                <p className="text-white"> <a href = "tel: +917008051628">+91-7008051628 (Shivram Krishna) </a> </p>
+                <p className="text-white"><a href = "tel: +919431591145">+91-9431591145 (Kshitij Singh) </a></p>
+                <p className="text-white"><a href = "tel: +917735127138">+91-7735127138 (Satyajeet Das) </a></p>
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white">Address</h4>
@@ -46,15 +46,15 @@ const Footer: React.FC = () => {
                 <h4 className="text-lg font-bold text-white">Social Media</h4>
                 <div className="flex items-center">
                   <FaFacebook style={{ fontSize: "xs" }} />
-                  <a href="https://www.facebook.com/example" className="text-white ml-2">Facebook</a>
+                  <a href="https://www.facebook.com/kiitmun/" className="text-white ml-2">Facebook</a>
                 </div>
                 <div className="flex items-center">
                   <FaInstagram style={{ fontSize: "xs" }} />
-                  <a href="https://www.instagram.com/example" className="text-white ml-2">Instagram</a>
+                  <a href="https://www.instagram.com/instakiitmun/" className="text-white ml-2">Instagram</a>
                 </div> 
                 <div className="flex items-center">
                   <FaTwitter style={{ fontSize: "xs" }} />
-                  <a href="https://www.twitter.com" className="text-white ml-2">Twitter</a>
+                  <a href="https://twitter.com/kiitmun" className="text-white ml-2">Twitter</a>
                 </div>
                 <div className="flex items-center">
                   <FaLinkedinIn style={{ fontSize: "xs" }} />
