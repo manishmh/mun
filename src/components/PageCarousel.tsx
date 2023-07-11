@@ -1,4 +1,5 @@
 'use client';
+
 import { Carousel } from 'flowbite-react';
 import Image from 'next/image';
 
@@ -44,22 +45,21 @@ const PageCarousel = () => {
 			<div className='h-96 max-w-7xl mx-auto'><Carousel>
 				{carouselData.map(n => <div className='flex h-full w-full items-center justify-center' key={n.id}>
 					<div className='h-full w-full'>
-						<div className='flex h-full justify-between mx-48 items-center'>
+						<div className='flex h-full justify-between mx-24 items-center'>
 							<div className='h-full'>
-								<h2 className='uppercase  text-carouselHead  mt-12 font-bold text-2xl'>
+								<h2 className='uppercase  text-transparent bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark mt-6 lg:mt-12 font-bold text-xl lg:text-2xl'>
 									{n.position}
 								</h2>
-								<div className='mt-16 text-carouselText'>
-									<h2 className='capitalize font-semibold text-3xl'>
+								<div className='mt-4 lg:mt-8 text-carouselText'>
+									<h2 className='capitalize font-semibold text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-b from-carouselTextDark to-carouselTextLight'>
 										{n.title}
 									</h2>
-									<p>{n.description}</p>
+									<p className='text-carouselTextDark text-sm lg:text-base pr-8 pt-2'>{n.description}</p>
 								</div>
 							</div>
 
-
-							<Image src={`/carousel/${n.image}`} width={350}
-								height={350} alt={'carousel image'}></Image></div>
+							<Image src={`/carousel/${n.image}`} width={300} height={300} alt='carousel image' className={'w-[200] h-[200px] lg:w-[300px] lg:h-[300px]'} />
+						</div>
 					</div>
 
 

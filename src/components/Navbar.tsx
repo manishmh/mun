@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import logo from '../../public/logo2.png'
+import logo from '../../public/logo.png'
 import Image from "next/image";
 import Link from 'next/link';
 
@@ -24,10 +24,10 @@ const Navbar = () => {
   })
 
   return (
-    <div className={`w-screen transition duration-300 ease-in-out fixed z-50 ${navbar ? 'top-0 backdrop-blur-md' : ''} left-0 right-0`}>
-      <div className={`flex mx-auto ${navbar ? 'py-2' : 'py-4'} max-w-7xl justify-between items-center`}>
-        <div><Link href='/'><Image src={logo} alt="MUN LOGO" className={`${navbar ? 'w-[60px] h-[60px]' : 'w-[90px] h-[90px]'}`} /></Link></div>
-        <ul className="flex gap-28">
+    <div className={`w-screen transition duration-300 mr-12 ease-in-out fixed z-50 ${navbar ? 'top-0 bg-navBg/80 backdrop-blur-xl ' : ''} left-0 right-0`}>
+      <div className={`flex mx-auto pr-8 px-8 2xl:px-0 ${navbar ? 'py-2' : 'py-4'} max-w-7xl justify-between items-center`}>
+        <div><Link href='/'><Image src={logo} alt="MUN LOGO" className={`${navbar ? 'w-[50px] h-[50px] lg:h-[70px] lg:w-[70px]' : 'w-[60px] h-[60px] lg:h-[90px] lg:w-[90px]'}`} /></Link></div>
+        <ul className="flex gap-12 lg:gap-28">
           <Link href="about">About</Link>
           <Link href='/'>Event</Link>
           <Link href='/'>Speaker</Link>

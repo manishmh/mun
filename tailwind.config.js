@@ -22,9 +22,11 @@ module.exports = {
         "4xl": "1990px",
       },
       colors: {
-        'carouselBackground':'#E2DDF4',
-        'carouselText':'#143A81',
+        'carouselBackground':'#D7E1E3',
+        'carouselTextLight':'#1A4D54',
+        'carouselTextDark':'#001212',
         'carouselHead':'#445DB6',
+        'navBg' : '#09231F'
       }
     },
   },
