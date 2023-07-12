@@ -73,7 +73,7 @@ const About = () => {
                         width={1920}
                         height={1080}
                         quality={100}
-                        className={`animate-fade-in absolute inset-0 h-full transition-all z-5 -translate-y-[30px] opacity-1 duration4000 ease-in-out w-full rounded-lg object-cover transform
+                        className={`animate-fade-in absolute inset-0 z-5 translatey-[30px] opacity-1 ease-out w-full rounded-lg object-cover transform
                             ${currentIndex === 2 ? "animate-from-bottom":""}
                             ${index === currentIndex ? "block" : "hidden"}
                         `}
