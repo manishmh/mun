@@ -38,7 +38,7 @@ const About = () => {
     <>
     <Navbar />
     <div className="w-screen bg-HeroBackground max-w-full">
-        <div className="mx-auto w-full">
+        <div className="mx-auto w-full overflow-x-hidden">
             <div className="relative w-full h-screen 4xl:h-[80vh] 4xl:max-h-[900px] overflow-hidden max-w-[1920px] mx-auto ">
                 {/* top gradient*/}
                 <div className="absolute top-[-5%] w-full h-[70%] opacity-70 bg-gradient-to-b z-10 from-[#0e213f] to-transparent blur-3xl"></div>
@@ -162,34 +162,31 @@ const About = () => {
                     </div> 
                 </div>
             </div>
-            <div className="w-full bg-[#D7E1E3] ">
-                <h1 className="bg-textBG text-transparent bg-clip-text text-2xl lg:text-3xl pt-[50px] text-center font-bold">ABOUT FOUNDER</h1>
-                <div className="flex justify-center">
-                    <div className="bg-gradient-to-b relative w-[150px] h-[150px] from-[#001212] to-[#1A4D54] p-1 rounded-full mt-2">
-                        <span className="bg-white absolute w-[140px] h-[140px] top-1/2 flex justify-center items-center -translate-x-1/2 left-1/2 -translate-y-1/2 rounded-full">
-                            <Image
-                                src="/about/founder.png" 
-                                alt="KIIT logo"
-                                width={300}
-                                height={300}
-                                className="w-[130px] h-[130px] p-2 rounded-full"
-                            ></Image>
-                        </span>
+            <div className="w-full bg-[#D7E1E3] py-[50px] px-[30px] lg:py-[80px] lg:px-[60px] overflow-hidden">
+                <div className="max-w-[1750px] mx-auto ">
+                    <h1 className="bg-textBG text-transparent bg-clip-text text-2xl lg:text-3xl text-center font-bold">ABOUT FOUNDER</h1>
+                    <div className="flex flex-col md:flex-row gap-4 lg:gap-8 items-center">
+                        <Image 
+                        src="/about/founder.png"
+                        alt="founder"
+                        width={1000}
+                        height={1000}
+                        quality={100}
+                        className="w-[350px] h-[450px] mt-8 md:mt-0 2xl:w-[30vw] 2xl:h-[70vh] 4xl:w-[20vw] 4xl:h-[50vh] md:w-[40vw] md:h-[50vh] lg:w-[40vw] lg:h-[50vh]"
+                        ></Image>
+                        <div>
+                            <p 
+                                style={{ 
+                                    wordWrap: 'break-word',
+                                    whiteSpace: 'pre-line',
+                                    textAlign: 'justify', 
+                                }} 
+                                className="w-[95%] text-[#020B10] max-w-[1920px] mx-auto lg:text-lg mt-4 3xl:text-[1.3vw] 3xl:leading-[2vw] 4xl:text-xl"
+                            >
+                                Prof Achyuta Samanta&apos;s life story reads like a powerful saga of grit, determination, and social responsibility. Born and brought up in poverty in a remote village in Odisha, he was dealt a cruel blow at the tender age of four when he lost his father, after which his life became a struggle for food and education for 15 long years. However, he persevered, and at the age of 22, joined teaching. At 25, he embarked on a journey that would change his own life, and the lives of thousands of people. With just Rs 5000 in his pocket, he started KIIT (Kalinga Institute of Industrial Technology) and KISS (Kalinga Institute of Social Sciences) in two rented houses. Today, these institutions are beacons of hope, providing world-class education, decorated with all possible national and international accolades and global reputation. KIIT has become one of the most sought-after universities in India for professional education. It currently has 40,000 students and representation from 65 countries. KISS is a ray of hope for tribals, providing education, healthcare, sports, and vocational training to 80,000 disadvantaged students - all fully free in a residential campus. KISS has a school, a college, and a university - KISS Deemed to be University, which is the first and only university exclusively for tribal scholars providing innovative tribal courses. 
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className="flex flex-col w-[95%] mt-4 md:mt-0 md:flex-row lg:w-[80%] max-w-[1920px] mx-auto gap-2 md:gap-8 lg:gap-12 pb-[70px] text-[#020B10] 3xl:text-[1.3vw] 3xl:leading-[2vw] 4xl:text-xl" 
-                    style={{
-                        wordWrap: 'break-word',
-                        whiteSpace: 'pre-line',
-                        textAlign: 'justify', 
-                    }} 
-                >
-                    <p>
-                    Prof Achyuta Samanta&apos;s life story reads like a powerful saga of grit, determination, and social responsibility. Born and brought up in poverty in a remote village in Odisha, he was dealt a cruel blow at the tender age of four when he lost his father, after which his life became a struggle for food and education for 15 long years. However, he persevered, and at the age of 22, joined teaching. At 25, he embarked on a journey that would change his own life, and the lives of thousands of people. With just Rs 5000 in his pocket, he started KIIT (Kalinga Institute of Industrial Technology) and KISS (Kalinga Institute of Social Sciences) in two rented houses. Today, these institutions are beacons of hope, providing world-class education, decorated with all possible national and international accolades and global reputation. KIIT has become one of the most sought-after universities in India for professional education. It currently has 40,000 students and representation from 65 countries. KISS is a ray of hope for tribals, providing education, healthcare, sports, and vocational training to 80,000 disadvantaged students - all fully free in a residential campus. KISS has a school, a college, and a university - KISS Deemed to be University, which is the first and only university exclusively for tribal scholars providing innovative tribal courses. 
-                    </p>
-                    <p>
-                    KISS has made a huge impact in arresting naxalism, harassment, trafficking, malnutrition, illiteracy, and superstitions by promoting education. He has founded Kalinga Institute of Medical Sciences, Kalinga Institute of Dental Sciences and Kalinga Institute of Nursing Sciences, besides an attached 2600 bedded state-of-the-art hospital, a super-speciality center and a cancer care hospital. He developed the first smart village in Asia - Kalarabanka Smart Village and a model panchayat in Odisha. It is a fully solar-powered village. Besides education and tribal upliftment, Prof Samanta has also contributed immensely to art, culture, sculpture, literature, film, media, spirituality, rural development, and his humanitarian contribution to society is awe-inspiring. His contribution to Sports is nothing short of phenomenal. Through his institutions, he has nurtured 11 Olympians, created a massive sports infrastructure and promoted sports persons - contributing to physical fitness, national unity, and social integration. His humanitarian efforts have touched countless lives. Despite all his achievements and accolades and access to luxuries, he leads a simple life and remains a bachelor who embodies humility and compassion.
-                    </p>
                 </div>
             </div>
             <div className="bg-HeroBackground w-full relative">
