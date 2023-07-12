@@ -15,7 +15,7 @@ const commingsoon = () => {
               <p></p>
         
         <Link href='/'><button className="rounded-full border-none bg-buttonBackground mt-12 px-4 py-1 outline-none">
-          REGISTER NOW
+          RETURN TO HOMEPAGE
         </button></Link>
       </div>
     </div>
