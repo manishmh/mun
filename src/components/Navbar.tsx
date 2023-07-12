@@ -33,7 +33,7 @@ const Navbar = () => {
           <Link href='/'>Event</Link>
           <Link href='/'>Speaker</Link>
           <Link href='/'><button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
-            REGISTER NOW
+            RECRUITMENT LIVE
           </button></Link>
         </ul>
         <div className='md:hidden' onClick={() => setMobile(!mobile)}>button Icon</div>
