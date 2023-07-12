@@ -39,7 +39,7 @@ const About = () => {
     <Navbar />
     <div className="w-screen bg-HeroBackground max-w-full">
         <div className="mx-auto w-full overflow-x-hidden">
-            <div className="relative w-full h-screen 4xl:h-[80vh] 4xl:max-h-[900px] overflow-hidden max-w-[1920px] mx-auto ">
+            <div className="relative w-full h-[40vh] md:h-[70vh] lg:h-screen 4xl:h-[80vh] 4xl:max-h-[900px] overflow-hidden max-w-[1920px] mx-auto ">
                 {/* top gradient*/}
                 <div className="absolute top-[-5%] w-full h-[70%] opacity-70 bg-gradient-to-b z-10 from-[#0e213f] to-transparent blur-3xl"></div>
 
@@ -50,7 +50,7 @@ const About = () => {
                         width={1920}
                         height={1080}
                         quality={100}
-                        className="w-full h-full"
+                        className="w-full h-full hidden md:block"
                         loading="lazy"
                     ></Image>
                 </div>
