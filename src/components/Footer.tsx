@@ -3,14 +3,15 @@ import { FaLinkedinIn, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa
 
 const Footer: React.FC = () => {
   return (
-    // <>
-      <div id = "footer" className=" bg-[url('/footer/back.png')] w-full h-full bg-no-repeat bg-cover" >
-
-        <footer className="g-gradient-to-b w-full max-w-7xl from-black to-black via-blue-900 mx-auto px-4 py-6 rounded-lg">
+    <>
+      <div className="bg-[url('/footer/green_bg.png')] w-full h-full bg-no-repeat bg-cover">
+        <footer className="g-gradient-to-b from-black to-black via-blue-900 mx-auto px-4 py-6 rounded-lg" style={{ margin: "0 10%" }}>
           <div className="container mx-auto">
             <div className="flex flex-col">
               <div className="flex justify-center">
-                <h3 className="text-2xl text-center font-extrabold text-white">CONTACT US</h3>
+                <h3 className="text-2xl text-center font-extrabold text-white">
+                  CONTACT US
+                </h3>
               </div>
               <div className="mt-4 flex justify-start">
                 <div className="w-full rounded-lg overflow-hidden">
@@ -24,44 +25,79 @@ const Footer: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-between mt-6">
-              <div>
+            <div className="flex flex-wrap justify-between mt-6">
+              <div className="w-full md:w-1/2 lg:w-1/5 mb-4">
                 <h4 className="text-lg font-bold text-white">PHONE</h4>
-                <p className="text-white"> <a href="tel: +917008051628">+91-7008051628 (Shivram Krishna) </a> </p>
-                <p className="text-white"><a href="tel: +919431591145">+91-9431591145 (Kshitij Singh) </a></p>
-                <p className="text-white"><a href="tel: +917735127138">+91-7735127138 (Satyajeet Das) </a></p>
+                <p className="text-white">
+                  <a href="tel: +917008051628">
+                    +91-7008051628 (Shivram Krishna){" "}
+                  </a>{" "}
+                </p>
+                <p className="text-white">
+                  <a href="tel: +919431591145">
+                    +91-9431591145 (Kshitij Singh){" "}
+                  </a>
+                </p>
+                <p className="text-white">
+                  <a href="tel: +917735127138">
+                    +91-7735127138 (Satyajeet Das){" "}
+                  </a>
+                </p>
               </div>
-              <div>
+              <div className="w-full md:w-1/2 lg:w-1/5 mb-4">
                 <h4 className="text-lg font-bold text-white">Address</h4>
                 <p className="text-white">Student Activity Centre</p>
-                <p className="text-white">Campus 13 KIIT (Deemed to be University)</p>
+                <p className="text-white">
+                  Campus 13 KIIT (Deemed to be University)
+                </p>
                 <p className="text-white">Bhubaneswar, Odisha-751024</p>
               </div>
-              <div>
+              <div className="w-full md:w-1/2 lg:w-1/5 mb-4">
                 <h4 className="text-lg font-bold text-white">Email</h4>
                 <p className="text-white">
-                  <a href="mailto:kiitmun@gmail.com">kiitmun@gmail.com</a> </p>
+                  <a href="mailto:kiitmun@gmail.com">kiitmun@gmail.com</a>{" "}
+                </p>
               </div>
-              <div>
+              <div className="w-full md:w-1/2 lg:w-1/5 mb-4">
                 <h4 className="text-lg font-bold text-white">Social Media</h4>
                 <div className="flex items-center">
-                  <FaFacebook style={{ fontSize: "xs" }} />
-                  <a href="https://www.facebook.com/kiitmun/" className="text-white ml-2">Facebook</a>
+                  <FaFacebook style={{ fontSize: "xs", marginRight: "0.5rem" }} />
+                  <a
+                    href="https://www.facebook.com/kiitmun/"
+                    className="text-white"
+                  >
+                    Facebook
+                  </a>
                 </div>
                 <div className="flex items-center">
-                  <FaInstagram style={{ fontSize: "xs" }} />
-                  <a href="https://www.instagram.com/instakiitmun/" className="text-white ml-2">Instagram</a>
+                  <FaInstagram style={{ fontSize: "xs", marginRight: "0.5rem" }} />
+                  <a
+                    href="https://www.instagram.com/instakiitmun/"
+                    className="text-white"
+                  >
+                    Instagram
+                  </a>
                 </div>
                 <div className="flex items-center">
-                  <FaTwitter style={{ fontSize: "xs" }} />
-                  <a href="https://twitter.com/kiitmun" className="text-white ml-2">Twitter</a>
+                  <FaTwitter style={{ fontSize: "xs", marginRight: "0.5rem" }} />
+                  <a
+                    href="https://twitter.com/kiitmun"
+                    className="text-white"
+                  >
+                    Twitter
+                  </a>
                 </div>
                 <div className="flex items-center">
-                  <FaLinkedinIn style={{ fontSize: "xs" }} />
-                  <a href="https://www.linkedin.com/example" className="text-white ml-2">LinkedIn</a>
+                  <FaLinkedinIn style={{ fontSize: "xs", marginRight: "0.5rem" }} />
+                  <a
+                    href="https://www.linkedin.com/example"
+                    className="text-white"
+                  >
+                    LinkedIn
+                  </a>
                 </div>
               </div>
-              <div className="text-right">
+              <div className="w-full md:w-1/2 lg:w-1/5 mb-4 text-right hidden lg:block">
                 <h4 className="text-lg font-bold text-white">Quick Links</h4>
                 <p>
                   <a href="#" className="text-white block">
@@ -85,21 +121,35 @@ const Footer: React.FC = () => {
                 </p>
               </div>
             </div>
-            <hr className="my-3 border-gray-300" />
+            <hr className="my-6 border-gray-300" />
+
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-center text-white-700 mt-4">© 2023 KIIT MUN. All rights reserved.</p>
+                <p className="text-left text-white-700 mt-4">© 2023 KIIT MUN. All rights reserved.</p>
               </div>
-              <div className="flex gap-4">
-                <img src="footer/Mask group.png" alt="Image 1" className="w-12 h-12 mr-2" />
-                <img src="footer/MUN LOGO-01 1.png" alt="Image 2" className="w-12 h-12" />
+              <div className="flex gap-2 ">
+                <img
+                  className="w-12 h-12"
+                  src="/Logo/MUN_logo.png"
+                  alt="Image 1"
+                />
+                <img
+                  className="w-12 h-12"
+                  src="/Logo/KIIT_Logo.png"
+                  alt="Image 2"
+                />
+                <img
+                  className="w-12 h-12"
+                  src="/Logo/Ksac_logo.png"
+                  alt="Image 3"
+                />
               </div>
             </div>
           </div>
         </footer>
       </div>
-    // </>
+    </>
   );
 };
 
-export default Footer;
+export default Footer;
