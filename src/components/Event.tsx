@@ -20,13 +20,13 @@ const Event = () => {
               day="T.B.A" 
               year="Soon" 
               title="Day 1: Inception" 
-              paragraph="From Delegate kit distribution to our Inauguration and Cultural Night, this day is packed with the first two thougt-provoking Sessions addressing the theme."
+              paragraph="From Delegate kit distribution to our Inauguration and Cultural Night, this day is packed with the first two thought-provoking Sessions addressing the theme."
             />
             <EventDetail 
               day="T.B.A" 
               year="Soon" 
               title="Day 2: Discourse" 
-              paragraph="Immersed in three engaging sessions, delving deep into the global challenges, the second day is packed and concluded with a captivating star night, featurring a famous personality and celebration."
+              paragraph="Immersed in three engaging sessions, delving deep into the global challenges, the second day is packed and concluded with a captivating star night, featuring a famous personality and celebration."
             />
             <EventDetail 
               day="T.B.A" 
@@ -42,8 +42,7 @@ const Event = () => {
               width={1920} 
               height={1080}
               className="h-full w-full min-w-[300px] sm:max-h-[500px] lg:max-h-[600px] xl:max-h-auto"
-            >
-            </Image>
+            />
           </div>
         </div>
       </div>
