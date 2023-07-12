@@ -14,6 +14,7 @@ export default function Home() {
       <Event />
       <PageCarousel/>
       <Footer />
+      
     </div>
   )
 }
