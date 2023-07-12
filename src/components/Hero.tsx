@@ -37,7 +37,7 @@ const Hero = () => {
               width={1000}
               height={720}
               quality={100}
-              className="h-[50vh] w-[100%] mx-auto sm:w-[75%] md:w-[55%] sm:h-[500px] md:h-[550px] lg:h-[700px] flex-shrink-0 max-w-[700px]"
+              className="h-[50vh] w-[100%] mx-auto sm:w-[75%] md:w-[55%] sm:h-[500px] md:h-[510px] lg:h-[700px] flex-shrink-0 max-w-[700px]"
             ></Image>
             <div className="hidden md:block absolute max-w-[1440px] left-0 bottom-0 -translate-y-[5vh] md:-translate-y-[70px] translate-x-[30px] md:translate-x-[70px] z-20 text-white">
               <h1 className="text-lg lg:text-xl font-semibold leading-6">
@@ -53,8 +53,8 @@ const Hero = () => {
                 </button>
               </Link>
             </div> 
-          <div className="flex-col w-full md:text-justify hidden md:block -translate-y-[400px] md:-translate-y-0 md:-translate-x-[40px] lg:-translate-x-0 justify-center gap-3 text-white">
-            <h1 className="text-2xl md:text-xl lg:text-3xl font-bold">
+          <div className="flex-col  w-full md:text-justify hidden md:block -translate-y-[400px] md:translate-y-8 lg:translate-y-0 md:-translate-x-[40px] lg:-translate-x-0 justify-center gap-3 text-white">
+            <h1 className="text-2xl md:text-xl lg:text-2xl xl:text-3xl font-bold">
             The Ultimate Platform for
               <br />
               Global Engagement, Diplomacy, and
@@ -85,7 +85,7 @@ const Hero = () => {
         <div className="absolute bottom-[-30%] left-0 h-[35%] w-screen bg-gradient-to-b from-[#1F3B68] to-transparent blur-3xl"></div>
         <div className="absolute bottom-[-30%] left-0 h-[35%] w-screen bg-gradient-to-b from-[#1F3B68] to-transparent blur-3xl"></div> */}
       </div>
-      <div className="relative max-w-[1440px] mt-[70px] mx-auto  md:px-[5vw] xl:px-[100px] pt-8 text-3xl text-white first-letter">
+      <div className="relative max-w-[1440px] md:-translate-y-[80px] lg:translate-y-0 mt-[70px] mx-auto  md:px-[5vw] xl:px-[100px] pt-8 text-3xl text-white first-letter">
         <div className="flex flex-col md:flex-row -translate-y-[60px] md:-translate-y-0 items-center justify-between w-full lg:pr-[150px] md:pr-[100px] sm:pr-[50px] xl:pr-[200px] absolute top-0 md:top-10">
           <div className="w-[90%] md:w-[40%]">
             <h1 className="text-[43px] md:text-3xl font-bold text-center">WHO WE ARE: </h1>
