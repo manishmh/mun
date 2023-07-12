@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <div className=" bg-[url('/footer/back.png')] w-full h-full bg-no-repeat bg-cover" >
-        
+
         <footer className="g-gradient-to-b w-full max-w-7xl from-black to-black via-blue-900 mx-auto px-4 py-6 rounded-lg">
           <div className="container mx-auto">
             <div className="flex flex-col">
@@ -27,9 +27,9 @@ const Footer: React.FC = () => {
             <div className="flex justify-between mt-6">
               <div>
                 <h4 className="text-lg font-bold text-white">PHONE</h4>
-                <p className="text-white"> <a href = "tel: +917008051628">+91-7008051628 (Shivram Krishna) </a> </p>
-                <p className="text-white"><a href = "tel: +919431591145">+91-9431591145 (Kshitij Singh) </a></p>
-                <p className="text-white"><a href = "tel: +917735127138">+91-7735127138 (Satyajeet Das) </a></p>
+                <p className="text-white"> <a href="tel: +917008051628">+91-7008051628 (Shivram Krishna) </a> </p>
+                <p className="text-white"><a href="tel: +919431591145">+91-9431591145 (Kshitij Singh) </a></p>
+                <p className="text-white"><a href="tel: +917735127138">+91-7735127138 (Satyajeet Das) </a></p>
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white">Address</h4>
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
               <div>
                 <h4 className="text-lg font-bold text-white">Email</h4>
                 <p className="text-white">
-                <a href="mailto:kiitmun@gmail.com">kiitmun@gmail.com</a> </p>
+                  <a href="mailto:kiitmun@gmail.com">kiitmun@gmail.com</a> </p>
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white">Social Media</h4>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                 <div className="flex items-center">
                   <FaInstagram style={{ fontSize: "xs" }} />
                   <a href="https://www.instagram.com/instakiitmun/" className="text-white ml-2">Instagram</a>
-                </div> 
+                </div>
                 <div className="flex items-center">
                   <FaTwitter style={{ fontSize: "xs" }} />
                   <a href="https://twitter.com/kiitmun" className="text-white ml-2">Twitter</a>
@@ -85,12 +85,16 @@ const Footer: React.FC = () => {
                 </p>
               </div>
             </div>
-            <hr className="my-6 border-gray-300" />
-            <div className="flex justify-end">
-              <img src="footer/Mask group.png" alt="Image 1" className="w-12 h-12 mr-2" />
-              <img src="footer/MUN LOGO-01 1.png" alt="Image 2" className="w-12 h-12" />
+            <hr className="my-3 border-gray-300" />
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-center text-white-700 mt-4">© 2023 KIIT MUN. All rights reserved.</p>
+              </div>
+              <div className="flex gap-4">
+                <img src="footer/Mask group.png" alt="Image 1" className="w-12 h-12 mr-2" />
+                <img src="footer/MUN LOGO-01 1.png" alt="Image 2" className="w-12 h-12" />
+              </div>
             </div>
-            <p className="text-center text-white-700 mt-4">© 2023 KIIT MUN. All rights reserved.</p>
           </div>
         </footer>
       </div>
@@ -98,4 +102,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer;
+export default Footer;
