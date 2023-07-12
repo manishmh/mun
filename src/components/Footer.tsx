@@ -129,17 +129,17 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex gap-2 ">
                 <img
-                  className="w-12 h-12"
+                  className="w-8 h-8 md:w-12 md:w-12"
                   src="/Logo/MUN_logo.png"
                   alt="Image 1"
                 />
                 <img
-                  className="w-12 h-12"
+                  className="w-8 h-8 md:w-12 md:w-12"
                   src="/Logo/KIIT_Logo.png"
                   alt="Image 2"
                 />
                 <img
-                  className="w-12 h-12"
+                  className="w-8 h-8 md:w-12 md:w-12"
                   src="/Logo/Ksac_logo.png"
                   alt="Image 3"
                 />
