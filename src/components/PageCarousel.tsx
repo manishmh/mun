@@ -42,9 +42,9 @@ const PageCarousel = () => {
 
 	return (
 		<div className='bg-cover bg-carouselBackground'>
-			<div className='h-[720px] min-[400px]:h-[620px] sm:h-[600px] md:h-[430px] lg:h-[400px] max-w-7xl mx-auto'>
-				<Carousel className='h-full'>
-					{carouselData.map(n => <div className='flex h-full w-full items-center justify-center' key={n.id}>
+			<div className='h-[800px] min-[500px]:h-[620px] sm:h-[600px] md:h-[430px] lg:h-[400px] max-w-7xl mx-auto'>
+				<Carousel className='h-full overflow-y-hidden'>
+					{carouselData.map(n => <div className='flex overflow-y-hidden h-full w-full items-center justify-center' key={n.id}>
 						<div className='h-full w-full md:mx-24 mx-12'>
 							<h2 className='uppercase text-transparent bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark mt-6 lg:mt-12 font-bold text-xl lg:text-2xl'>
 								{n.position}
