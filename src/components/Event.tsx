@@ -4,7 +4,7 @@ import EventDetail from "./EventDetail";
 
 const Event = () => {
   return (
-    <div className="lg:h-screen py-8 lg:py-0 bg-HeroBackground max-h-[800px] ">
+    <div id = "events" className="lg:h-screen py-8 lg:py-0 bg-HeroBackground max-h-[800px] ">
       <Image 
         src="/hero/GroupTop.png" 
         alt="" 
@@ -17,22 +17,22 @@ const Event = () => {
         <div className="flex flex-row justify-center sm:gap-[30px] xl:gap-[50px]">
           <div className="flex flex-col gap-10 justify-center max-w-[700px]">
             <EventDetail 
-              day={14} 
-              year="JULY, 2023" 
-              title="KEYNOTE ADDRESS" 
-              paragraph="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s"
+              day="T.B.A" 
+              year="Soon" 
+              title="Day 1: Inception" 
+              paragraph="From Delegate kit distribution to our Inauguration and Cultural Night, this day is packed with the first two thougt-provoking Sessions addressing the theme."
             />
             <EventDetail 
-              day={14} 
-              year="JULY, 2023" 
-              title="KEYNOTE ADDRESS" 
-              paragraph="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s"
+              day="T.B.A" 
+              year="Soon" 
+              title="Day 2: Discourse" 
+              paragraph="Immersed in three engaging sessions, delving deep into the global challenges, the second day is packed and concluded with a captivating star night, featurring a famous personality and celebration."
             />
             <EventDetail 
-              day={14} 
-              year="JULY, 2023" 
-              title="KEYNOTE ADDRESS" 
-              paragraph="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s"
+              day="T.B.A" 
+              year="Soon" 
+              title="Day 3: Epilogue" 
+              paragraph="The culmination of insightful discussions in the last three sessions, followed by a profound closing ceremony and a memorable valedictory event, honoring the delegates and celebrating their accomplishments."
             />
           </div>
           <div className="">

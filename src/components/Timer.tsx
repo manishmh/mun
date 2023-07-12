@@ -6,6 +6,7 @@ import React from "react";
 // import "./timer.css";
 import CountdownTimer from "./CountdownTimer";
 import { TiLocation, TiCalendarOutline } from "react-icons/ti";
+import Link from 'next/link';
 
 const Timer: React.FC = () => {
 
@@ -39,12 +40,16 @@ const Timer: React.FC = () => {
             </span>
           </div>
           <div className="flex mt-5 items-center justify-evenly">
+          <Link href='#events'>
             <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
               VIEW DETAILS
             </button>
+            </Link>
+            <Link href='/formrec'>
             <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
-              REGISTER NOW
+              JOIN US NOW
             </button>
+           </Link>
           </div>
         </div>
       </div>

@@ -30,9 +30,9 @@ const Navbar = () => {
         <div><Link href='/'><Image src={logo} alt="MUN LOGO" className={`${navbar ? 'w-[50px] h-[50px] lg:h-[70px] lg:w-[70px]' : 'w-[60px] h-[60px] lg:h-[90px] lg:w-[90px]'}`} /></Link></div>
         <ul className="hidden md:flex gap-12 lg:gap-28">
           <Link href="about">About</Link>
-          <Link href='/'>Event</Link>
-          <Link href='/'>Speaker</Link>
-          <Link href='/'><button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
+          <Link href='mun'>MUN</Link>
+          <Link href='mun'>Executive</Link>
+          <Link href='/formrec'><button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
             RECRUITMENT LIVE
           </button></Link>
         </ul>
@@ -40,8 +40,8 @@ const Navbar = () => {
       </div>
       {mobile && <ul className="flex  pt-6 pb-12 gap-8 items-center flex-col md:hidden ">
         <Link href="about">About</Link>
-        <Link href='/'>Event</Link>
-        <Link href='/'>Speaker</Link>
+        <Link href='mun'>MUN</Link>
+        <Link href='mun'>Executive</Link>
         <Link href='/'><button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
           REGISTER NOW
         </button></Link>

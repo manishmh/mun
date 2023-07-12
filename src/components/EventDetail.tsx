@@ -1,7 +1,7 @@
 'use client'
 
 type EventDetailProps = {
-    day: number,
+    day: number | string,
     year: string,
     title: string,
     paragraph: string,
@@ -19,7 +19,7 @@ const EventDetail = ({ day, year, title, paragraph }: EventDetailProps) => {
         <div>
             <h1 className="sm:text-xl lg:text-2xl font-semibold">{title}</h1>
             <p className="text-sm mt-5 ">{paragraph}</p>
-            <button className="outline-none mt-3.5 border-none py-1 px-4 bg-buttonBackground rounded-full">VIEW DETAILS</button>
+            <button className="outline-none mt-3.5 border-none py-1 px-4 bg-buttonBackground rounded-full">Not yet Announced</button>
         </div>
     </div>
   )

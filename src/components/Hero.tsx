@@ -38,9 +38,9 @@ const Hero = () => {
                 <br />
                 Change Takes Shape
               </h1>
-              <Link href="/contact">
-                <button className="text-base lg:text-lg mt-3 lg:mt-5 rounded-full border-none bg-buttonBackground px-3 lg:px-4 py-1 outline-none">
-                  RECRUITMENT LIVE!
+              <Link href="/formrec">
+                <button className="text-base lg:text-lg mt-3 lg:mt-5 rounded-full border-none bg-buttonBackground px-3 lg:px-5 py-3 outline-none font-bold">
+                  JOIN US NOW!
                 </button>
               </Link>
             </div> 
@@ -78,23 +78,24 @@ const Hero = () => {
             <p className="text-xs mt-4">
             KIIT International Model United Nations emerges as a leading global United Nations simulation, spearheaded by the Secretariat, the committed student body of the Kalinga Institute of Industrial Technology. Since its inception in 2013, this conference has consistently surpassed expectations, establishing unprecedented benchmarks year after year. By fostering intellectual growth, nurturing youth leadership, and promoting global understanding, it stands as an exemplary platform for empowerment and enlightenment.
             </p>
-            <Link href="#Footer" className="z-50">
+            <Link href="#footer" className="z-50">
               <button className=" mt-5 rounded-full border-none bg-buttonBackground px-4 py-1 text-base outline-none">
                 CONTACT US
               </button>
             </Link>
           </div>
           <div className="flex text-[40px] z-40">
-            <Link href="https://www.google.com" target="_blank">
+            <Link href="/">
+            {/* target="_blank" */}
               <TfiWorld className="border-r-none h-20 w-20 border-2 border-r-0 border-[#AF693B] px-4 py-4 bg-buttonBackground" />
             </Link>
-            <Link href="https://www.google.com" target="_blank">
+            <Link href="#events">
               <FaRegCalendarAlt className="h-20 w-20 border-2 border-r-0 border-[#AF693B] px-4 py-4" />
             </Link>
-            <Link href="https://www.google.com" target="_blank">
+            <Link href="mun">
               <FaImage className="h-20 w-20 border-2 border-r-0 border-[#AF693B] px-4 py-4" />
             </Link>
-            <Link href="https://www.google.com" target="_blank">
+            <Link href="mun">
               <MdSecurity className="h-20 w-20 border-2 border-[#AF693B] px-4 py-4" />
             </Link>
           </div>
