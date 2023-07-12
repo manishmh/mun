@@ -10,7 +10,7 @@ const commingsoon = () => {
     <div className="bg-[url('/Error/green_bg.png')] w-full h-full bg-no-repeat bg-cover">
       <div className="flex flex-col items-center justify-center min-h-screen">
       <Link href='/'><Image src={logo} alt="MUN LOGO" className={  'w-[60px] h-[60px] lg:h-[90px] lg:w-[90px]'} /></Link>
-              {/* <Image src="/Error/plugs_1.png" alt="Image" className="mt-8" /> */}
+              <Image src="/comingsoon.png" width={400} height={400} alt="Image" className="mt-8" />
 
               <p></p>
         
