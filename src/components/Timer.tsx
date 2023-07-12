@@ -9,16 +9,16 @@ import { TiLocation, TiCalendarOutline } from "react-icons/ti";
 
 const Timer: React.FC = () => {
 
-  const targetDate = new Date("2023-09-10T23:59:59");
+  const targetDate = new Date("2023-10-07T06:00:00");
 
   return (
     <>
       <div className="font-sans w-screen py-28 overflow-hidden bg-carouselBackground pt-12">
         <div className="max-w-7xl mx-auto">
           <h1 className="py-8 text-3xl text-center font-bold text-transparent mx-auto max-w-5xl bg-clip-text bg-gradient-to-r from-[#061124] via-[#143A81] to-[#061125]">
-            JOIN US FOR OUR UPCOMING EVENT!
+          Join us for the 11th Edition of KIIT International MUN!
           </h1>
-          <h1 className="pb-5 py-8 text-center text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#445DB6] to-[#7860C5]">The Future of Technology Conference</h1>
+          <h1 className="pb-5 py-8 text-center text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#445DB6] to-[#7860C5]">Countdown to UNLEASH DIPLOMACY.</h1>
           <div className="p-10 flex items-center justify-center text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#445DB6] to-[#7860C5]">
             <CountdownTimer targetDate={targetDate} />
           </div>
@@ -31,7 +31,7 @@ const Timer: React.FC = () => {
           <div className="px-10 pt-12 flex justify-evenly text-[#143A81] text-2xl mt-4">
             <span>
               <TiCalendarOutline className="inline-block align-middle" />
-              <span className="align-middle">July 11-12-13, 2023</span>
+              <span className="align-middle">October 7-8-9, 2023</span>
             </span>
             <span>
               <TiLocation className="inline-block align-middle" />

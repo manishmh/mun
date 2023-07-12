@@ -32,32 +32,28 @@ const Hero = () => {
             ></Image>
             <div className="absolute max-w-[1440px] left-0 bottom-0 -translate-y-[5vh] md:-translate-y-[70px] translate-x-[30px] md:translate-x-[70px] z-20 text-white">
               <h1 className="text-lg lg:text-xl font-semibold leading-6">
-                Minds Converge
+              Ideas Collide
                 <br />
-                Ideas Collide
+                Minds Converge
                 <br />
                 Change Takes Shape
               </h1>
               <Link href="/contact">
                 <button className="text-base lg:text-lg mt-3 lg:mt-5 rounded-full border-none bg-buttonBackground px-3 lg:px-4 py-1 outline-none">
-                  REGISTER NOW
+                  RECRUITMENT LIVE!
                 </button>
               </Link>
             </div> 
           <div className="flex flex-col -translate-x-[40px] lg:-translate-x-0 justify-center gap-3 text-white">
             <h1 className="sm:text-2xl  lg:text-3xl font-bold">
-              The Ultimate Platform for
+            The Ultimate Platform for
               <br />
-              Planning and Promoting
+              Global Engagement, Diplomacy, and
               <br />
-              Successfull Events
+              Empowering tomorrow&apos;s Leaders
             </h1>
             <p className="max-w-[900px] text-xs w-[100%] md:w-[80%]">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum has been the industrys standard dummy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic
-              typesetting, remaining essentially unchanged.
+            With its engaging debates, diverse perspectives, and collaborative spirit, KIITMUN serves as a catalyst for honing critical thinking, diplomacy, and problem-solving skills. This extraordinary platform brings together aspiring diplomats, future leaders, and change-makers from around the world, providing them with an unparalleled opportunity to explore pressing global issues, engage in meaningful dialogue, and collectively work towards innovative solutions.
             </p>
             <div className="flex gap-2">
               See more about us
@@ -78,15 +74,11 @@ const Hero = () => {
 
         <div className="flex items-center justify-between w-full max-w-[] lg:pr-[150px] md:pr-[100px] sm:pr-[50px] xl:pr-[200px] absolute top-10">
           <div className="w-[40%]">
-            <h1 className="text-3xl font-bold">WHO WE ARE</h1>
+            <h1 className="text-3xl font-bold">WHO WE ARE: </h1>
             <p className="text-xs mt-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industrys standard dummy text ever since the 1500s, when an unknown
-              printer took a galley of type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged.
+            KIIT International Model United Nations emerges as a leading global United Nations simulation, spearheaded by the Secretariat, the committed student body of the Kalinga Institute of Industrial Technology. Since its inception in 2013, this conference has consistently surpassed expectations, establishing unprecedented benchmarks year after year. By fostering intellectual growth, nurturing youth leadership, and promoting global understanding, it stands as an exemplary platform for empowerment and enlightenment.
             </p>
-            <Link href="/contact" className="z-50">
+            <Link href="#Footer" className="z-50">
               <button className=" mt-5 rounded-full border-none bg-buttonBackground px-4 py-1 text-base outline-none">
                 CONTACT US
               </button>
