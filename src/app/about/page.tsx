@@ -39,7 +39,7 @@ const About = () => {
     <Navbar />
     <div className="w-screen bg-HeroBackground max-w-full">
         <div className="mx-auto w-full">
-            <div className="relative w-full h-screen 4xl:h-[80vh] 4xl:max-h[900px] overflow-hidden">
+            <div className="relative w-full h-screen 4xl:h-[80vh] 4xl:max-h-[900px] overflow-hidden max-w-[1920px] mx-auto ">
                 {/* top gradient*/}
                 <div className="absolute top-[-5%] w-full h-[70%] opacity-70 bg-gradient-to-b z-10 from-[#0e213f] to-transparent blur-3xl"></div>
 
@@ -79,7 +79,7 @@ const About = () => {
                         `}
                     ></Image>
                 ))}
-            <h1 className="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 font-bold text-[10vw] 2xl:text-[150px]">About Us</h1>
+                <h1 className="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 font-bold text-[10vw] 2xl:text-[150px]">About Us</h1>
             </div>
             <div className="bg-[#D7E1E3] w-full">
                 <h1 className="bg-textBG text-transparent bg-clip-text text-2xl lg:text-3xl pt-[120px] text-center font-bold 3xl:text-[2vw] 4xl:text-3xl">PREVIOUS EDITION</h1>
