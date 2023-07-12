@@ -14,7 +14,7 @@ const Timer: React.FC = () => {
           <h1 className="py-4 text-2xl text-center font-bold text-transparent mx-auto max-w-5xl bg-clip-text bg-gradient-to-r from-[#061124] via-[#143A81] to-[#061125]">
             JOIN US FOR OUR UPCOMING EVENT!
           </h1>
-          <h1 className="pb-5 py-6 text-center text-3xl sm:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark">
+          <h1 className="pb-2 md:pb-5 py-4 md:py-6 text-center text-2xl sm:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark">
             The Future of Technology Conference
           </h1>
           <div className="p-6 sm:p-10 flex items-center justify-center text-3xl sm:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#445DB6] to-[#7860C5]">
