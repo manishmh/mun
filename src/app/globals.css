@@ -26,36 +26,36 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
-@keyframes from-top {
+@keyframes from-left {
   from { 
     opacity: 0;
-    transform: translateY(-50px);
-    }
+    transform: translateX(-20px);
+  }
   to { 
     opacity: 1; 
-    transform: translateY(-30px);
+    transform: translateX(0px);
   }
 }
 
 .animate-fade-in {
-  animation-name: from-top;
-  animation-duration: 1.5s;
+  animation-name: from-left;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
 
-@keyframes from-bottom {
+@keyframes from-right {
   from { 
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateX(20px);
     }
   to { 
     opacity: 1; 
-    transform: translateY(-30px);
+    transform: translateX(0px);
   }
 }
 
 .animate-from-bottom {
-  animation-name: from-bottom;
-  animation-duration: 1.5s;
+  animation-name: from-right;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }

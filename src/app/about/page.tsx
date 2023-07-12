@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import Link from "next/link";
 import Footer from "@/components/Footer";
 
 const GALLERY = [
@@ -29,7 +28,7 @@ const About = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % GALLERY.length);
-    }, 3000); // Set the desired interval time (in milliseconds)
+    }, 5000); // Set the desired interval time (in milliseconds)
 
     return () => {
       clearInterval(intervalId);
@@ -38,22 +37,22 @@ const About = () => {
   return (
     <>
     <Navbar />
-    <div className="w-screen bg-HeroBackground">
-        <div className="mx-auto w-screen">
-            <div className="relative w-full h-screen 2xl:h-[80vh] 4xl:max-h-[900px] overflow-hidden">
+    <div className="w-screen bg-HeroBackground max-w-full">
+        <div className="mx-auto w-full">
+            <div className="relative w-full h-screen 4xl:h-[80vh] 4xl:max-h[900px] overflow-hidden">
                 {/* top gradient*/}
                 <div className="absolute top-[-5%] w-full h-[70%] opacity-70 bg-gradient-to-b z-10 from-[#0e213f] to-transparent blur-3xl"></div>
 
-                {/* <div className="absolute bottom="> */}
                 <div className="absolute w-full bottom-[-10%] overflow-hidden h-[40%] z-20">
-                    {/* <Image 
+                    <Image 
                         src="/hero/GroupBottom.png" 
                         alt="About Hero img"
                         width={1920}
                         height={1080}
                         quality={100}
                         className="w-full h-full"
-                    ></Image> */}
+                        loading="lazy"
+                    ></Image>
                 </div>
                 {/* bottom gradient*/}
                 <div className="absolute bottom-[-10%] w-full h-[80%] bg-gradient-to-t z-10 from-[#001212] to-transparent blur-xl "></div>
@@ -74,7 +73,7 @@ const About = () => {
                         width={1920}
                         height={1080}
                         quality={100}
-                        className={`animate-fade-in absolute inset-0 h-full transition-all z-5 -translate-y-[30px] opacity-1 duration4000 ease-in-out w-full rounded-lg object-cover transform
+                        className={`animate-fade-in absolute inset-0 z-5 translatey-[30px] opacity-1 ease-out w-full rounded-lg object-cover transform
                             ${currentIndex === 2 ? "animate-from-bottom":""}
                             ${index === currentIndex ? "block" : "hidden"}
                         `}
@@ -84,7 +83,7 @@ const About = () => {
             </div>
             <div className="bg-[#D7E1E3] w-full">
                 <h1 className="bg-textBG text-transparent bg-clip-text text-2xl lg:text-3xl pt-[120px] text-center font-bold 3xl:text-[2vw] 4xl:text-3xl">PREVIOUS EDITION</h1>
-                <p className="text-[#051418] max-w-[1920px] w-[85%] lg:w-[80%] mx-auto lg:text-lg mt-4 pb-12 3xl:text-[1.3vw] 3xl:leading-[2vw] 4xl:text-xl " 
+                <p className="text-[#051418] max-w-[1920px] w-[90%] lg:w-[80%] mx-auto lg:text-lg mt-4 pb-12 3xl:text-[1.3vw] 3xl:leading-[2vw] 4xl:text-xl " 
                     style={{
                         wordWrap: 'break-word',
                         whiteSpace: 'pre-line',
@@ -109,7 +108,7 @@ const About = () => {
                     height={1080}
                     className="absolute w-full bottom-0"
                 ></Image> */}
-                <div className="flex w-[95%] lg:w-[80%] mx-auto pt-12 gap-2 max-w-[1920px] lg:gap-16 pb-[70px] 3xl:text-[1.1vw] 3xl:leading-[2vw] 4xl:text-xl">
+                <div className="flex flex-col md:flex-row w-[95%] lg:w-[80%] mx-auto pt-12 gap-12 md:gap-12 max-w-[1920px] lg:gap-16 pb-[70px] 3xl:text-[1.1vw] 3xl:leading-[2vw] 4xl:text-xl">
                     <div>
                         <h1 className="text-center text-2xl font-bold">ABOUT KIIT</h1> 
                         <div className="flex justify-center">
@@ -169,7 +168,7 @@ const About = () => {
                         </span>
                     </div>
                 </div>
-                <div className="flex w-[95%] lg:w-[80%] max-w-[1920px] mx-auto gap-2 lg:gap-12 pb-[70px] text-[#020B10] 3xl:text-[1.3vw] 3xl:leading-[2vw] 4xl:text-xl" 
+                <div className="flex flex-col w-[95%] mt-4 md:mt-0 md:flex-row lg:w-[80%] max-w-[1920px] mx-auto gap-2 md:gap-8 lg:gap-12 pb-[70px] text-[#020B10] 3xl:text-[1.3vw] 3xl:leading-[2vw] 4xl:text-xl" 
                     style={{
                         wordWrap: 'break-word',
                         whiteSpace: 'pre-line',
