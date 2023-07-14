@@ -80,10 +80,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* <div className="absolute bottom-[-30%] left-0 h-[35%] w-screen bg-gradient-to-b from-[#1F3B68] to-transparent blur-3xl"></div>
-        <div className="absolute bottom-[-30%] left-0 h-[35%] w-screen bg-gradient-to-b from-[#1F3B68] to-transparent blur-3xl"></div>
-        <div className="absolute bottom-[-30%] left-0 h-[35%] w-screen bg-gradient-to-b from-[#1F3B68] to-transparent blur-3xl"></div>
-        <div className="absolute bottom-[-30%] left-0 h-[35%] w-screen bg-gradient-to-b from-[#1F3B68] to-transparent blur-3xl"></div> */}
       </div>
       <div className="relative max-w-[1440px] md:-translate-y-[80px] lg:translate-y-0 mt-[70px] mx-auto  md:px-[5vw] xl:px-[100px] pt-8 text-3xl text-white first-letter">
         <div className="flex flex-col md:flex-row -translate-y-[60px] md:-translate-y-0 items-center justify-between w-full lg:pr-[150px] md:pr-[100px] sm:pr-[50px] xl:pr-[200px] absolute top-0 md:top-10">
