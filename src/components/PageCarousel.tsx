@@ -42,7 +42,29 @@ const PageCarousel = () => {
 
 	return (
 		<div className='bg-cover bg-carouselBackground'>
+			<div className='max-w-7xl mx-auto'>
+				<h2 className='uppercase text-transparent bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark py-12 text-center font-bold text-xl lg:text-2xl'>
+					MESSAGE FROM OUR SECRETARY GENERAL
+				</h2>
+				<div className="flex md:flex-row flex-col mx-16 items-center gap-2 md:gap-6 ">
+					<div className='grow-0 shrink-0 basis-2/5 flex flex-col justify-center items-center'>
+						<Image src={`/carousel/kshitij.png`} width={300} height={300} alt='carousel image' className={'w-[250px] h-[250px] lg:w-[300px] lg:h-[300px]'} />
+						<h2 className='text-transparent ml-2 bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark py-4 text-center font-bold text-xl lg:text-2xl'>
+							Kshitij Singh <br />
+							2023
+						</h2>
+					</div>
+					<div className='w-full'>
+						<p className='text-carouselTextDark text-sm lg:text-base pr-4 pt-2 md:text-left text-justify'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate suscipit facilis eligendi earum rerum ullam eveniet voluptatum doloremque quos dolorem perferendis vel at modi excepturi harum ratione ad, fugiat Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro quaerat aspernatur dolores ex quos reprehenderit veniam tempore culpa, iure amet nisi optio facilis facere, aperiam quibusdam, tenetur fugiat iusto eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ut cum quae et iure eum reprehenderit iusto dolor incidunt eveniet nostrum eos voluptatem dolores porro ipsam nihil sequi. Reiciendis, doloremque!
+							Dolore doloremque ipsum officiis pariatur molestias eum voluptatem adipisci cum consectetur velit at commodi in aliquid, temporibus aspernatur quam quaerat optio nihil voluptatum odio cumque. Nulla explicabo eius id quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae, voluptas quaerat excepturi inventore alias, deserunt non ea corrupti, sed nihil voluptatem eius fugiat rem minus cupiditate odio modi. Saepe!
+							Eaque temporibus fugit ea dolores, totam illo ex laboriosam nulla voluptatibus eveniet numquam excepturi? Dolorem numquam tenetur laboriosam aut cumque, beatae voluptas, enim corporis minima non eum quam, ratione culpa?
+						</p>
+					</div>
+				</div>
+			</div>
 			<div className='h-[800px] min-[500px]:h-[620px] sm:h-[600px] md:h-[430px] lg:h-[400px] max-w-7xl mx-auto'>
+				{/* Sec Gen Speech */}
+
 				<Carousel className='h-full overflow-y-hidden'>
 					{carouselData.map(n => <div className='flex overflow-y-hidden h-full w-full items-center justify-center' key={n.id}>
 						<div className='h-full w-full md:mx-24 mx-12'>
