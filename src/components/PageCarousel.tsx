@@ -50,14 +50,27 @@ const PageCarousel = () => {
 					<div className='grow-0 shrink-0 basis-2/5 flex flex-col justify-center items-center'>
 						<Image src={`/carousel/kshitij.png`} width={300} height={300} alt='carousel image' className={'w-[250px] h-[250px] lg:w-[300px] lg:h-[300px]'} />
 						<h2 className='text-transparent ml-2 bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark py-4 text-center font-bold text-xl lg:text-2xl'>
-							Kshitij Singh <br />
-							2023
+							Kshitij Singh,
+							<br />
+							Secretary-General,
+							<br />
+							KIIT International MUN 2023
 						</h2>
 					</div>
 					<div className='w-full'>
-						<p className='text-carouselTextDark text-sm lg:text-base text-justify'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate suscipit facilis eligendi earum rerum ullam eveniet voluptatum doloremque quos dolorem perferendis vel at modi excepturi harum ratione ad, fugiat Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro quaerat aspernatur dolores ex quos reprehenderit veniam tempore culpa, iure amet nisi optio facilis facere, aperiam quibusdam, tenetur fugiat iusto eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ut cum quae et iure eum reprehenderit iusto dolor incidunt eveniet nostrum eos voluptatem dolores porro ipsam nihil sequi. Reiciendis, doloremque!
-							Dolore doloremque ipsum officiis pariatur molestias eum voluptatem adipisci cum consectetur velit at commodi in aliquid, temporibus aspernatur quam quaerat optio nihil voluptatum odio cumque. Nulla explicabo eius id quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae, voluptas quaerat excepturi inventore alias, deserunt non ea corrupti, sed nihil voluptatem eius fugiat rem minus cupiditate odio modi. Saepe!
-							Eaque temporibus fugit ea dolores, totam illo ex laboriosam nulla voluptatibus eveniet numquam excepturi? Dolorem numquam tenetur laboriosam aut cumque, beatae voluptas, enim corporis minima non eum quam, ratione culpa?
+						<p className='text-carouselTextDark text-sm lg:text-base text-justify'>Respected faculty members, delegates, and my Secretariat,
+<br />							
+As Chinese philosopher Lao Tzu once said, "The journey of a thousand miles begins with a single step".
+At KIIT International Model United Nations, we dare to embrace the steps that drive change. It brings me great joy to extend an invitation to the esteemed annual conference, representing our distinguished faculty and the dedicated Secretariat of Kalinga Institute of Industrial Technology. Building upon the triumphs of past editions, this year's KIIT International MUN promises an extraordinary journey, merging innovation and tradition to foster a transformative platform for global dialogue and collaboration.
+	<br />						
+In today's society, we face new challenges in the aftermath of the global pandemic. Conflict, social unrest, and human rights violations continue to disrupt the world. During these trying times, it is crucial to maintain a positive outlook and work towards safeguarding global peace and unity. Our secretariat is wholeheartedly dedicated to the KIIT International Model United Nations, motivated by the indomitable human spirit that transcends all obstacles. By advocating for peace and cooperative problem-solving, we aim to inspire millions worldwide to embrace goodwill and harmony.
+	<br />						
+The United Nations tackles global responsibilities for health, peace, security, and economic recovery. It promotes unity and cooperation to address civil unrest and challenges impacting humanity. Diplomatic dialogue, facilitated by world leaders, combats issues and upholds core principles of international cooperation.
+As the Secretary General of this edition of the KIIT International Model United Nations, I take great pride in leading the conference, fully dedicated to upholding the principles embodied by the United Nations. The Secretariat firmly supports every delegate and anyone who shares our vision and goal of fostering a united and harmonious world filled with hope and optimism. We eagerly anticipate your ideas that can make a meaningful impact and offer solutions to address the challenges of our time, paving the way for a fair, sustainable, and resilient future.
+			<br />				
+KIIT International Model United Nations is committed to upholding its reputation and legacy. Our utmost desire is for every delegate to embark upon an extraordinary journey, one that leaves an indelible mark in their minds and forever resides within the treasury of their cherished memories. Alongside acquiring valuable principles and honing skills, we aim for this experience to empower individuals to make a meaningful impact in the world.
+			<br />				
+As responsible global citizens, it is our duty to strive for excellence and personal growth. I extend my sincere regards and best wishes for the upcoming experience that awaits you. May your valuable participation and support in this edition of KIIT International MUN create memories worth cherishing.
 						</p>
 					</div>
 				</div>
