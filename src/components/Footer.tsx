@@ -3,8 +3,8 @@ import { FaLinkedinIn, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa
 
 const Footer: React.FC = () => {
   return (
-    <>
-      <div className="bg-[url('/footer/green_bg.png')] w-full h-full bg-no-repeat bg-cover">
+    //<>
+      <div id = "footer" className="bg-[url('/footer/green_bg.png')] w-full h-full bg-no-repeat bg-cover">
         <footer className="g-gradient-to-b from-black to-black via-blue-900 mx-auto px-4 py-6 rounded-lg" style={{ margin: "0 10%" }}>
           <div className="container mx-auto">
             <div className="flex flex-col">
@@ -148,7 +148,7 @@ const Footer: React.FC = () => {
           </div>
         </footer>
       </div>
-    </>
+    //</>
   );
 };
 
