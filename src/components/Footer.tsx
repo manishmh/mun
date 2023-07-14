@@ -3,8 +3,8 @@ import { FaLinkedinIn, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa
 
 const Footer: React.FC = () => {
   return (
-    //<>
-      <div id = "footer" className="bg-[url('/footer/green_bg.png')] w-full h-full bg-no-repeat bg-cover">
+    <>
+      <div className="bg-[url('/footer/green_bg.png')] w-full h-full bg-no-repeat bg-cover">
         <footer className="g-gradient-to-b from-black to-black via-blue-900 mx-auto px-4 py-6 rounded-lg" style={{ margin: "0 10%" }}>
           <div className="container mx-auto">
             <div className="flex flex-col">
@@ -25,8 +25,8 @@ const Footer: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-wrap justify-between mt-6">
-              <div className="w-full md:w-1/2 lg:w-1/5 mb-4">
+            <div className="flex flex-wrap justify-between mt-6 ">
+              <div className="w-full md:w-1/2 lg:w-1/5 mb-4 text-left">
                 <h4 className="text-lg font-bold text-white">PHONE</h4>
                 <p className="text-white">
                   <a href="tel: +917008051628">
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
                   </a>
                 </p>
               </div>
-              <div className="w-full md:w-1/2 lg:w-1/5 mb-4">
+              <div className="w-full md:w-1/2 lg:w-1/5 mb-4 md:pl-16">
                 <h4 className="text-lg font-bold text-white">Address</h4>
                 <p className="text-white">Student Activity Centre</p>
                 <p className="text-white">
@@ -52,14 +52,14 @@ const Footer: React.FC = () => {
                 </p>
                 <p className="text-white">Bhubaneswar, Odisha-751024</p>
               </div>
-              <div className="w-full md:w-1/2 lg:w-1/5 mb-4">
+              <div className="w-full md:w-1/2 lg:w-1/5 mb-4 md:pl-16">
                 <h4 className="text-lg font-bold text-white">Email</h4>
                 <p className="text-white">
                   <a href="mailto:kiitmun@gmail.com">kiitmun@gmail.com</a>{" "}
                 </p>
               </div>
-              <div className="w-full md:w-1/2 lg:w-1/5 mb-4">
-                <h4 className="text-lg font-bold text-white">Social Media</h4>
+              <div className="w-full md:w-1/2 lg:w-1/5 mb-4 md:pl-16">
+                <h4 className="text-lg font-bold text-white text-centert">Social Media</h4>
                 <div className="flex items-center">
                   <FaFacebook style={{ fontSize: "xs", marginRight: "0.5rem" }} />
                   <a
@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
                   </a>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-1/5 mb-4 text-right hidden lg:block">
+              <div className="w-full md:w-1/2 lg:w-1/5 mb-4 text-left md:text-right">
                 <h4 className="text-lg font-bold text-white">Quick Links</h4>
                 <p>
                   <a href="#" className="text-white block">
@@ -125,21 +125,21 @@ const Footer: React.FC = () => {
 
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-left text-white-700 mt-4">© 2023 KIIT MUN. All rights reserved.</p>
+                <p className="text-center md:text-left text-white-700 mt-4">© 2023 KIIT MUN. All rights reserved.</p>
               </div>
               <div className="flex gap-2 ">
                 <img
-                  className="w-8 h-8 md:w-12 md:w-12"
+                  className="w-12 h-12"
                   src="/Logo/MUN_logo.png"
                   alt="Image 1"
                 />
                 <img
-                  className="w-8 h-8 md:w-12 md:w-12"
+                  className="w-12 h-12"
                   src="/Logo/KIIT_Logo.png"
                   alt="Image 2"
                 />
                 <img
-                  className="w-8 h-8 md:w-12 md:w-12"
+                  className="w-12 h-12"
                   src="/Logo/Ksac_logo.png"
                   alt="Image 3"
                 />
@@ -148,8 +148,8 @@ const Footer: React.FC = () => {
           </div>
         </footer>
       </div>
-    //</>
+    </>
   );
 };
 
-export default Footer;
+export default Footer;
