@@ -5,7 +5,7 @@ import CountdownTimer from "./CountdownTimer";
 import Image from "next/image";
 
 const Timer: React.FC = () => {
-  const targetDate = new Date("2023-09-10T23:59:59");
+  const targetDate = new Date("2023-10-07T23:59:59");
   console.log(targetDate);
 
   return (
@@ -13,10 +13,10 @@ const Timer: React.FC = () => {
       <div className="font-sans w-screen py-8 px-4 overflow-hidden bg-carouselBackground sm:py-12">
         <div className="max-w-7xl mx-auto">
           <h1 className="py-4 text-2xl text-center font-bold text-transparent mx-auto max-w-5xl bg-clip-text bg-gradient-to-r from-[#061124] via-[#143A81] to-[#061125]">
-            JOIN US FOR OUR UPCOMING EVENT!
+            Join us for the 11th Edition of KIIT International MUN!
           </h1>
           <h1 className="pb-2 md:pb-5 py-4 md:py-6 text-center text-2xl sm:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark">
-            The Future of Technology Conference
+            Countdown to UNLEASH DIPLOMACY
           </h1>
           <div className="p-6 sm:p-10 flex items-center justify-center text-3xl sm:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#445DB6] to-[#7860C5]">
             <CountdownTimer targetDate={targetDate} />
