@@ -59,3 +59,7 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
+
+.my-custom-text {
+  font-family: 'Roboto', sans-serif;
+}
