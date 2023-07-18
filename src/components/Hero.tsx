@@ -9,7 +9,7 @@ import { TfiWorld } from "react-icons/tfi";
 const Hero = () => {
   return (
     <>
-    <div className="font-sans w-screen bg-HeroBackground overflow-x-hidden z-[-10] h-[120vh] md:h-auto">
+    <div className="font-sans w-screen bg-HeroBackground overflow-x-hidden z-[-10] h-[120vh] md:h-auto my-custom-text">
       <Image
         src="/hero/GroupTop.png"
         alt=""
@@ -53,15 +53,15 @@ const Hero = () => {
                 </button>
               </Link>
             </div> 
-          <div className="flex-col  w-full md:text-justify hidden md:block -translate-y-[400px] md:translate-y-8 lg:translate-y-0 md:-translate-x-[40px] lg:-translate-x-0 justify-center gap-3 text-white">
-            <h1 className="text-2xl md:text-xl lg:text-2xl xl:text-3xl font-bold">
+          <div className="flex-col  w-full md:text-justify hidden md:block -translate-y-[400px] md:translate-y-8 lg:translate-y-0 md:-translate-x-[40px] justify-center gap-3 text-white">
+            <h1 className="my-custom-text text-2xl md:text-[17px] md:leading-6 lg:text-2xl xl:text-[25px] font-bold">
             The Ultimate Platform for
               <br />
               Global Engagement, Diplomacy, and
               <br />
               Empowering tomorrow&apos;s Leaders
             </h1>
-            <p className="max-w-[900px] text-sm w-[80%] mt-4 md:w-[80%]"
+            <p className="max-w-[900px] text-sm w-[80%] mt-4 md:w-[100%] lg:w-[80%] my-custom-text leading-5"
              style={{ 
               wordWrap: 'break-word',
               whiteSpace: 'pre-line',
@@ -70,7 +70,7 @@ const Hero = () => {
             >
             With its engaging debates, diverse perspectives, and collaborative spirit, KIITMUN serves as a catalyst for honing critical thinking, diplomacy, and problem-solving skills. This extraordinary platform brings together aspiring diplomats, future leaders, and change-makers from around the world, providing them with an unparalleled opportunity to explore pressing global issues, engage in meaningful dialogue, and collectively work towards innovative solutions.
             </p>
-            <div className="flex gap-2 justify-center md:justify-normal mt-2 ">
+            <div className="flex gap-2 justify-center md:justify-normal mt-2 my-custom-text">
               See more about us
               <Link href="/about" className="flex items-center">
                 <span className="inline-block rounded-full bg-white px-1 py-1 text-xs text-black">
@@ -82,10 +82,10 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative max-w-[1440px] md:-translate-y-[80px] lg:translate-y-0 mt-[70px] mx-auto  md:px-[5vw] xl:px-[100px] pt-8 text-3xl text-white first-letter">
-        <div className="flex flex-col md:flex-row -translate-y-[60px] md:-translate-y-0 items-center justify-between w-full lg:pr-[150px] md:pr-[100px] sm:pr-[50px] xl:pr-[200px] absolute top-0 md:top-10">
-          <div className="w-[90%] md:w-[40%]">
+        <div className="flex flex-col md:flex-row -translate-y-[60px] md:-translate-y-8 lg:-translate-y-0 items-center justify-between w-full lg:pr-[150px] md:pr-[100px] sm:pr-[50px] xl:pr-[200px] absolute top-0 md:top-10">
+          <div className="w-[90%] md:w-[50%]">
             <h1 className="text-[43px] md:text-3xl font-bold text-center">WHO WE ARE: </h1>
-            <p className="text-sm md:text-xs mt-4 break-words whitespace-pre-line text-justify">
+            <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
             KIIT International Model United Nations emerges as a leading global United Nations simulation, spearheaded by the Secretariat, the committed student body of the Kalinga Institute of Industrial Technology. Since its inception in 2013, this conference has consistently surpassed expectations, establishing unprecedented benchmarks year after year. By fostering intellectual growth, nurturing youth leadership, and promoting global understanding, it stands as an exemplary platform for empowerment and enlightenment.
             </p>
             <div className="md:hidden flex gap-2 mt-2 text-lg font-bold justify-center md:justify-normal">
@@ -98,7 +98,7 @@ const Hero = () => {
             </div>
             <div className="flex justify-center md:justify-normal">
               <Link href="#footer" className="z-50">
-                <button className="mt-12 md:mt-5 rounded-full border-none bg-buttonBackground px-8 py-1 text-base outline-none">
+                <button className="mt-12  md:mt-5 rounded-full border-none bg-buttonBackground px-8 py-1 text-base outline-none">
                   CONTACT US
                 </button>
               </Link>
