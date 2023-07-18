@@ -81,7 +81,7 @@ const About = () => {
                 ))}
                 <h1 className="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 font-bold text-[9.5vw] 2xl:text-[150px]">About Us</h1>
             </div>
-            <div className="bg-[#D7E1E3] w-full py-[60px]">
+            <div className="bg-[#D7E1E3] w-full py-8 md:py-[60px]">
                 <h1 className="bg-textBG text-transparent mb-6 bg-clip-text text-2xl lg:text-3xl  text-center font-bold 3xl:text-[2vw] 4xl:text-3xl">
                 ABOUT KIIT International Model United Nations</h1>
                 <p className="text-[#051418] max-w-[1920px] w-[90%] lg:w-[80%] mx-auto lg:text-lg mt-4 pb-12 3xl:text-[1.3vw] 3xl:leading-[2vw] 4xl:text-xl " 
