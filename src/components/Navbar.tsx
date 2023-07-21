@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link href="about">About</Link>
           <Link href='mun'>MUN</Link>
           <Link href='mun'>Executive</Link>
-          <Link href='/formrec'><button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
+          <Link href="https://docs.google.com/forms/d/1ZIM3mNaIVwyHTLFowapa-rsMMErX1kpwCTRqvSzHiMA/edit?ts=64b81355"><button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
             RECRUITMENT LIVE
           </button></Link>
         </ul>
