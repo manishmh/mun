@@ -5,7 +5,7 @@ import CountdownTimer from "./CountdownTimer";
 import Image from "next/image";
 
 const Timer: React.FC = () => {
-  const targetDate = new Date("2023-10-07T23:59:59");
+  const targetDate = new Date("2023-10-05T23:59:59");
   console.log(targetDate);
 
   return (
@@ -25,7 +25,7 @@ const Timer: React.FC = () => {
             <div className="flex items-center mt-2 sm:mt-0">
             <Image src="/timercal.png" width={10} height={10} alt="cal" />
 
-              <span className="align-middle pl-1">TBA</span>
+              <span className="align-middle pl-1">October 6-7-8, 2023</span>
             </div>
              {/* <div className="flex flex-col sm:flex-row mt-5 items-center justify-center">
             <button className="rounded-full border-none bg-buttonBackground px-4 py-2 sm:px-6 sm:py-3 outline-none mb-4 sm:mb-0">
