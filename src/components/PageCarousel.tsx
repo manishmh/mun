@@ -46,7 +46,7 @@ const PageCarousel = () => {
 				<h2 className='uppercase text-transparent bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark py-12 text-center font-bold text-xl lg:text-2xl'>
 					MESSAGE FROM OUR SECRETARY GENERAL
 				</h2>
-				<div className="flex md:flex-row flex-col mx-8 md:mx-12 lg:mx-16 items-center gap-2 md:gap-6 ">
+				<div className="flex flex-col mx-8 md:mx-12 lg:mx-16 items-center gap-2 md:gap-6 ">
 					<div className='grow-0 shrink-0 basis-2/5 flex flex-col justify-center items-center'>
 						<Image src={`/carousel/kshitij.png`} width={300} height={300} alt='carousel image' className={'w-[250px] h-[250px] lg:w-[300px] lg:h-[300px]'} />
 						<h2 className='text-transparent ml-2 bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark py-4 text-center font-bold text-xl lg:text-2xl'>
@@ -72,7 +72,13 @@ const PageCarousel = () => {
 						</p>
 					</div>
 				</div>
+
+			<Image src="/carousel/divider.png" className='mx-auto'  width={400} height={100} alt="divider"/>
+			<div>	<h2 className='uppercase text-center text-transparent mx-auto bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark font-bold text-2xl lg:text-3xl'>
+								The KIIT MUN Insignia
+							</h2></div>
 			</div>
+
 			<div className='h-[800px] min-[500px]:h-[620px] sm:h-[600px] md:h-[430px] lg:h-[400px] max-w-7xl mx-auto'>
 				{/* Sec Gen Speech */}
 
