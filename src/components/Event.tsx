@@ -17,20 +17,20 @@ const Event = () => {
         <div className="flex flex-col-reverse md:flex-row justify-center sm:gap-[30px] xl:gap-[50px] ">
           <div className="flex flex-col gap-8 md:gap-10 justify-center max-w-[700px] mt-6 md:mt-0">
             <EventDetail 
-              day="T.B.A" 
-              year="Soon" 
+              day="6" 
+              year="October, 2023" 
               title="Day 1: Inception" 
               paragraph="From Delegate kit distribution to our Inauguration and Cultural Night, this day is packed with the first two thought-provoking Sessions addressing the theme."
             />
             <EventDetail 
-              day="T.B.A" 
-              year="Soon" 
+              day="7" 
+              year="October, 2023" 
               title="Day 2: Discourse" 
               paragraph="Immersed in three engaging sessions, delving deep into the global challenges, the second day is packed and concluded with a captivating star night, featuring a famous personality and celebration."
             />
             <EventDetail 
-              day="T.B.A" 
-              year="Soon" 
+              day="8" 
+              year="October, 2023" 
               title="Day 3: Epilogue" 
               paragraph="The culmination of insightful discussions in the last three sessions, followed by a profound closing ceremony and a memorable valedictory event, honoring the delegates and celebrating their accomplishments."
             />
