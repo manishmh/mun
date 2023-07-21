@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                   <iframe
                     width="100%"
                     height="270"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1869.6267498966815!2d85.811784058212!3d20.34954249914489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a8f99fc78767%3A0x9eacdaac84524cdd!2sKIIT%20Sports%20Complex!5e0!3m2!1sen!2sin!4v1658118103340!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.636720758235!2d85.81634771159072!3d20.35662091044425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19093cc3e1974b%3A0x85a345e1f4fcce86!2sKIIT%20Student%20Activity%20Center%20-%20KSAC!5e0!3m2!1sen!2sin!4v1689966822541!5m2!1sen!2sin"
                     allowFullScreen
                     style={{ borderRadius: "30px" }}
                   ></iframe>
