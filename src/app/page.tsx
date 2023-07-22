@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden text-white'>
       <Navbar />
       <Hero />
       <Timer />
