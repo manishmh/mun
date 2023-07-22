@@ -34,8 +34,8 @@ const Footer: React.FC = () => {
                   </a>{" "}
                 </p>
                 <p className="text-white">
-                  <a href="tel: +919431591145">
-                    +91-9431591145 (Kshitij Singh){" "}
+                  <a href="tel: +918210542443">
+                    +91-8210542443 (Kshitij Singh){" "}
                   </a>
                 </p>
                 <p className="text-white">
