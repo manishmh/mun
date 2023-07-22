@@ -35,8 +35,10 @@ const Navbar = () => {
           <Link href="about">About</Link>
           <Link href='mun'>MUN</Link>
           <Link href='mun'>Gallery</Link>
-          <Link href="https://docs.google.com/forms/d/1ZIM3mNaIVwyHTLFowapa-rsMMErX1kpwCTRqvSzHiMA/edit?ts=64b81355" target="_blank"><button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
-            RECRUITMENT LIVE
+{/*           <Link href="https://docs.google.com/forms/d/1ZIM3mNaIVwyHTLFowapa-rsMMErX1kpwCTRqvSzHiMA/edit?ts=64b81355" target="_blank"><button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none"> */}
+          <Link href= 'mun'>
+            <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">  
+          RECRUITMENT LIVE
           </button></Link>
         </ul>
         <div className='md:hidden' onClick={() => setMobile(!mobile)}>{mobile ? <Image src='/navbar/closenav.png' width={30} height={30} alt="close-nav" /> : <Image src="/navbar/opennav.png" width={30} height={30} alt="open--nav" />}</div>
@@ -45,7 +47,9 @@ const Navbar = () => {
         <Link href="about">About</Link>
         <Link href='mun'>MUN</Link>
         <Link href='mun'>Executive</Link>
-        <Link href="https://docs.google.com/forms/d/1ZIM3mNaIVwyHTLFowapa-rsMMErX1kpwCTRqvSzHiMA/edit?ts=64b81355" target="_blank"><button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
+{/*         <Link href="https://docs.google.com/forms/d/1ZIM3mNaIVwyHTLFowapa-rsMMErX1kpwCTRqvSzHiMA/edit?ts=64b81355" target="_blank"> */}
+          <Link href= 'mun'>
+          <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
           RECRUITMENT LIVE
         </button></Link>
       </ul>}
