@@ -6,42 +6,42 @@ import Image from 'next/image';
 const PageCarousel = () => {
 
 	const carouselData = [
-	{
-		title: 'Satyajeet Das',
-		description: "Serving as Deputy Secretary General for this year's event is a thrilling experience, and I am looking forward to seeing the transforming effects that KIIT International MUN 2023 will have on each participant. With its expansive scale and wide-ranging scope, this year's KIIT MUN holds the potential to profoundly transform the lives of all participants, offering an event of extraordinary magnitude and significance.",
-		position: 'Deputy Secretary General',
-		image: 'satyajeet.png',
-		id: 1
-	},
-	{
-		title: 'Ayush Kumar Srivastav',
-		description: "Model United Nations has always held a special place in my heart and ever since I enrolled at KIIT, the thought of being a part of KIITMUN filled me with excitement and energy. From being a delegate to now hosting a conference, it has been an amazing journey and I sincerely hope that all participants of KIIT MUN 2023 will have as wonderful and enriching a learning experience as I have had throughout.",
-		position: 'Director General',
-		image: 'Ayush.png',
-		id: 2
-	},
-	{
-		title: 'Shubhadittya Roy',
-		description: "KIIT International Model United Nations has always been a conference par excellence that is awaited all year long. From delegating as a fresher to serving the conference as a part of the Core Secretariat, it has been a literal embodiment of life coming to a full circle. I hope this edition of KIIT MUN beckons MUN enthusiasts from all over the globe and succeeds in adding a page to the golden book of diplomacy and dialogue.",
-		position: 'Deputy Director General',
-		image: 'shubh.png',
-		id: 3
-	},
-	{
-		title: 'Shivram Krishna',
-		description: "KIITMUN stands tall as one of Asia's most prominent Model United Nations conferences. Since its inception in 2013, it has continually evolved and grown. This conference has been a catalyst for countless passionate and ambitious individuals, and I sincerely hope that in this edition, we can extend our reach to more young minds, ensuring a profoundly meaningful experience for all.",
-		position: "Charge D' Affairs",
-		image: 'shivram.png',
-		id: 4
-	},
 		{
-		title: 'Kshitij Singh',
-		description: "As the Secretary General of KIIT MUN 2023, I am honoured to lead the Secretariat and participate in this prestigious conference. Throughout my years of involvement with Model United Nations, I have seen the conference and the passion of the participants grow exponentially, and the collaborative effort to organize KIIT International MUN has honed my organizational skills, which will carry over into the real world. It is an honour to work alongside passionate individuals who share a common vision of creating a transformative experience for participants.",
-		position: 'Secretary General',
-		image: 'kshitij.png',
-		id: 5
-	}	
-			     
+			title: 'Satyajeet Das',
+			description: "Serving as Deputy Secretary General for this year's event is a thrilling experience, and I am looking forward to seeing the transforming effects that KIIT International MUN 2023 will have on each participant. With its expansive scale and wide-ranging scope, this year's KIIT MUN holds the potential to profoundly transform the lives of all participants, offering an event of extraordinary magnitude and significance.",
+			position: 'Deputy Secretary General',
+			image: 'satyajeet.png',
+			id: 1
+		},
+		{
+			title: 'Ayush Kumar Srivastav',
+			description: "Model United Nations has always held a special place in my heart and ever since I enrolled at KIIT, the thought of being a part of KIITMUN filled me with excitement and energy. From being a delegate to now hosting a conference, it has been an amazing journey and I sincerely hope that all participants of KIIT MUN 2023 will have as wonderful and enriching a learning experience as I have had throughout.",
+			position: 'Director General',
+			image: 'Ayush.png',
+			id: 2
+		},
+		{
+			title: 'Shubhadittya Roy',
+			description: "KIIT International Model United Nations has always been a conference par excellence that is awaited all year long. From delegating as a fresher to serving the conference as a part of the Core Secretariat, it has been a literal embodiment of life coming to a full circle. I hope this edition of KIIT MUN beckons MUN enthusiasts from all over the globe and succeeds in adding a page to the golden book of diplomacy and dialogue.",
+			position: 'Deputy Director General',
+			image: 'shubh.png',
+			id: 3
+		},
+		{
+			title: 'Shivram Krishna',
+			description: "KIITMUN stands tall as one of Asia's most prominent Model United Nations conferences. Since its inception in 2013, it has continually evolved and grown. This conference has been a catalyst for countless passionate and ambitious individuals, and I sincerely hope that in this edition, we can extend our reach to more young minds, ensuring a profoundly meaningful experience for all.",
+			position: "Charge D' Affairs",
+			image: 'shivram.png',
+			id: 4
+		},
+		{
+			title: 'Kshitij Singh',
+			description: "As the Secretary General of KIIT MUN 2023, I am honoured to lead the Secretariat and participate in this prestigious conference. Throughout my years of involvement with Model United Nations, I have seen the conference and the passion of the participants grow exponentially, and the collaborative effort to organize KIIT International MUN has honed my organizational skills, which will carry over into the real world. It is an honour to work alongside passionate individuals who share a common vision of creating a transformative experience for participants.",
+			position: 'Secretary General',
+			image: 'kshitij.png',
+			id: 5
+		}
+
 	]
 
 	return (
@@ -64,7 +64,7 @@ const PageCarousel = () => {
 					<div className='w-full'>
 						<p className='text-carouselTextDark text-sm lg:text-base text-justify'>
 							<b>Respected faculty members, delegates, and my Secretariat,</b>
-							<br />	
+							<br />
 							As Chinese philosopher Lao Tzu once said, &apos;The journey of a thousand miles begins with a single step&apos;. At KIIT International Model United Nations, we dare to embrace the steps that drive change. It brings me great joy to extend an invitation to the esteemed annual conference, representing our distinguished faculty and the dedicated Secretariat of Kalinga Institute of Industrial Technology. Building upon the triumphs of past editions, this year&apos;s KIIT International MUN promises an extraordinary journey, merging innovation and tradition to foster a transformative platform for global dialogue and collaboration.
 							<br />
 							In today&apos;s society, we face new challenges in the aftermath of the global pandemic. Conflict, social unrest, and human rights violations continue to disrupt the world. During these trying times, it is crucial to maintain a positive outlook and work towards safeguarding global peace and unity. Our secretariat is wholeheartedly dedicated to the KIIT International Model United Nations, motivated by the indomitable human spirit that transcends all obstacles. By advocating for peace and cooperative problem-solving, we aim to inspire millions worldwide to embrace goodwill and harmony.
@@ -78,15 +78,15 @@ const PageCarousel = () => {
 					</div>
 				</div>
 
-			<Image src="/carousel/divider.png" className='mx-auto'  width={400} height={100} alt="divider"/>
-			<div>	<h2 className='uppercase text-center text-transparent mx-auto bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark font-bold text-2xl lg:text-3xl'>
-								The KIIT MUN Insignia
-							</h2></div>
+				<Image src="/carousel/divider.png" className='mx-auto' width={400} height={100} alt="divider" />
+				<div>
+					<h2 className='uppercase text-center text-transparent mx-auto bg-clip-text bg-gradient-to-b from-carouselTextLight to-carouselTextDark font-bold text-2xl lg:text-3xl -mt-16'>
+						The KIIT MUN Insignia
+					</h2>
+				</div>
 			</div>
 
 			<div className='h-[800px] min-[500px]:h-[620px] sm:h-[600px] md:h-[430px] lg:h-[400px] max-w-7xl mx-auto'>
-				{/* Sec Gen Speech */}
-
 				<Carousel className='h-full overflow-y-hidden'>
 					{carouselData.map(n => <div className='flex overflow-y-hidden h-full w-full items-center justify-center' key={n.id}>
 						<div className='h-full w-full md:mx-24 mx-12'>

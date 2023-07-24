@@ -1,11 +1,11 @@
 import React from "react";
 import { FaLinkedinIn, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
-
+import Image from "next/image";
 const Footer: React.FC = () => {
   return (
     <>
-      <div id = "footer" className="bg-[url('/footer/green_bg.png')] w-full h-full bg-no-repeat bg-cover">
-        <footer className="g-gradient-to-b from-black to-black via-blue-900 mx-auto px-4 py-6 rounded-lg" style={{ margin: "0 10%" }}>
+      <div id="footer" className="bg-[url('/footer/green_bg.png')] w-full h-full bg-no-repeat bg-cover">
+        <footer className="g-gradient-to-b from-black to-black via-blue-900 md:mx-auto mx-2 px-4 py-6 rounded-lg">
           <div className="container mx-auto">
             <div className="flex flex-col">
               <div className="flex justify-center">
@@ -123,25 +123,30 @@ const Footer: React.FC = () => {
             </div>
             <hr className="my-6 border-gray-300" />
 
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-center md:text-left text-white-700 mt-4">© 2023 KIIT MUN. All rights reserved.</p>
-              </div>
-              <div className="flex gap-2 ">
-                <img
-                  className="w-12 h-12"
+            <div className="flex items-center gap-4 justify-between">
+                <p className="text-left text-sm md:text-base md:text-left text-white-700 flex flex-col md:flex-row gap-1"><span>© 2023 KIIT MUN.</span><span>All rights reserved.</span></p>
+  
+              <div className="flex gap-2 ml-4 md:ml-0">
+                <Image
+                  className="w-10 h-10 lg:w-12 lg:h-12"
                   src="/Logo/MUN_logo.png"
                   alt="Image 1"
+                  width={80}
+                  height={80}
                 />
-                <img
-                  className="w-12 h-12"
+                <Image
+                  className="w-10 h-10 lg:w-12 lg:h-12"
                   src="/Logo/KIIT_Logo.png"
-                  alt="Image 2"
+                  alt="Image 1"
+                  width={80}
+                  height={80}
                 />
-                <img
-                  className="w-12 h-12"
+                <Image
+                  className="w-10 h-10 lg:w-12 lg:h-12"
                   src="/Logo/ksac_logo.png"
-                  alt="Image 3"
+                  alt="Image 1"
+                  width={80}
+                  height={80}
                 />
               </div>
             </div>
