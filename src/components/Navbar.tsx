@@ -4,9 +4,8 @@ import { useState, useEffect } from 'react';
 import logo from '../../public/logo.png'
 import Image from "next/image";
 import Link from 'next/link';
-import type { Modal } from '@/app/page';
 
-const Navbar = ({ isOpenModal, setIsOpenModal }: Modal) => {
+const Navbar = () => {
 
   const [navbar, setNavbar] = useState(false)
   const [mobile, setMobile] = useState(false)
@@ -25,7 +24,7 @@ const Navbar = ({ isOpenModal, setIsOpenModal }: Modal) => {
   })
 
   return (
-    <div className={`w-screen transition duration-300 mr-12 ${isOpenModal ? 'blur' : ''} ease-in-out fixed z-40 ${navbar ? 'top-0 bg-navBg/80 backdrop-blur-xl ' : ''} ${mobile ? 'top-0 bg-navBg/80 backdrop-blur-xl ' : ''} left-0 right-0`}>
+    <div className={`w-screen transition duration-300 mr-12 ease-in-out fixed z-40 ${navbar ? 'top-0 bg-navBg/80 backdrop-blur-xl ' : ''} ${mobile ? 'top-0 bg-navBg/80 backdrop-blur-xl ' : ''} left-0 right-0`}>
       <div className={`flex mx-auto pr-8 px-8 2xl:px-0 ${navbar ? 'py-2' : 'py-4'} max-w-7xl justify-between items-center`}>
         <div>
           <Link href='/'>

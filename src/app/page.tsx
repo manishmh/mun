@@ -7,7 +7,6 @@ import Event from "@/components/Event";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import SignUpModal from "@/components/SignUpModal";
-import { useState } from "react";
 
 export default function Home() {
 
