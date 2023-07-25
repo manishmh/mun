@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import type { Modal } from '@/app/page';
 
-const Navbar = ({ isOpenModal }: Modal) => {
+const Navbar = ({ isOpenModal, setIsOpenModal }: Modal) => {
 
   const [navbar, setNavbar] = useState(false)
   const [mobile, setMobile] = useState(false)

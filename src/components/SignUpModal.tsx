@@ -53,7 +53,7 @@ export default function MyModal({ isOpenModal, setIsOpenModal }: Modal) {
 										<Image src="/modal.png" alt="modal" height={400} width={800} className='rounded-xl' />
 									</div>
 									<div>
-										<p className='pt-4 text-center '>The Exclusive Secretariat Recruitment for KiiT International MUN 2023 is officially LIVE!!!
+										<p className='pt-4 text-center'>The Exclusive Secretariat Recruitment for KiiT International MUN 2023 is officially LIVE!!!
 											.</p>
 									</div>
 									<div className="mt-4 w-full mx-auto flex justify-center">
