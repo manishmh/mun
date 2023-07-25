@@ -9,19 +9,13 @@ import Navbar from "@/components/Navbar";
 import SignUpModal from "@/components/SignUpModal";
 import { useState } from "react";
 
-export type Modal = {
-  isOpenModal: boolean
-  setIsOpenModal: (isOpenModal:boolean)=>void
-}
-
 export default function Home() {
-	let [isOpenModal, setIsOpenModal] = useState(false)
 
   return (
     <div className='overflow-x-hidden text-white'>
-      <Navbar isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal}/>
+      <Navbar/>
       <Hero />
-      <SignUpModal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal}/>
+      <SignUpModal/>
       <Timer />
       <Event />
       <PageCarousel/>

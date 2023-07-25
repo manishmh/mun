@@ -1,14 +1,15 @@
 'use client'
-
+import { useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose } from "react-icons/ai";
-import type { Modal } from '@/app/page'
 
 
-export default function MyModal({ isOpenModal, setIsOpenModal }: Modal) {
+export default function MyModal() {
+
+	let [isOpenModal, setIsOpenModal] = useState(false)
 
 	function closeModal() {
 		setIsOpenModal(false)

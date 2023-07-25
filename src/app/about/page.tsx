@@ -36,9 +36,7 @@ const About = () => {
   }, []);
   return (
     <>
-    <Navbar isOpenModal={false} setIsOpenModal={function (isOpenModal: boolean): void {
-              throw new Error("Function not implemented.");
-          } } />
+    <Navbar/>
     <div className=" w-screen bg-HeroBackground max-w-full my-custom-text">
         <div className="mx-auto w-full overflow-x-hidden">
             <div className="relative w-full h-[40vh] md:h-[60vh] lg:h-[70vh] xl:h-screen 4xl:h-[80vh] 4xl:max-h-[900px] overflow-hidden max-w-[1920px] mx-auto ">
