@@ -39,7 +39,7 @@ const Hero = () => {
               quality={100}
               className="h-[50vh] w-[100%] mx-auto sm:w-[75%] md:w-[55%] sm:h-[500px] md:h-[510px] lg:h-[700px] flex-shrink-0 max-w-[700px]"
             ></Image>
-            <div className="hidden md:block absolute max-w-[1440px] left-0 bottom-0 -translate-y-[5vh] md:-translate-y-[70px] translate-x-[30px] md:translate-x-[70px] z-20 text-white">
+            <div className="hidden md:block absolute max-w-[1440px] left-0 bottom-0 -translate-y-[5vh] md:-translate-y-[70px] translate-x-[30px] md:translate-x-[70px] z-10 text-white">
               <h1 className="text-lg lg:text-xl font-semibold leading-6">
               Ideas Collide
                 <br />
@@ -98,14 +98,14 @@ const Hero = () => {
               </Link>
             </div>
             <div className="flex justify-center md:justify-normal">
-              <Link href="#footer" className="z-50">
+              <Link href="#footer" className="z-30">
                 <button className="mt-12  md:mt-5 rounded-full border-none bg-buttonBackground px-8 py-1 text-base outline-none">
                   CONTACT US
                 </button>
               </Link>
             </div>
           </div>
-          <div className="flex text-[40px] z-40 mt-6 md:mt-4">
+          <div className="flex text-[40px] z-30 mt-6 md:mt-4">
             <Link href="/">
             {/* target="_blank" */}
               <TfiWorld className="border-r-none h-20 w-20 border-2 border-r-0 border-[#AF693B] px-4 py-4 bg-buttonBackground" />

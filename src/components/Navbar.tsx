@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react';
 import logo from '../../public/logo.png'
 import Image from "next/image";
 import Link from 'next/link';
+import type { Modal } from '@/app/page';
 
-const Navbar = () => {
+const Navbar = ({ isOpenModal }: Modal) => {
 
   const [navbar, setNavbar] = useState(false)
   const [mobile, setMobile] = useState(false)
@@ -24,7 +25,7 @@ const Navbar = () => {
   })
 
   return (
-    <div className={`w-screen transition duration-300 mr-12 ease-in-out fixed z-50 ${navbar ? 'top-0 bg-navBg/80 backdrop-blur-xl ' : ''} ${mobile ? 'top-0 bg-navBg/80 backdrop-blur-xl ' : ''} left-0 right-0`}>
+    <div className={`w-screen transition duration-300 mr-12 ${isOpenModal ? 'blur' : ''} ease-in-out fixed z-40 ${navbar ? 'top-0 bg-navBg/80 backdrop-blur-xl ' : ''} ${mobile ? 'top-0 bg-navBg/80 backdrop-blur-xl ' : ''} left-0 right-0`}>
       <div className={`flex mx-auto pr-8 px-8 2xl:px-0 ${navbar ? 'py-2' : 'py-4'} max-w-7xl justify-between items-center`}>
         <div>
           <Link href='/'>
@@ -36,10 +37,9 @@ const Navbar = () => {
           <Link href='mun'>MUN</Link>
           <Link href='mun'>Gallery</Link>
           <Link href="https://forms.gle/A4gFRxRTpPnaiWSg9" target="_blank">
-{/*           <Link href= 'mun'> */}
-            <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">  
-          RECRUITMENT LIVE
-          </button></Link>
+            <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
+              RECRUITMENT LIVE
+            </button></Link>
         </ul>
         <div className='md:hidden' onClick={() => setMobile(!mobile)}>{mobile ? <Image src='/navbar/closenav.png' width={30} height={30} alt="close-nav" /> : <Image src="/navbar/opennav.png" width={30} height={30} alt="open--nav" />}</div>
       </div>
@@ -48,10 +48,9 @@ const Navbar = () => {
         <Link href='mun'>MUN</Link>
         <Link href='mun'>Executive</Link>
         <Link href="https://forms.gle/A4gFRxRTpPnaiWSg9" target="_blank">
-{/*           <Link href= 'mun'> */}
           <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
-          RECRUITMENT LIVE
-        </button></Link>
+            RECRUITMENT LIVE
+          </button></Link>
       </ul>}
     </div>
   )
