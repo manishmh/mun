@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import logo from '../../public/logo.png'
 import Image from "next/image";
 import Link from 'next/link';
+import MunDropdown from './MunDropdown';
 
 const Navbar = () => {
 
@@ -31,14 +32,17 @@ const Navbar = () => {
             <Image src={logo} alt="MUN LOGO" className={`${navbar ? 'w-[50px] h-[50px] lg:h-[70px] lg:w-[70px]' : 'w-[60px] h-[60px] lg:h-[90px] lg:w-[90px]'}`} />
           </Link>
         </div>
-        <ul className="hidden md:flex gap-12 lg:gap-28">
+        <ul className="hidden md:flex gap-12 lg:gap-28 ">
           <Link href="about">About</Link>
-          <Link href='mun'>MUN</Link>
-          <Link href='mun'>Gallery</Link>
-          <Link href="register">
-          <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
-            REGISTER NOW
-          </button></Link>
+          <Link href='mun' className='relative group '>
+            <span>MUN</span>
+            <MunDropdown />
+          </Link>
+          <Link href='gallery'>Gallery</Link>
+          <Link href="https://forms.gle/A4gFRxRTpPnaiWSg9" target="_blank">
+            <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
+              RECRUITMENT LIVE
+            </button></Link>
         </ul>
         <div className='md:hidden' onClick={() => setMobile(!mobile)}>{mobile ? <Image src='/navbar/closenav.png' width={30} height={30} alt="close-nav" /> : <Image src="/navbar/opennav.png" width={30} height={30} alt="open--nav" />}</div>
       </div>
@@ -46,9 +50,9 @@ const Navbar = () => {
         <Link href="about">About</Link>
         <Link href='mun'>MUN</Link>
         <Link href='mun'>Executive</Link>
-        <Link href="register">
+        <Link href="https://forms.gle/A4gFRxRTpPnaiWSg9" target="_blank">
           <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
-            REGISTER NOW
+            RECRUITMENT LIVE
           </button></Link>
       </ul>}
     </div>
