@@ -35,10 +35,10 @@ const Navbar = () => {
           <Link href="about">About</Link>
           <Link href='mun'>MUN</Link>
           <Link href='mun'>Gallery</Link>
-          <Link href="https://forms.gle/A4gFRxRTpPnaiWSg9" target="_blank">
-            <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
-              RECRUITMENT LIVE
-            </button></Link>
+          <Link href="register">
+          <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
+            REGISTER NOW
+          </button></Link>
         </ul>
         <div className='md:hidden' onClick={() => setMobile(!mobile)}>{mobile ? <Image src='/navbar/closenav.png' width={30} height={30} alt="close-nav" /> : <Image src="/navbar/opennav.png" width={30} height={30} alt="open--nav" />}</div>
       </div>
@@ -46,9 +46,9 @@ const Navbar = () => {
         <Link href="about">About</Link>
         <Link href='mun'>MUN</Link>
         <Link href='mun'>Executive</Link>
-        <Link href="https://forms.gle/A4gFRxRTpPnaiWSg9" target="_blank">
+        <Link href="register">
           <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
-            RECRUITMENT LIVE
+            REGISTER NOW
           </button></Link>
       </ul>}
     </div>

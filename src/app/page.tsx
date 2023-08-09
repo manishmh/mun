@@ -12,12 +12,12 @@ export default function Home() {
 
   return (
     <div className='overflow-x-hidden text-white'>
-      <Navbar/>
+      <Navbar />
       <Hero />
-      <SignUpModal/>
+      <SignUpModal />
       <Timer />
       <Event />
-      <PageCarousel/>
+      <PageCarousel />
       <Footer />
     </div>
   )
