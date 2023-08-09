@@ -1,5 +1,6 @@
 'use client'
 
+import Footer from '@/components/Footer';
 import GalleryNavigation from '@/components/GalleryNavigation';
 import Navbar from '@/components/Navbar';
 import React, { useState } from 'react';
@@ -196,6 +197,7 @@ const Gallery = () => {
         )}
       </div>
     </div>
+    <Footer />
     </>
   );
 };

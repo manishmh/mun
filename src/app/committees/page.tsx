@@ -1,6 +1,7 @@
 'use client'
 
 import CommitteesCard from "@/components/CommitteesCard";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React, { useState } from "react";
@@ -48,21 +49,21 @@ const Committees = () => {
           <div className="h-[7px] bg-committeeLine"></div>
           <div className="w-full py-16">
             <div className="flex justify-center">
-              <div className="text-black text-sm sm:text-base font-medium flex gap-0 md:gap-10 bg-[#D7E1E3] rounded-full">
+              <div className="text-black text-xs ssm:text-sm sm:text-base font-medium flex gap-0 md:gap-10 bg-[#D7E1E3] rounded-full">
                 <div 
-                  className={`py-2 px-4 sm:px-6 md:px-8 rounded-full cursor-pointer ${activeLevel.beginner ? "bg-buttonBackground text-white" : "bg-[#D7E1E3]"}
+                  className={`py-2 px-2 ssm:px-4  sm:px-6 md:px-8 rounded-full cursor-pointer ${activeLevel.beginner ? "bg-buttonBackground text-white" : "bg-[#D7E1E3]"}
                   `}
                     onClick={() => hanldeActiveLevel('beginner')} 
                   >BEGINNER
                 </div>
                 <div 
-                  className={`py-2 px-4 sm:px-6 md:px-8 rounded-full cursor-pointer ${activeLevel.intermediate? "bg-buttonBackground text-white" : "bg-[#D7E1E3]"}
+                  className={`py-2 px-2 ssm:px-4  sm:px-6 md:px-8 rounded-full cursor-pointer ${activeLevel.intermediate? "bg-buttonBackground text-white" : "bg-[#D7E1E3]"}
                   `}
                     onClick={() => hanldeActiveLevel('intermediate')} 
                   >INTERMEDIATE
                 </div>
                 <div 
-                  className={`py-2 px-4 sm:px-6 md:px-8 rounded-full cursor-pointer ${activeLevel.advanced? "bg-buttonBackground text-white" : "bg-[#D7E1E3]"}
+                  className={`py-2 px-2 ssm:px-4  sm:px-6 md:px-8 rounded-full cursor-pointer ${activeLevel.advanced? "bg-buttonBackground text-white" : "bg-[#D7E1E3]"}
                   `}
                     onClick={() => hanldeActiveLevel('advanced')} 
                   >ADVANCED
@@ -119,6 +120,7 @@ const Committees = () => {
             )}
           </div>
       </div>
+      <Footer />
     </main>
   )
 };

@@ -24,6 +24,7 @@ module.exports = {
       galleryNav: "linear-gradient(180deg, #082e28 7.95%, #1A4D54 47.43%, #082e28 100%);",
       },
         screens: {
+        "ssm": '370px',
         "3xl": "1440px",
         "4xl": "1990px",
       },

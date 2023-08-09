@@ -8,7 +8,7 @@ type committeesCardProps = {
 const CommitteesCard = ({ imgAlt }: committeesCardProps) => {
   const [cardFlip, setCardFlip] = useState(false)
   return (
-    <div className="w-[95vw] h-[45vh] max-w-[450px] md:max-w-none group md:w-[45vw] md:h-[55vh] lg:h-[70vh] xl:w-[38vw] xl:h-[65vh] object-cover relative rounded-3xl overflow-hidden flex-shrink-0 mb-6 hover:scale-[102%] transition-transform duration-400"
+    <div className="w-[95vw] h-[45vh] max-w-[450px] md:max-w-none 4xl:max-w-[25%] 4xl:max-h-[50vh] group md:w-[45vw] md:h-[55vh] lg:h-[70vh] xl:w-[38vw] xl:h-[65vh] object-cover relative rounded-3xl overflow-hidden flex-shrink-0 mb-6 hover:scale-[102%] transition-transform duration-400"
         onClick={() => setCardFlip((prev) => !prev)} 
     >
         <div className={`w-full h-full object-cover transition-opacity duration-700 absolute inset-0 
