@@ -17,9 +17,10 @@ import { DelegateNum } from "@/components/register/Committee";
 type headingProps = {
     delegateStatus: boolean;
     handleDelegateStatus: () => void;
+    load: boolean
 }
 
-const Heading = ({ delegateStatus, handleDelegateStatus }: headingProps) => {
+const Heading = ({ delegateStatus, load, handleDelegateStatus }: headingProps) => {
     return (
         <div className={`${delegateStatus ? "mb-10" : "mb-0"}`}>
             <h1 className="text-center text-xl md:text-2xl lg:text-3xl font-bold">REGISTRATION FORM</h1>
@@ -31,15 +32,16 @@ const Heading = ({ delegateStatus, handleDelegateStatus }: headingProps) => {
                         `}>
                         {!delegateStatus ? "DOUBLE DELEGATE" : "SINGLE DELEGATE"}
                     </div>
-                    <div className="cursor-pointer text-black" onClick={handleDelegateStatus} >
+                    <button disabled={load} className="cursor-pointer text-black" onClick={handleDelegateStatus} >
                         SINGLE DELEGATE
-                    </div>
-                    <div
+                    </button>
+                    <button
                         className="cursor-pointer text-black"
                         onClick={handleDelegateStatus}
+                        disabled={load}
                     >
                         DOUBLE DELEGATE
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -74,7 +76,7 @@ const Register = () => {
                     className="absolute top-0 w-screen"
                 ></Image>
                 <div className="w-[95vw] py-4 rounded-xl shadow-2xl mx-auto md:py-[4%] lg:pb-8 xl:px-8 max-w-[1440px] overflow-x-hidden">
-                    <Heading delegateStatus={singleDelegate} handleDelegateStatus={handleSingleDelegate} />
+                    <Heading load={load} delegateStatus={singleDelegate} handleDelegateStatus={handleSingleDelegate} />
                     {singleDelegate ? (
                         <Formik initialValues={initialValuesSingleDelegate}
                             validationSchema={formValidationSingleDelegate}
@@ -82,9 +84,8 @@ const Register = () => {
                             onSubmit={async (values) => {
                                 setLoad(true)
                                 const data = await backendService.singleDelegatePost(values)
-                                setLoad(false)
                                 if (data.error) {
-                                    console.log(data)
+                                    setLoad(false)
                                     return setError(data.error)
                                 }
                                 return router.push('/thankyou')
