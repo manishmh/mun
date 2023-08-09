@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:4000'
+const baseUrl = 'https://random-mun-backend.onrender.com'
 
 const singleDelegatePost = async (values: any) => {
 	const { firstName, lastName, middleName, committeeOne,

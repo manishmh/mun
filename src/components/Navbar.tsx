@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
         <ul className="hidden md:flex gap-12 lg:gap-28 ">
           <Link href="about">About</Link>
-          <Link href='mun' className='relative group '>
+          <Link href='/' className='relative group '>
             <span>MUN</span>
             <MunDropdown />
           </Link>
