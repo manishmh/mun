@@ -9,20 +9,10 @@ import { Form, Formik } from "formik";
 import { formValidationDoubleDelegate, formValidationSingleDelegate } from "./schema";
 import backendService from '@/service'
 import { useRouter } from "next/navigation";
+import { DelegateNum } from "@/components/register/Committee";
 
-type delegateNumProps = {
-    name: string,
-}
 
-export const DelegateNum = ({ name }: delegateNumProps) => {
-    return (
-        <div className="flex items-center px-10 my-10">
-            <span className="w-full h-[2px] bg-white"></span>
-            <h1 className="text-xl md:text-2xl lg:text-3xl flex-shrink-0 px-4">{name}</h1>
-            <span className="w-full h-[2px] bg-white"></span>
-        </div>
-    )
-}
+
 
 type headingProps = {
     delegateStatus: boolean;
