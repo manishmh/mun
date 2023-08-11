@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
                   </a>
                 </p>
                 <p>
-                  <a href="#" className="text-white block">
+                  <a href="/#events" className="text-white block">
                     Important Dates
                   </a>
                 </p>
