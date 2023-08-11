@@ -83,28 +83,106 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 2" 
+                  imgSource= "/committees/UNHRC@4x.png"
+                  h1= 'UNHRC'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate"
                 />
                 <CommitteesCard 
-                  imgAlt="card 3" 
+                  imgAlt="card 3"
+                  imgSource= "/committees/ECOSOC@4x.png"
+                  h1= 'ECOSOC'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate"
                 />
                 <CommitteesCard 
-                  imgAlt="card 4" 
+                  imgAlt="card 4"
+                  imgSource= "/committees/WHA@4x.png"
+                  h1= 'WHA'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate" 
+                />
+                <CommitteesCard 
+                  imgAlt="card 5"
+                  imgSource= "/committees/IP@4x.png"
+                  h1= 'IP'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate" 
                 />
               </div>
             )}
             {activeLevel.intermediate && (
               <div className="flex gap-5 mt-[70px] flex-wrap justify-center">
                 <CommitteesCard 
-                  imgAlt="card 1" 
+                  imgAlt="card 1"
+                  imgSource= "/committees/UNCSW@4x.png"
+                  h1= 'UNCSW'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate" 
                 />
                 <CommitteesCard 
-                  imgAlt="card 2" 
+                  imgAlt="card 2"
+                  imgSource= "/committees/UNFCCC@4x.png"
+                  h1= 'UNFCCC'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate" 
                 />
                 <CommitteesCard 
-                  imgAlt="card 3" 
+                  imgAlt="card 3"
+                  imgSource= "/committees/WB@4x.png"
+                  h1= 'WB'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate" 
                 />
                 <CommitteesCard 
-                  imgAlt="card 4" 
+                  imgAlt="card 4"
+                  imgSource= "/committees/UNESCO@4x.png"
+                  h1= 'UNESCO'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate" 
+                />
+                <CommitteesCard 
+                  imgAlt="card 5"
+                  imgSource= "/committees/UNCND@4x.png"
+                  h1= 'UNCND'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate" 
+                />
+                <CommitteesCard 
+                  imgAlt="card 6"
+                  imgSource= "/committees/GA6@4x.png"
+                  h1= 'GA6'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate" 
+                />
+                <CommitteesCard 
+                  imgAlt="card 7"
+                  imgSource= "/committees/UNOOSA@4x.png"
+                  h1= 'UNOOSA'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate" 
                 />
               </div>
             )}
@@ -112,15 +190,30 @@ const Committees = () => {
               <div className="flex gap-5 mt-[70px] flex-wrap justify-center">
                 <CommitteesCard 
                   imgAlt="card 1" 
+                  imgSource= "/committees/UNSC@4x.png"
+                  h1= 'UNSC'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate"
                 />
                 <CommitteesCard 
                   imgAlt="card 2" 
+                  imgSource= "/committees/NATO@4x.png"
+                  h1= 'NATO'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate"
                 />
                 <CommitteesCard 
                   imgAlt="card 3" 
-                />
-                <CommitteesCard 
-                  imgAlt="card 4" 
+                  imgSource= "/committees/ADHOC@4x.png"
+                  h1= 'AD HOC'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate"
                 />
               </div>
             )}
