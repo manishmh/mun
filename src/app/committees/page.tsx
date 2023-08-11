@@ -74,6 +74,12 @@ const Committees = () => {
               <div className="flex gap-5 mt-[70px] flex-wrap justify-center">
                 <CommitteesCard 
                   imgAlt="card 1" 
+                  imgSource= "https://s3-alpha-sig.figma.com/img/7074/a43c/ba323351fb01e2a8b994ce2319621a96?Expires=1691971200&Signature=Ppd3M277kLWWJ57AaCoAF-cuaEldM1tKflvc87f69TpeVCGU-Yh9NTaFhrT97TFnSjMON64axkYE3fM8dW3SRtoq~iiHZ2m1bVZ81agsYYl3MRpoR57vg9R5d4ED~jDQFyIT-oH5rjKNzWVgNFeZZeH~oXyQ8~aWI3-oGVARBn-c0Z1c3sKuuHzN246Wkqys8rl0XRkgfvUTx7cux2GJb4f9HivKMveNGYCFKRP67qFoiBuC0dpWbL4AJXHO-DP73yPxSISz~qE5mUb75oL14A7TVn4XL3JZM8TIFp1wpc104cPlv6v1r07DcgVYia~IkUssm-NjlatgJdyQZ5~Oag__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  h1= 'DISEC'
+                  h2= 'Disarmament & International'
+                  h2span = 'Security Committee'
+                  single = "Single Delegate"
+                  double = "Double Delegate"
                 />
                 <CommitteesCard 
                   imgAlt="card 2" 
