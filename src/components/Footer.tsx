@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
               <div className="w-full md:w-1/2 lg:w-1/5 mb-4 md:pl-16">
                 <h4 className="text-lg font-bold text-white">Email</h4>
                 <p className="text-white">
-                  <a href="mailto:kiitmun@gmail.com">kiitmun@gmail.com</a>{" "}
+                  <a href="mailto:kiit.mun@kiit.ac.in">kiit.mun@kiit.ac.in</a>{" "}
                 </p>
               </div>
               <div className="w-full md:w-1/2 lg:w-1/5 mb-4 md:pl-16">
