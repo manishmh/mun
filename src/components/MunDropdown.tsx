@@ -7,11 +7,11 @@ const navItems = [
   },
   {
     name: 'Executive Board', 
-    link: '/'
+    link: '/mun'
   },
   {
     name: 'Downloads', 
-    link: '/'
+    link: '/mun'
   }
 ]
 
