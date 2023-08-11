@@ -41,7 +41,7 @@ const Navbar = () => {
             <MunDropdown />
           </div>
           <Link href='gallery'>Gallery</Link>
-          <Link href="/register">
+          <Link href="/mun">
             <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
               REGISTER NOW
             </button></Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           </div>
         </div>
         <Link href='mun'>Executive</Link>
-        <Link href="/register">
+        <Link href="/mun">
           <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
               REGISTER NOW
           </button></Link>
