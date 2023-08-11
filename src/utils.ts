@@ -1,0 +1,76 @@
+export const initialValuesSingleDelegate = {
+	firstName: "",
+	middleName: "",
+	lastName: "",
+	email: "",
+	gender: "",
+	country: "",
+	phone1: "",
+	phone2: "",
+	age: "",
+	course: "",
+	college: "",
+	year: "",
+	prevExp: "",
+	awards: "",
+	committeeOne: "", // committeee one
+	committeeOne_countryOne: "",
+	committeeOne_countryTwo: "",
+	committeeOne_countryThree: "",
+	committeeTwo: "", // committee two
+	committeeTwo_countryOne: "",
+	committeeTwo_countryTwo: "",
+	committeeTwo_countryThree: "",
+	committeeThree: "", // committee three
+	committeeThree_countryOne: "",
+	committeeThree_countryTwo: "",
+	committeeThree_countryThree: "",
+	accommodation: "",
+	accommodation_type: "",
+}
+
+
+export const initialValuesDoubleDelegate = {
+	s_firstName: "",
+	s_middleName: "",
+	s_lastName: "",
+	d_firstName: "",
+	d_middleName: "",
+	d_lastName: "",
+	s_email: "",
+	d_email: "",
+	s_gender: "",
+	d_gender: "",
+	s_country:"",
+	d_country:"",
+	s_phone1: "",
+	s_phone2: "",
+	d_phone1: "",
+	d_phone2: "",
+	s_course: "",
+	d_course: "",
+	s_college:"",
+	d_college:"",
+	s_age: "",
+	d_age: "",
+	s_prevExp:"",
+	d_prevExp:"",
+	s_awards: "",
+	d_awards: "",
+	committeeOne: "", // committeee one
+	committeeOne_countryOne: "",
+	committeeOne_countryTwo: "",
+	committeeOne_countryThree: "",
+	committeeTwo: "", // committee two
+	committeeTwo_countryOne: "",
+	committeeTwo_countryTwo: "",
+	committeeTwo_countryThree: "",
+	committeeThree: "", // committee three
+	committeeThree_countryOne: "",
+	committeeThree_countryTwo: "",
+	committeeThree_countryThree: "",
+	accommodation: "",
+	accommodation_type: "",
+}
+
+export const committees = ["DISEC", "UNHRC", "UNCSW", "WHA", "COP-28 UNFCCC", "World bank", "SC", "UNESCO", "NATO", "Ad Hoc", "ECOSOC", "UNCND", "GA6 Legal", "UNOOSA", "IP"]

@@ -48,9 +48,9 @@ const Hero = () => {
                 Change Takes Shape
               </h1>
 {/*               <Link href= 'mun'> */}
-              <Link href="https://forms.gle/A4gFRxRTpPnaiWSg9" target="_blank">
+              <Link href="register">
                 <button className="text-base lg:text-lg mt-3 lg:mt-5 rounded-full border-none bg-buttonBackground px-3 lg:px-5 py-3 md:py-1 outline-none font-bold">
-                  JOIN US NOW!
+                  REGISTER NOW
                 </button>
               </Link>
             </div> 

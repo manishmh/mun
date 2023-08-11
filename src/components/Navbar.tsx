@@ -4,11 +4,14 @@ import { useState, useEffect } from 'react';
 import logo from '../../public/logo.png'
 import Image from "next/image";
 import Link from 'next/link';
+import MunDropdown from './MunDropdown';
+import { BsChevronDown } from 'react-icons/bs';
 
 const Navbar = () => {
 
   const [navbar, setNavbar] = useState(false)
   const [mobile, setMobile] = useState(false)
+  const [showMun, setShowMun] = useState(false)
 
   const changeBackground = () => {
     if (window.scrollY >= 100) {
@@ -31,24 +34,37 @@ const Navbar = () => {
             <Image src={logo} alt="MUN LOGO" className={`${navbar ? 'w-[50px] h-[50px] lg:h-[70px] lg:w-[70px]' : 'w-[60px] h-[60px] lg:h-[90px] lg:w-[90px]'}`} />
           </Link>
         </div>
-        <ul className="hidden md:flex gap-12 lg:gap-28">
+        <ul className="hidden md:flex gap-12 lg:gap-28 ">
           <Link href="about">About</Link>
-          <Link href='mun'>MUN</Link>
-          <Link href='mun'>Gallery</Link>
-          <Link href="https://forms.gle/A4gFRxRTpPnaiWSg9" target="_blank">
+          <div className='relative group'>
+            <span>MUN</span>
+            <MunDropdown />
+          </div>
+          <Link href='gallery'>Gallery</Link>
+          <Link href="/register">
             <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
-              RECRUITMENT LIVE
+              REGISTER NOW
             </button></Link>
         </ul>
         <div className='md:hidden' onClick={() => setMobile(!mobile)}>{mobile ? <Image src='/navbar/closenav.png' width={30} height={30} alt="close-nav" /> : <Image src="/navbar/opennav.png" width={30} height={30} alt="open--nav" />}</div>
       </div>
-      {mobile && <ul className="flex  pt-6 pb-12 gap-8 items-center flex-col md:hidden ">
-        <Link href="about">About</Link>
-        <Link href='mun'>MUN</Link>
+      {mobile && <ul className="flex pt-6 pb-12 gap-8 items-center flex-col md:hidden ">
+        <Link href="about" className=''>About</Link>
+        <div className='flex flex-col items-center gap-4'>
+          <div className='flex items-center gap-2' onClick={() => setShowMun((prev) => !prev)}>
+            <span>MUN</span>
+            <BsChevronDown />
+          </div>
+          <div className={`text-base flex-col gap-4 text-center ${showMun ? "flex" : "hidden"}`}>
+            <Link href="/committees">Committees</Link>
+            <Link href="/">Executive Board</Link>
+            <Link href="/">Downloads</Link>
+          </div>
+        </div>
         <Link href='mun'>Executive</Link>
-        <Link href="https://forms.gle/A4gFRxRTpPnaiWSg9" target="_blank">
+        <Link href="/register">
           <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
-            RECRUITMENT LIVE
+              REGISTER NOW
           </button></Link>
       </ul>}
     </div>
