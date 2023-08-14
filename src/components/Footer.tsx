@@ -29,18 +29,18 @@ const Footer: React.FC = () => {
               <div className="w-full md:w-1/2 lg:w-1/5 mb-4 text-left">
                 <h4 className="text-lg font-bold text-white">PHONE</h4>
                 <p className="text-white">
-                  <a href="tel: +917008051628">
-                    +91-7008051628 (Shivram Krishna){" "}
+                  <a href="tel: +918210542443">
+                    +91-8210542443 (Kshitij Singh){" "}
                   </a>{" "}
                 </p>
                 <p className="text-white">
-                  <a href="tel: +918210542443">
-                    +91-8210542443 (Kshitij Singh){" "}
+                  <a href="tel: +917735127138">
+                   +91-7735127138 (Satyajeet Das){" "}
                   </a>
                 </p>
                 <p className="text-white">
-                  <a href="tel: +917735127138">
-                    +91-7735127138 (Satyajeet Das){" "}
+                  <a href="tel: +917008051628">
+                   +91-7008051628 (Shivram Krishna){" "}
                   </a>
                 </p>
               </div>
