@@ -37,13 +37,13 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-12 lg:gap-28 ">
           <Link href="about">About</Link>
           <div className='relative group'>
-            <span>MUN</span>
+            <span>DELEGATION</span>
             <MunDropdown />
           </div>
-          <Link href='gallery'>Gallery</Link>
-          <Link href="/mun">
+          <Link href='/mun'>Gallery</Link>
+          <Link href="https://forms.gle/SW8YpWVvCaLrXRvC8">
             <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
-              REGISTER NOW
+              EB REGISTRATION
             </button></Link>
         </ul>
         <div className='md:hidden' onClick={() => setMobile(!mobile)}>{mobile ? <Image src='/navbar/closenav.png' width={30} height={30} alt="close-nav" /> : <Image src="/navbar/opennav.png" width={30} height={30} alt="open--nav" />}</div>
@@ -62,9 +62,9 @@ const Navbar = () => {
           </div>
         </div>
         <Link href='mun'>Executive</Link>
-        <Link href="/mun">
+        <Link href="https://forms.gle/SW8YpWVvCaLrXRvC8">
           <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
-              REGISTER NOW
+              EB REGISTRATION
           </button></Link>
       </ul>}
     </div>
