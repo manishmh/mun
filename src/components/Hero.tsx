@@ -98,7 +98,7 @@ const Hero = () => {
               </Link>
             </div>
             <div className="flex justify-center md:justify-normal">
-              <Link href="https://forms.gle/SW8YpWVvCaLrXRvC8" className="z-30 target="_blank">
+              <Link href="https://forms.gle/SW8YpWVvCaLrXRvC8" className="z-30" target="blank">
                 <button className="mt-12  md:mt-5 rounded-full border-none bg-buttonBackground px-8 py-1 text-base outline-none">
                   EB Registration LIVE !!
                 </button>
