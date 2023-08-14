@@ -37,7 +37,7 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-12 lg:gap-28 ">
           <Link href="about">About</Link>
           <div className='relative group'>
-            <span>DELEGATE Zone</span><BsChevronDown />
+            <span>DELEGATE Zone <BsChevronDown /></span>
             <MunDropdown />
           </div>
           <Link href='/mun'>Gallery</Link>
