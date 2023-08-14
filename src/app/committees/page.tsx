@@ -149,7 +149,7 @@ const Committees = () => {
                   imgSource= "/committees/UNESCO@4x.png"
                   h1= 'UNESCO'
                   h2= 'United Nations Educational, Scientific and Cultural Organization'
-                  single = "Double Delegate"
+                  single = "Single Delegate"
                   double = "EB: T.B.A." 
                 />
                 <CommitteesCard 
