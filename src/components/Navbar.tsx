@@ -37,7 +37,7 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-12 lg:gap-28 ">
           <Link href="about">About</Link>
           <div className='relative group'>
-            <span>DELEGATE Zone</span>
+            <span>DELEGATE Zone</span><BsChevronDown />
             <MunDropdown />
           </div>
           <Link href='/mun'>Gallery</Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
         <Link href="about" className=''>About</Link>
         <div className='flex flex-col items-center gap-4'>
           <div className='flex items-center gap-2' onClick={() => setShowMun((prev) => !prev)}>
-            <span>MUN</span>
+            <span>Delegate Zone</span>
             <BsChevronDown />
           </div>
           <div className={`text-base flex-col gap-4 text-center ${showMun ? "flex" : "hidden"}`}>
@@ -61,7 +61,7 @@ const Navbar = () => {
             <Link href="/">Downloads</Link>
           </div>
         </div>
-        <Link href='mun'>Executive</Link>
+        <Link href='mun'>Gallery</Link>
         <Link href="https://forms.gle/SW8YpWVvCaLrXRvC8" target="blank">
           <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
               EB REGISTRATION
