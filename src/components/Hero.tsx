@@ -88,6 +88,7 @@ const Hero = () => {
             <h1 className="text-[43px] md:text-3xl font-bold text-center">EXECUTIVE BOARD: </h1>
             <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
             The Executive Board of an MUN is comprised of individuals who have been selected after an extensive process of judging their merit and skills, verifying their experience, calculating the dynamics of the entire board with the requirements of the secretariat, only because they are going to be entrusted with one of the biggest tasks in making an MUN Conference successful – to guide their respective councils through debate on the agenda and throughout the debate, to judge the delegates who put in a tremendous effort to rise above the rest in all aspects of being a Delegate.
+            <br/><i>I DON’T WANT TO KNOW WHAT THE LAW IS, I WANT TO KNOW WHO THE JUDGE IS.</i>
             </p>
             <div className="md:hidden flex gap-2 mt-2 text-lg font-bold justify-center md:justify-normal">
               See more about us
@@ -113,10 +114,10 @@ const Hero = () => {
             <Link href="#events">
               <FaRegCalendarAlt className="h-20 w-20 border-2 border-r-0 border-[#AF693B] px-4 py-4" />
             </Link>
-            <Link href="mun">
+            <Link href="/gallery">
               <FaImage className="h-20 w-20 border-2 border-r-0 border-[#AF693B] px-4 py-4" />
             </Link>
-            <Link href="mun">
+            <Link href="/committees">
               <MdSecurity className="h-20 w-20 border-2 border-[#AF693B] px-4 py-4" />
             </Link>
           </div>
