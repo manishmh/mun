@@ -87,8 +87,7 @@ const Hero = () => {
           <div className="w-[90%] md:w-[50%]">
             <h1 className="text-[43px] md:text-3xl font-bold text-center">EXECUTIVE BOARD: </h1>
             <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
-            The Executive Board of an MUN is comprised of individuals who have been selected after an extensive process of judging their merit and skills, verifying their experience, calculating the dynamics of the entire board with the requirements of the secretariat, only because they are going to be entrusted with one of the biggest tasks in making an MUN Conference successful – to guide their respective councils through debate on the agenda and throughout the debate, to judge the delegates who put in a tremendous effort to rise above the rest in all aspects of being a Delegate.
-            <br/><i>I DON’T WANT TO KNOW WHAT THE LAW IS, I WANT TO KNOW WHO THE JUDGE IS.</i>
+            An Executive Board is the one who knows the way, goes the way and shows the way. If the delegates are the heart of the committee, the Executive board becomes the mind. They regulate, nurture, evaluate and ensure a peaceful procedural course throughout the conference.
             </p>
             <div className="md:hidden flex gap-2 mt-2 text-lg font-bold justify-center md:justify-normal">
               See more about us
