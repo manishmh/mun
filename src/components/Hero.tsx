@@ -48,9 +48,9 @@ const Hero = () => {
                 Change Takes Shape
               </h1>
 {/*               <Link href= 'mun'> */}
-              <Link href="register">
+              <Link href="#footer">
                 <button className="text-base lg:text-lg mt-3 lg:mt-5 rounded-full border-none bg-buttonBackground px-3 lg:px-5 py-3 md:py-1 outline-none font-bold">
-                  REGISTER NOW
+                  CONTACT US
                 </button>
               </Link>
             </div> 
@@ -85,9 +85,9 @@ const Hero = () => {
       <div className="relative max-w-[1440px] md:-translate-y-[80px] lg:translate-y-0 mt-[70px] mx-auto  md:px-[5vw] xl:px-[100px] pt-8 text-3xl text-white first-letter">
         <div className="flex flex-col md:flex-row -translate-y-[60px] md:-translate-y-8 lg:-translate-y-0 items-center justify-between w-full lg:pr-[150px] md:pr-[100px] sm:pr-[50px] xl:pr-[200px] absolute top-0 md:top-10">
           <div className="w-[90%] md:w-[50%]">
-            <h1 className="text-[43px] md:text-3xl font-bold text-center">WHO WE ARE: </h1>
+            <h1 className="text-[43px] md:text-3xl font-bold text-center">EXECUTIVE BOARD: </h1>
             <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
-            KIIT International Model United Nations emerges as a leading global United Nations simulation, spearheaded by the Secretariat, the committed student body of the Kalinga Institute of Industrial Technology. Since its inception in 2013, this conference has consistently surpassed expectations, establishing unprecedented benchmarks year after year. By fostering intellectual growth, nurturing youth leadership, and promoting global understanding, it stands as an exemplary platform for empowerment and enlightenment.
+            The Executive Board of an MUN is comprised of individuals who have been selected after an extensive process of judging their merit and skills, verifying their experience, calculating the dynamics of the entire board with the requirements of the secretariat, only because they are going to be entrusted with one of the biggest tasks in making an MUN Conference successful – to guide their respective councils through debate on the agenda and throughout the debate, to judge the delegates who put in a tremendous effort to rise above the rest in all aspects of being a Delegate.
             </p>
             <div className="md:hidden flex gap-2 mt-2 text-lg font-bold justify-center md:justify-normal">
               See more about us
@@ -98,9 +98,9 @@ const Hero = () => {
               </Link>
             </div>
             <div className="flex justify-center md:justify-normal">
-              <Link href="#footer" className="z-30">
+              <Link href="https://forms.gle/SW8YpWVvCaLrXRvC8" className="z-30 target="_blank">
                 <button className="mt-12  md:mt-5 rounded-full border-none bg-buttonBackground px-8 py-1 text-base outline-none">
-                  CONTACT US
+                  EB Registration LIVE !!
                 </button>
               </Link>
             </div>
