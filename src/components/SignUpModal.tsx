@@ -60,7 +60,7 @@ export default function MyModal() {
 									</div>
 									<div className="mt-4 w-full mx-auto flex justify-center">
 										<button className=" rounded-md border border-transparent px-4 py-2 text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border-none bg-buttonBackground outline-none">
-											<Link href="/register">
+											<Link href="/mun">
 												Register Now
 											</Link>
 										</button>
