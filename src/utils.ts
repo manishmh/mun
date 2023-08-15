@@ -1603,7 +1603,7 @@ export const worldbank = ["Afghanistan",
 	"Zimbabwe"
 ]
 
-export const ip = [ "Photographer", "Journalist" ]
+export const ip = [ "Photographer", "Journalist"]
 
 export function whatToMapCommitteeOne(values: FormikValues): string[] {
 	var countryMapper: string[];
@@ -1646,7 +1646,10 @@ export function whatToMapCommitteeOne(values: FormikValues): string[] {
 			break;
 		case "UNESCO":
 			countryMapper = unesco
-			break
+			break;
+			case "IP":
+				countryMapper = ip
+				break
 		default:
 			countryMapper = [];
 	}
@@ -1694,7 +1697,11 @@ export function whatToMapCommitteeTwo(values: FormikValues): string[] {
 			break;
 		case "UNESCO":
 			countryMapper = unesco
-			break
+			break;
+			case "IP":
+				countryMapper = ip
+				break
+
 		default:
 			countryMapper = [];
 	}
@@ -1742,7 +1749,10 @@ export function whatToMapCommitteeThree(values: FormikValues): string[] {
 			break;
 		case "UNESCO":
 			countryMapper = unesco
-			break
+			break;
+			case "IP":
+				countryMapper = ip
+				break
 		default:
 			countryMapper = [];
 	}

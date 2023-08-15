@@ -22,8 +22,8 @@ export const DelegateNum = ({ name }: delegateNumProps) => {
   )
 }
 
-const CountryBlock = ({ name, mapper }: { name: string, mapper: string[] }) => {
-  const { values, setFieldValue} = useFormikContext<FormikValues>()
+const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[], ipOne: boolean }) => {
+  const { values, setFieldValue } = useFormikContext<FormikValues>()
 
   useEffect(() => {
     if (values[name] === '') {
@@ -41,14 +41,13 @@ const CountryBlock = ({ name, mapper }: { name: string, mapper: string[] }) => {
   const C1country2 = mapper.filter(v => v !== values[One] && v !== values[Three])
   const C1country3 = mapper.filter(v => v !== values[One] && v !== values[Two])
 
-  // console.log(validateOnChange);
-
   return (<div className="w-full flex flex-col gap-3 lg:gap-6">
     <div>
+
       <Select icon={<BiWorld />}
         className="w-full md:w-full"
         name={`${name}_countryOne`}
-        >
+      >
         <option value="">Choose a Country</option>
         {C1country1.map((n, index) => (
           <option key={index} value={n}>{n}</option>
@@ -65,14 +64,15 @@ const CountryBlock = ({ name, mapper }: { name: string, mapper: string[] }) => {
         ))}
       </Select>
     </div>
-    <Select icon={<BiWorld />}
-      className="w-full md:w-full"
-      name={`${name}_countryThree`}>
-      <option value="">Choose a Country</option>
-      {C1country3.map((n, index) => (
-        <option key={index} value={n}>{n}</option>
-      ))}
-    </Select>
+    {ipOne ? <></> :
+      <Select icon={<BiWorld />}
+        className="w-full md:w-full"
+        name={`${name}_countryThree`}>
+        <option value="">Choose a Country</option>
+        {C1country3.map((n, index) => (
+          <option key={index} value={n}>{n}</option>
+        ))}
+      </Select>}
   </div>)
 }
 
@@ -124,22 +124,22 @@ const Committee = () => {
   const adHocIsChosenTwo = values.committeeTwo === 'Ad Hoc'
   const adHocIsChosenThree = values.committeeThree === 'Ad Hoc'
 
+  const ipIsChosenOne = values.committeeOne === 'IP'
+  const ipIsChosenTwo = values.committeeTwo === 'IP'
+  const ipIsChosenThree = values.committeeThree === 'IP'
   return (
-    <div className="lg:px-10 gap-8 pb-10 flex flex-col mt-6">
-
+    <div className="lg:px-10 relative gap-8 pb-10 flex flex-col mt-6">
       <div className="flex flex-col md:flex-row gap-3 md:gap-6">
         <CommitteeBlock name="committeeOne" />
-        {adHocIsChosenOne ? <></> : <CountryBlock name="committeeOne" mapper={countryOneMapper} />}
+        {adHocIsChosenOne ? <></> : <CountryBlock name="committeeOne" ipOne={ipIsChosenOne} mapper={countryOneMapper} />}
       </div>
-
       <div className="flex flex-col md:flex-row gap-3 md:gap-6">
         <CommitteeBlock name="committeeTwo" />
-        {adHocIsChosenTwo ? <></> : <CountryBlock name="committeeTwo" mapper={countryTwoMapper} />}
+        {adHocIsChosenTwo ? <></> : <CountryBlock name="committeeTwo" ipOne={ipIsChosenTwo} mapper={countryTwoMapper} />}
       </div>
-
       <div className="flex flex-col md:flex-row gap-3 md:gap-6">
         <CommitteeBlock name="committeeThree" />
-        {adHocIsChosenThree ? <></> : <CountryBlock name="committeeThree" mapper={countryThreeMapper} />}
+        {adHocIsChosenThree ? <></> : <CountryBlock name="committeeThree" ipOne={ipIsChosenThree} mapper={countryThreeMapper} />}
       </div>
 
       <DelegateNum name="Accommodation Details" />
