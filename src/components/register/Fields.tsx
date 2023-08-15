@@ -1,5 +1,5 @@
 'use client'
-import { useField } from "formik";
+import { FormikValues, useField, useFormikContext } from "formik";
 
 type TextFieldProps = {
   icon: React.ReactNode,
@@ -14,6 +14,7 @@ type SelectFieldProps = {
   name: string,
   className: string,
   children: React.ReactNode
+  onChange?: () => void
 }
 
 type TextAreaFieldProps = Omit<TextFieldProps, "type">
@@ -58,10 +59,47 @@ export const TextAreaField = ({ ...props }: TextAreaFieldProps) => {
 };
 
 export const Select = ({ ...props }: SelectFieldProps) => {
-  const [field, meta] = useField(props);
+  const [field, meta, helpers] = useField(props);
   const error = meta.touched && meta.error
+  // console.log(helpers);
+  // const { values } = useFormikContext<FormikValues>()
 
+  // const checkIfExist = () => {
+  //   console.log(values);
+  //   helpers.setError(values.committeeOne)
+  // }
+  // console.log(props)
+  // console.log(field)
   const { icon, className } = props
+  return (
+    <div className={` relative flex bg[#E2DDF4] rounded-lg items-center bg-[#E2DDF4] ${className} ${error ? 'border-2 border-red-500' : ''}`}>
+      <span className={`text-black/50 pl-2`}>{icon}</span>
+      <select {...field} {...props}
+        className="bg-[#E2DDF4] text-black/50 pr-1 w-full pl-2 rounded-lg border-none outline-none focus:ring-0"
+      />
+      {meta.touched && meta.error ? (
+        <div className="error text-sm text-red-500 mr-2">{meta.error}</div>
+      ) : null}
+    </div>
+  );
+};
+
+
+
+export const SelectCommittee = ({ ...props }: SelectFieldProps) => {
+  const [field, meta, helpers] = useField(props);
+  const error = meta.touched && meta.error
+  // console.log(helpers);
+  // const { values } = useFormikContext<FormikValues>()
+
+  // const checkIfExist = () => {
+  //   console.log(values);
+  //   helpers.setError(values.committeeOne)
+  // }
+  // console.log(props)
+  // console.log(field)
+  const { icon, className } = props
+  console.log(field, meta, helpers);
   return (
     <div className={` relative flex bg[#E2DDF4] rounded-lg items-center bg-[#E2DDF4] ${className} ${error ? 'border-2 border-red-500' : ''}`}>
       <span className={`text-black/50 pl-2`}>{icon}</span>

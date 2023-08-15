@@ -1,8 +1,7 @@
 import React from "react";
 import { Select, TextAreaField, TextField } from "./Fields";
-
 import Image from "next/image";
-import { BsFillCalendarPlusFill, BsFillPersonFill, BsFillTelephoneFill, BsFlagFill, BsGenderAmbiguous } from 'react-icons/bs'
+import { BsCalendar2Day, BsFillPersonFill, BsFillTelephoneFill, BsFlagFill, BsGenderAmbiguous } from 'react-icons/bs'
 import { LiaUniversitySolid } from "react-icons/lia"
 import { VscMail } from "react-icons/vsc"
 import { FaBook, FaGraduationCap } from "react-icons/fa";
@@ -76,7 +75,7 @@ const Delegate = ({ delegate }: { delegate?: string }) => {
           className="w-[48%] md:w-[49%] lg:w-[35%]"
           name={`${delegateValue}phone2`}
         />
-        <Select icon={<BiSolidBook />}
+        <Select icon={<BsCalendar2Day />}
           name={`${delegateValue}age`}
           className="w-[30%] lg:w-[20%]">
           <option value="">Age</option>

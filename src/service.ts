@@ -1,4 +1,5 @@
-const baseUrl = 'https://random-mun-backend.onrender.com'
+const baseUrl = 'https://kiitmunbackend.onrender.com'
+
 
 const singleDelegatePost = async (values: any) => {
 	const { firstName, lastName, middleName, committeeOne,

@@ -16,11 +16,11 @@ export default function MyModal() {
 	}
 
 	// removing modal since registrations are over
-	// useEffect(() => {
-	// 	setTimeout(() => {
-	// 		setIsOpenModal(true)
-	// 	}, 2000)
-	// }, [])
+	useEffect(() => {
+		setTimeout(() => {
+			setIsOpenModal(true)
+		}, 2000)
+	}, [])
 
 	return (
 		<>
@@ -55,13 +55,13 @@ export default function MyModal() {
 										<Image src="/modal.png" alt="modal" height={400} width={800} className='rounded-xl' />
 									</div>
 									<div>
-										<p className='pt-4 text-center'>The Exclusive Secretariat Recruitment for KiiT International MUN 2023 is officially LIVE!!!
+										<p className='pt-4 text-center'>The Delegate registration KiiT International MUN 2023 is officially LIVE!!!
 											.</p>
 									</div>
 									<div className="mt-4 w-full mx-auto flex justify-center">
 										<button className=" rounded-md border border-transparent px-4 py-2 text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border-none bg-buttonBackground outline-none">
-											<Link href="https://docs.google.com/forms/d/1ZIM3mNaIVwyHTLFowapa-rsMMErX1kpwCTRqvSzHiMA/edit?ts=64b81355" target="_blank">
-												SECRETARIAT RECRUITMENT LIVE
+											<Link href="/mun">
+												Register Now
 											</Link>
 										</button>
 									</div>
