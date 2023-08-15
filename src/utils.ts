@@ -1603,6 +1603,8 @@ export const worldbank = ["Afghanistan",
 	"Zimbabwe"
 ]
 
+export const ip = [ "Photographer", "Journalist" ]
+
 export function whatToMapCommitteeOne(values: FormikValues): string[] {
 	var countryMapper: string[];
 	switch (values.committeeOne) {
