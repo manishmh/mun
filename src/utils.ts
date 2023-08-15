@@ -31,7 +31,6 @@ export const initialValuesSingleDelegate = {
 	accommodation_type: "",
 }
 
-
 export const initialValuesDoubleDelegate = {
 	s_firstName: "",
 	s_middleName: "",
@@ -75,7 +74,9 @@ export const initialValuesDoubleDelegate = {
 	accommodation_type: "",
 }
 
-export const COMMITTEE = ["DISEC", "UNHRC", "UNCSW", "WHA", "COP-28 UNFCCC", "World bank", "SC", "UNESCO", "NATO", "Ad Hoc", "ECOSOC", "UNCND", "GA6 Legal", "UNOOSA", "IP"]
+export const SINGLEDELEGATECOMMITTEE = ["DISEC",  "UNCSW",  "SC", "UNESCO", "NATO", "Ad Hoc",  "UNCND", "GA6 Legal", "UNOOSA", "IP"]
+
+export const DOUBLEDELEGATECOMMITTEE = [ "UNHRC",  "WHA", "COP-28 UNFCCC", "World bank", "ECOSOC"]
 
 export const unfccc = ["Afghanistan",
 	"Albania",
