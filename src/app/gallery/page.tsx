@@ -15,24 +15,35 @@ export type activelevelProps = {
 }
 
 const Gallery = () => {
-  const imageUrls = [
-    "/logo.png",
-    "/logo.png",
-    "/logo.png",
-    "/logo.png",
-    "/logo.png",
-    "image6.jpg",
-    "image7.jpg",
-    "image8.jpg",
-    "/logo.png",
-    "image10.jpg",
-    "image11.jpg",
-    "image12.jpg",
-    "/logo.png",
-    "image14.jpg",
-    "image15.jpg",  
-    "image16.jpg",
-  ];
+  const imageUrls: { [key: string]: string[] } = {
+    starNight: [
+      "/img/1.jpg",
+      "/img/2.jpg",
+
+    ],
+    delegation: [
+      "/img/3.jpg",
+      "/img/4.jpg",
+
+    ],
+    committee: [
+      "/img/5.jpg",
+      "/img/6.jpg",
+
+    ],
+    topFive: [
+      "/img/7.jpg",
+      "/img/8.jpg",
+
+    ],
+    winning: [
+      "/img/9.jpg",
+
+    ],
+    inaugration: [
+      "https://kiit.ac.in/wp-content/uploads/2021/11/KIIT-MUN-2021.jpg",
+    ],
+  };
 
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
@@ -81,12 +92,13 @@ const Gallery = () => {
             handleActiveLevel={hanldeActiveLevel}
           />
           {activeLevel.starNight && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> 
-              {imageUrls.map((url, i) => (
-                <div key={i} className="bg-gray-200 p-4 rounded-2xl max-w-xs"> 
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {imageUrls.starNight.map((url, i) => (
+                <div key={i} className="bg-gray-200 p-2 rounded-2xl max-w-xs">
                   <img
+                      key={i}
                     className="w-full h-full object-cover cursor-pointer rounded"
-                    src={url.startsWith('/') ? url : `/public/${url}`}
+                    src={url}
                     alt={`Image ${i + 1}`}
                     onClick={() => handleImageClick(url)}
                   />
@@ -96,11 +108,11 @@ const Gallery = () => {
           )}
           {activeLevel.delegation && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> 
-              {imageUrls.map((url, i) => (
-                <div key={i} className="bg-gray-200 p-4 rounded-2xl max-w-xs"> 
+              {imageUrls.delegation.map((url, i) => (
+                <div key={i} className="bg-gray-200 p-2 rounded-2xl max-w-xs">
                   <img
                     className="w-full h-full object-cover cursor-pointer rounded"
-                    src={url.startsWith('/') ? url : `/public/${url}`}
+                    src={url}
                     alt={`Image ${i + 1}`}
                     onClick={() => handleImageClick(url)}
                   />
@@ -110,11 +122,11 @@ const Gallery = () => {
           )}
           {activeLevel.committee && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> 
-              {imageUrls.map((url, i) => (
-                <div key={i} className="bg-gray-200 p-4 rounded-2xl max-w-xs"> 
+              {imageUrls.committee.map((url, i) => (
+                <div key={i} className="bg-gray-200 p-2 rounded-2xl max-w-xs">
                   <img
                     className="w-full h-full object-cover cursor-pointer rounded"
-                    src={url.startsWith('/') ? url : `/public/${url}`}
+                    src={url}
                     alt={`Image ${i + 1}`}
                     onClick={() => handleImageClick(url)}
                   />
@@ -124,11 +136,11 @@ const Gallery = () => {
           )}
           {activeLevel.topFive && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> 
-              {imageUrls.map((url, i) => (
-                <div key={i} className="bg-gray-200 p-4 rounded-2xl max-w-xs"> 
+              {imageUrls.topFive.map((url, i) => (
+                <div key={i} className="bg-gray-200 p-2 rounded-2xl max-w-xs">
                   <img
                     className="w-full h-full object-cover cursor-pointer rounded"
-                    src={url.startsWith('/') ? url : `/public/${url}`}
+                    src={url}
                     alt={`Image ${i + 1}`}
                     onClick={() => handleImageClick(url)}
                   />
@@ -138,11 +150,11 @@ const Gallery = () => {
           )}
           {activeLevel.winning && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> 
-              {imageUrls.map((url, i) => (
-                <div key={i} className="bg-gray-200 p-4 rounded-2xl max-w-xs"> 
+              {imageUrls.winning.map((url, i) => (
+                <div key={i} className="bg-gray-200 p-2 rounded-2xl max-w-xs">
                   <img
                     className="w-full h-full object-cover cursor-pointer rounded"
-                    src={url.startsWith('/') ? url : `/public/${url}`}
+                    src={url}
                     alt={`Image ${i + 1}`}
                     onClick={() => handleImageClick(url)}
                   />
@@ -152,11 +164,11 @@ const Gallery = () => {
           )}
           {activeLevel.inaugration && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> 
-              {imageUrls.map((url, i) => (
-                <div key={i} className="bg-gray-200 p-4 rounded-2xl max-w-xs"> 
+              {imageUrls.inaugration.map((url, i) => (
+                <div key={i} className="bg-gray-200 p-2 rounded-2xl max-w-xs">
                   <img
                     className="w-full h-full object-cover cursor-pointer rounded"
-                    src={url.startsWith('/') ? url : `/public/${url}`}
+                    src={url}
                     alt={`Image ${i + 1}`}
                     onClick={() => handleImageClick(url)}
                   />
