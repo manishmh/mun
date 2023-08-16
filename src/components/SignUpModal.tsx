@@ -55,12 +55,12 @@ export default function MyModal() {
 										<Image src="/early.png" alt="modal" height={400} width={800} className='rounded-xl' />
 									</div>
 									<div>
-										<p className='pt-4 text-center'>The Delegate registration KiiT International MUN 2023 is officially LIVE!!!
+										<p className='pt-4 text-center'>The EARLY BIRD REGISTRATIONS of KiiT International MUN 2023 is officially LIVE!!!
 											.</p>
 									</div>
 									<div className="mt-4 w-full mx-auto flex justify-center">
 										<button className=" rounded-md border border-transparent px-4 py-2 text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 border-none bg-buttonBackground outline-none">
-											<Link href="/register">
+											<Link href="/register"  target="blank">
 												Register Now
 											</Link>
 										</button>
