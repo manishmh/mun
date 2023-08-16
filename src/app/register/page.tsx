@@ -94,7 +94,7 @@ const Register = () => {
                             <Form>
                                 <Delegate />
                                 <DelegateNum name="Committee Details" />
-                                <Committee />
+                                <Committee delegate="single"/>
                                 {error && <div className="flex justify-center text-center my-4 text-red-500">{error} Please try Again.</div>}
                                 <SubmitButton load={load} />
                             </Form>
@@ -121,7 +121,7 @@ const Register = () => {
                                 <DelegateNum name="Delegate 2" />
                                 <Delegate delegate="d_" />
                                 <DelegateNum name="Committee Details" />
-                                <Committee />
+                                <Committee delegate="double"/>
                                 {error && <div className="flex justify-center text-center my-4 text-red-500">{error} Please try Again.</div>}
                                 <SubmitButton load={load} />
                             </Form>

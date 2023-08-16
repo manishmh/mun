@@ -7,7 +7,7 @@ import { VscMail } from "react-icons/vsc"
 import { FaBook, FaGraduationCap } from "react-icons/fa";
 import { BiSolidBook, BiSolidTrophy } from "react-icons/bi";
 import { COUNTRIES } from "../../app/register/countries"
-import { AGE } from "../../app/register/age"
+import { AGE, YEAR } from "../../app/register/age"
 
 const gender = ["Male", "Female", "Other"]
 
@@ -46,7 +46,7 @@ const Delegate = ({ delegate }: { delegate?: string }) => {
         <Select icon={<BsGenderAmbiguous />}
           className="w-[48%] md:w-[49%] lg:w-[30%]"
           name={`${delegateValue}gender`}
-          >
+        >
           <option value="">Gender</option>
           {gender.map((g, index) => (
             <option key={index} value={g}>{g}</option>
@@ -55,7 +55,7 @@ const Delegate = ({ delegate }: { delegate?: string }) => {
         <Select icon={<BsFlagFill />}
           className="w-[48%] md:w-[49%] lg:w-[30%]"
           name={`${delegateValue}country`}
-          >
+        >
           <option value="">Countries</option>
           {COUNTRIES.map((c, index) => (
             <option key={index} value={c}>{c}</option>
@@ -97,13 +97,14 @@ const Delegate = ({ delegate }: { delegate?: string }) => {
           className="w-[71%] md:w-[73%] lg:w-[50%]"
           name={`${delegateValue}college`}
         />
-        <TextField
-          icon={<BiSolidBook />}
-          placeholder="Year"
-          type="number"
-          className="w-[25%] lg:w-[10%]"
+        <Select icon={<BiSolidBook />}
           name={`${delegateValue}year`}
-        />
+          className="w-[25%] lg:w-[10%]">
+          <option value="">Year</option>
+          {YEAR.map((age, index) => (
+            <option key={index} value={age}>{age}</option>
+          ))}
+        </Select>
         <TextAreaField
           icon={<Image
             src="/speak.png"

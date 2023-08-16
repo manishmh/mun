@@ -16,11 +16,11 @@ export default function MyModal() {
 	}
 
 	// removing modal since registrations are over
-	useEffect(() => {
-		setTimeout(() => {
-			setIsOpenModal(true)
-		}, 2000)
-	}, [])
+	// useEffect(() => {
+	// 	setTimeout(() => {
+	// 		setIsOpenModal(true)
+	// 	}, 2000)
+	// }, [])
 
 	return (
 		<>

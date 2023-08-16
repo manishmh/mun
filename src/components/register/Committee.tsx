@@ -2,11 +2,12 @@ import { Select, SelectCommittee } from "./Fields";
 import { BiWorld } from "react-icons/bi";
 import { TfiWorld } from "react-icons/tfi";
 import { useFormikContext } from "formik";
-import { COMMITTEE, whatToMapCommitteeOne, whatToMapCommitteeThree, whatToMapCommitteeTwo } from "@/utils";
+import { SINGLEDELEGATECOMMITTEE, DOUBLEDELEGATECOMMITTEE, whatToMapCommitteeOne, whatToMapCommitteeThree, whatToMapCommitteeTwo } from "@/utils";
 import { useEffect } from "react";
 
 type CommitteeBlockProps = {
   name: string,
+  delegate: string,
 }
 type delegateNumProps = {
   name: string,
@@ -77,8 +78,10 @@ const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[],
 }
 
 
-const CommitteeBlock = ({ name }: CommitteeBlockProps) => {
+const CommitteeBlock = ({ name, delegate }: CommitteeBlockProps) => {
   const { values } = useFormikContext<FormikValues>()
+
+  const COMMITTEE = delegate === 'single' ? SINGLEDELEGATECOMMITTEE : delegate === 'double' ? DOUBLEDELEGATECOMMITTEE : [] 
 
   const committee1 = COMMITTEE.filter(v => v !== values.committeeTwo && v !== values.committeeThree)
   const committee2 = COMMITTEE.filter(v => v !== values.committeeOne && v !== values.committeeThree)
@@ -113,7 +116,7 @@ export type FormikValues = {
   accommodation: string
 }
 
-const Committee = () => {
+const Committee = ({delegate}:{delegate: string}) => {
   const { values } = useFormikContext<FormikValues>()
 
   const countryOneMapper = whatToMapCommitteeOne(values)
@@ -130,15 +133,15 @@ const Committee = () => {
   return (
     <div className="lg:px-10 relative gap-8 pb-10 flex flex-col mt-6">
       <div className="flex flex-col md:flex-row gap-3 md:gap-6">
-        <CommitteeBlock name="committeeOne" />
+        <CommitteeBlock name="committeeOne" delegate={delegate}/>
         {adHocIsChosenOne ? <></> : <CountryBlock name="committeeOne" ipOne={ipIsChosenOne} mapper={countryOneMapper} />}
       </div>
       <div className="flex flex-col md:flex-row gap-3 md:gap-6">
-        <CommitteeBlock name="committeeTwo" />
+        <CommitteeBlock name="committeeTwo" delegate={delegate}/>
         {adHocIsChosenTwo ? <></> : <CountryBlock name="committeeTwo" ipOne={ipIsChosenTwo} mapper={countryTwoMapper} />}
       </div>
       <div className="flex flex-col md:flex-row gap-3 md:gap-6">
-        <CommitteeBlock name="committeeThree" />
+        <CommitteeBlock name="committeeThree" delegate={delegate}/>
         {adHocIsChosenThree ? <></> : <CountryBlock name="committeeThree" ipOne={ipIsChosenThree} mapper={countryThreeMapper} />}
       </div>
 
