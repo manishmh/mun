@@ -65,6 +65,7 @@ const Footer: React.FC = () => {
                   <a
                     href="https://www.facebook.com/kiitmun/"
                     className="text-white"
+                    target="blank"
                   >
                     Facebook
                   </a>
@@ -74,6 +75,7 @@ const Footer: React.FC = () => {
                   <a
                     href="https://www.instagram.com/instakiitmun/"
                     className="text-white"
+                    target="blank"
                   >
                     Instagram
                   </a>
@@ -83,6 +85,7 @@ const Footer: React.FC = () => {
                   <a
                     href="https://twitter.com/kiitmun"
                     className="text-white"
+                    target="blank"
                   >
                     Twitter
                   </a>
@@ -90,8 +93,9 @@ const Footer: React.FC = () => {
                 <div className="flex items-center">
                   <FaLinkedinIn style={{ fontSize: "xs", marginRight: "0.5rem" }} />
                   <a
-                    href="https://www.linkedin.com/example"
+                    href="https://www.linkedin.com/company/kiit-international-mun/"
                     className="text-white"
+                    target="blank"
                   >
                     LinkedIn
                   </a>
@@ -100,17 +104,17 @@ const Footer: React.FC = () => {
               <div className="w-full md:w-1/2 lg:w-1/5 mb-4 text-left md:text-right">
                 <h4 className="text-lg font-bold text-white">Quick Links</h4>
                 <p>
-                  <a href="#" className="text-white block">
+                  <a href="/about" className="text-white block">
                     About Us
                   </a>
                 </p>
                 <p>
-                  <a href="#" className="text-white block">
+                  <a href="/committees" className="text-white block">
                     Committees
                   </a>
                 </p>
                 <p>
-                  <a href="#" className="text-white block">
+                  <a href="https://forms.gle/SW8YpWVvCaLrXRvC8" className="text-white block" target="blank">
                     Executive board
                   </a>
                 </p>
