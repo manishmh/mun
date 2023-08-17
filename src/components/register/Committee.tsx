@@ -123,9 +123,6 @@ const Committee = ({delegate}:{delegate: string}) => {
   const countryTwoMapper = whatToMapCommitteeTwo(values)
   const countryThreeMapper = whatToMapCommitteeThree(values)
 
-  const adHocIsChosenOne = values.committeeOne === 'Ad Hoc'
-  const adHocIsChosenTwo = values.committeeTwo === 'Ad Hoc'
-  const adHocIsChosenThree = values.committeeThree === 'Ad Hoc'
 
   const ipIsChosenOne = values.committeeOne === 'IP'
   const ipIsChosenTwo = values.committeeTwo === 'IP'
@@ -134,15 +131,15 @@ const Committee = ({delegate}:{delegate: string}) => {
     <div className="lg:px-10 relative gap-8 pb-10 flex flex-col mt-6">
       <div className="flex flex-col md:flex-row gap-3 md:gap-6">
         <CommitteeBlock name="committeeOne" delegate={delegate}/>
-        {adHocIsChosenOne ? <></> : <CountryBlock name="committeeOne" ipOne={ipIsChosenOne} mapper={countryOneMapper} />}
+         <CountryBlock name="committeeOne" ipOne={ipIsChosenOne} mapper={countryOneMapper} />
       </div>
       <div className="flex flex-col md:flex-row gap-3 md:gap-6">
         <CommitteeBlock name="committeeTwo" delegate={delegate}/>
-        {adHocIsChosenTwo ? <></> : <CountryBlock name="committeeTwo" ipOne={ipIsChosenTwo} mapper={countryTwoMapper} />}
+         <CountryBlock name="committeeTwo" ipOne={ipIsChosenTwo} mapper={countryTwoMapper} />
       </div>
       <div className="flex flex-col md:flex-row gap-3 md:gap-6">
         <CommitteeBlock name="committeeThree" delegate={delegate}/>
-        {adHocIsChosenThree ? <></> : <CountryBlock name="committeeThree" ipOne={ipIsChosenThree} mapper={countryThreeMapper} />}
+         <CountryBlock name="committeeThree" ipOne={ipIsChosenThree} mapper={countryThreeMapper} />
       </div>
 
       <DelegateNum name="Accommodation Details" />
