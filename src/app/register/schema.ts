@@ -37,9 +37,9 @@ export const formValidationSingleDelegate = Yup.object({
 
 export const formValidationDoubleDelegate = Yup.object({
 	s_firstName: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
-	d_firstName: Yup.string().max(15, 'Must be 15 characters or less'),
+	d_firstName: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
 	s_lastName: Yup.string().max(20, 'Must be 20 characters or less').required('Required'),
-	d_lastName: Yup.string().max(20, 'Must be 20 characters or less'),
+	d_lastName: Yup.string().max(20, 'Must be 20 characters or less').required('Required'),
 	s_email: Yup.string().email('Invalid').required('Required'),
 	d_email: Yup.string().email('Invalid').required('Required'),
 	s_gender: Yup.string().oneOf(['Male', 'Female', 'Other']).required('Required'),
