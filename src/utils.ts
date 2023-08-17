@@ -74,9 +74,9 @@ export const initialValuesDoubleDelegate = {
 	accommodation_type: "",
 }
 
-export const SINGLEDELEGATECOMMITTEE = ["DISEC",  "UNCSW",  "SC", "UNESCO", "NATO", "Ad Hoc",  "UNCND", "GA6 Legal", "UNOOSA", "IP"]
+export const SINGLEDELEGATECOMMITTEE = ["DISEC", "UNCSW", "SC", "UNESCO", "NATO", "Ad Hoc", "UNCND", "GA6 Legal", "UNOOSA", "IP", "UNHRC", "WHA", "COP-28 UNFCCC", "World bank", "ECOSOC"]
 
-export const DOUBLEDELEGATECOMMITTEE = [ "UNHRC",  "WHA", "COP-28 UNFCCC", "World bank", "ECOSOC"]
+export const DOUBLEDELEGATECOMMITTEE = ["UNHRC", "WHA", "COP-28 UNFCCC", "World bank", "ECOSOC"]
 
 export const unfccc = ["Afghanistan",
 	"Albania",
@@ -1604,9 +1604,9 @@ export const worldbank = ["Afghanistan",
 	"Zimbabwe"
 ]
 
-export const ip = [ "Photographer", "Journalist"]
+export const ip = ["Photographer", "Journalist"]
 
-export const adhoc = [ "Israel - Minister of Defense", "Israel - Chief of Mossad", "Israel - Foreign Affairs Minister",  "Israel - Minister of Public Security", "Israel - Minister of Internal Affairs", "Palestine - Chairman of the Palestine Liberation Organizations Executive Committee",  "Palestine - Chief of Intelligence", "Palestine - Minister of Foreign Affairs", "Palestine - Minister of Interior and National Security", "Palestine - Head of Hamas Political Bureau", "USA - Secretary of State", "USA - Secretary of Defense", "USA - Director of the CIA", "USA - Commander of U.S. CENTCOM", "USA - Commander of U.S. Fifth Fleet", "China - Foreign Minister", "China - Minister of National Defense", "China - Director of the Ministry of State Security", "China - Commander of the PLA Western Theater Command", "China - Chief of Staff of the PLA Navy", "Russia - Foreign Minister", "Russia - Minister of Defense", "Russia - Director of the SVR", "Russia - Commander of the Russian Southern Military District", "Russia - Commander of the Russian Navy Black Sea Fleet", "France - Foreign Minister", "France - Minister of the Armed Forces", "France - Director of DGSE", "France - Chief of Staff of the French Armed Forces", "Saudi Arabia - Foreign Minister", "Saudi Arabia - Chief of General Intelligence Presidency", "Saudi Arabia - Commander of the Royal Saudi Land Forces", "Jordan - Foreign Minister", "Jordan - Director of General Intelligence Directorate", "Jordan - Commander of the Jordanian Armed Forces"]
+export const adhoc = ["Israel - Minister of Defense", "Israel - Chief of Mossad", "Israel - Foreign Affairs Minister", "Israel - Minister of Public Security", "Israel - Minister of Internal Affairs", "Palestine - Chairman of the Palestine Liberation Organizations Executive Committee", "Palestine - Chief of Intelligence", "Palestine - Minister of Foreign Affairs", "Palestine - Minister of Interior and National Security", "Palestine - Head of Hamas Political Bureau", "USA - Secretary of State", "USA - Secretary of Defense", "USA - Director of the CIA", "USA - Commander of U.S. CENTCOM", "USA - Commander of U.S. Fifth Fleet", "China - Foreign Minister", "China - Minister of National Defense", "China - Director of the Ministry of State Security", "China - Commander of the PLA Western Theater Command", "China - Chief of Staff of the PLA Navy", "Russia - Foreign Minister", "Russia - Minister of Defense", "Russia - Director of the SVR", "Russia - Commander of the Russian Southern Military District", "Russia - Commander of the Russian Navy Black Sea Fleet", "France - Foreign Minister", "France - Minister of the Armed Forces", "France - Director of DGSE", "France - Chief of Staff of the French Armed Forces", "Saudi Arabia - Foreign Minister", "Saudi Arabia - Chief of General Intelligence Presidency", "Saudi Arabia - Commander of the Royal Saudi Land Forces", "Jordan - Foreign Minister", "Jordan - Director of General Intelligence Directorate", "Jordan - Commander of the Jordanian Armed Forces"]
 
 export function whatToMapCommitteeOne(values: FormikValues): string[] {
 	var countryMapper: string[];
@@ -1650,9 +1650,12 @@ export function whatToMapCommitteeOne(values: FormikValues): string[] {
 		case "UNESCO":
 			countryMapper = unesco
 			break;
-			case "IP":
-				countryMapper = ip
-				break
+		case "IP":
+			countryMapper = ip
+			break;
+		case "Ad Hoc":
+			countryMapper = adhoc
+			break
 		default:
 			countryMapper = [];
 	}
@@ -1701,9 +1704,12 @@ export function whatToMapCommitteeTwo(values: FormikValues): string[] {
 		case "UNESCO":
 			countryMapper = unesco
 			break;
-			case "IP":
-				countryMapper = ip
-				break
+		case "IP":
+			countryMapper = ip
+			break;
+		case "Ad Hoc":
+			countryMapper = adhoc
+			break
 
 		default:
 			countryMapper = [];
@@ -1753,9 +1759,12 @@ export function whatToMapCommitteeThree(values: FormikValues): string[] {
 		case "UNESCO":
 			countryMapper = unesco
 			break;
-			case "IP":
-				countryMapper = ip
-				break
+		case "IP":
+			countryMapper = ip
+			break;
+		case "Ad Hoc":
+			countryMapper = adhoc
+			break
 		default:
 			countryMapper = [];
 	}
