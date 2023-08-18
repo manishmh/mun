@@ -40,7 +40,7 @@ const Navbar = () => {
             <span>DELEGATE ZONE</span>
             <MunDropdown />
           </div>
-          <Link href='/mun'>Gallery</Link>
+          <Link href='/gallery'>Gallery</Link>
           <Link href="/register" target="blank">
             <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
               REGISTER NOW!
@@ -61,7 +61,7 @@ const Navbar = () => {
             <Link href="/">Downloads</Link>
           </div>
         </div>
-        <Link href='mun'>Gallery</Link>
+        <Link href='/gallery'>Gallery</Link>
         <Link href="/register" target="blank">
           <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
               REGISTER NOW!
