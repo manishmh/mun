@@ -22,7 +22,7 @@ const CommitteesCard = ({ imgAlt, imgSource, h1, h2, h2span, single, double}: co
             `}>
             {imgSource && (
                 <Image 
-                    src="https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/IP@4x.png?updatedAt=1692022442169"
+                    src="https://1000logos.net/wp-content/uploads/2020/05/Google-Photos-logo.png"
                     alt={imgAlt}
                     width={500}
                     height={252}
