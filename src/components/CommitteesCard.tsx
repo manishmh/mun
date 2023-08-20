@@ -21,14 +21,14 @@ const CommitteesCard = ({ imgAlt, imgSource, h1, h2, h2span, single, double}: co
             ${!cardFlip ? "opacity-1" : "opacity-0"}
             `}>
             {imgSource && (
-                <img 
-                    src={imgSource}
+                <Image 
+                    src="https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/IP@4x.png?updatedAt=1692022442169"
                     alt={imgAlt}
                     width={500}
                     height={252}
                     quality={100}
                     className="w-full h-[75%]"
-                >
+                ></Image>
             )}
             <div className="bg-white py-5 px-4 md:px-8 lg:px-16 text-black group-hover:text-white group-hover:bg-committeeCard text-center rounded-b-3xl h-[25%] flex  flex-col items-center justify-center">
                 <h1 className="font-extrabold text-xl xl:text-2xl">{ h1 }</h1>
