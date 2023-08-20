@@ -83,7 +83,7 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 2" 
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/UNHRC@4x.png?updatedAt=1692022444607"
+                  imgSource= "/committees/UNHRC@4x.png"
                   h1= 'UNHRC'
                   h2= 'United Nations Human'
                   h2span = 'Rights Council'
@@ -92,7 +92,7 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 3"
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/ECOSOC@4x.png?updatedAt=1692022441548"
+                  imgSource= "/committees/ECOSOC@4x.png"
                   h1= 'ECOSOC'
                   h2= 'United Nations Economic and'
                   h2span = 'Social Council'
@@ -101,7 +101,7 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 4"
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/WHA@4x.png?updatedAt=1692022444874"
+                  imgSource= "/committees/WHA@4x.png"
                   h1= 'WHA'
                   h2= 'World Health Assembly'
                   single = "Double Delegate"
@@ -109,7 +109,7 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 5"
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/IP@4x.png?updatedAt=1692022442169"
+                  imgSource= "/committees/IP@4x.png"
                   h1= 'IP'
                   h2= 'International Press'
                   single = "Single Delegate"
@@ -121,7 +121,7 @@ const Committees = () => {
               <div className="flex gap-5 mt-[70px] flex-wrap justify-center">
                 <CommitteesCard 
                   imgAlt="card 1"
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/UNCSW@4x.png?updatedAt=1692022441625"
+                  imgSource= "/committees/UNCSW@4x.png"
                   h1= 'UNCSW'
                   h2= 'United Nations Commission on the '
                   h2span = 'Status of Women'
@@ -130,7 +130,7 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 2"
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/UNFCCC@4x.png?updatedAt=1692022442115"
+                  imgSource= "/committees/UNFCCC@4x.png"
                   h1= 'COP-28 UNFCCC'
                   h2= ' "Conference of the Parties" of United Nations Framework Convention on Climate Change'
                   single = "Double Delegate"
@@ -138,7 +138,7 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 3"
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/WB@4x.png?updatedAt=1692022444888"
+                  imgSource= "/committees/WB@4x.png"
                   h1= 'WB'
                   h2= 'World Bank'
                   single = "Double Delegate"
@@ -146,7 +146,7 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 4"
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/UNESCO@4x.png?updatedAt=1692022441620"
+                  imgSource= "/committees/UNESCO@4x.png"
                   h1= 'UNESCO'
                   h2= 'United Nations Educational, Scientific and Cultural Organization'
                   single = "Single Delegate"
@@ -154,7 +154,7 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 5"
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/UNCND@4x.png?updatedAt=1692022441608"
+                  imgSource= "/committees/UNCND@4x.png"
                   h1= 'UNCND'
                   h2= 'United Nations Commission on Narcotic Drugs'
                   single = "Single Delegate"
@@ -162,7 +162,7 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 6"
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/GA6@4x.png?updatedAt=1692022441637"
+                  imgSource= "/committees/GA6@4x.png"
                   h1= 'GA6 LEGAL'
                   h2= 'United Nations General Assembly Sixth Committee'
                   single = "Single Delegate"
@@ -170,7 +170,7 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 7"
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/UNOOSA@4x.png?updatedAt=1692022444645"
+                  imgSource= "/committees/UNOOSA@4x.png"
                   h1= 'UNOOSA'
                   h2= 'United Nations Office for Outer Space Affairs'
                   single = "Single Delegate"
@@ -182,7 +182,7 @@ const Committees = () => {
               <div className="flex gap-5 mt-[70px] flex-wrap justify-center">
                 <CommitteesCard 
                   imgAlt="card 1" 
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/UNSC@4x.png?updatedAt=1692022444936"
+                  imgSource= "/committees/UNSC@4x.png"
                   h1= 'UNSC'
                   h2= 'United Nations Security Council'
                   single = "Single Delegate"
@@ -190,7 +190,7 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 2" 
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/NATO@4x.png?updatedAt=1692022441646"
+                  imgSource= "/committees/NATO@4x.png"
                   h1= 'NATO'
                   h2= 'North Atlantic Treaty Organization'
                   single = "Single Delegate"
@@ -198,7 +198,7 @@ const Committees = () => {
                 />
                 <CommitteesCard 
                   imgAlt="card 3" 
-                  imgSource= "https://ik.imagekit.io/roverphoenix/KiitMUN%20Committee/committees/ADHOC@4x.png?updatedAt=1692022441622"
+                  imgSource= "/committees/ADHOC@4x.png"
                   h1= 'AD HOC'
                   h2= 'Ad Hoc Committee'
                   single = "Single Delegate"
