@@ -28,7 +28,7 @@ const CommitteesCard = ({ imgAlt, imgSource, h1, h2, h2span, single, double}: co
                     height={252}
                     quality={100}
                     className="w-full h-[75%]"
-                />
+                >
             )}
             <div className="bg-white py-5 px-4 md:px-8 lg:px-16 text-black group-hover:text-white group-hover:bg-committeeCard text-center rounded-b-3xl h-[25%] flex  flex-col items-center justify-center">
                 <h1 className="font-extrabold text-xl xl:text-2xl">{ h1 }</h1>
