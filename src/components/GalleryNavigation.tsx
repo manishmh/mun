@@ -43,7 +43,7 @@ const GalleryNavigation = ({ activeLevel, handleActiveLevel}: galleryNavigationP
           className={`py-1 w-full text-center sm:w-auto m-2 lg:m-0 px-4 sm:px-6 md:px-8 rounded-lg cursor-pointer ${activeLevel.inaugration? "bg-buttonBackground text-white" : "bg-[#D7E1E3]"}
           `}
             onClick={() => handleActiveLevel('inaugration')} 
-          >INAUGRAITON
+          >INAUGURATION
         </div>
       </div>
   )
