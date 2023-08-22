@@ -76,7 +76,6 @@ export const Select = ({ ...props }: SelectFieldProps) => {
       <span className={`text-black/50 pl-2`}>{icon}</span>
       <select {...field} {...props}
         className="bg-[#E2DDF4] text-black/50 pr-1 w-full pl-2 rounded-lg border-none outline-none focus:ring-0"
-        required
       />
       {meta.touched && meta.error ? (
         <div className="error text-sm text-red-500 mr-2">{meta.error}</div>
@@ -106,7 +105,6 @@ export const SelectCommittee = ({ ...props }: SelectFieldProps) => {
       <span className={`text-black/50 pl-2`}>{icon}</span>
       <select {...field} {...props}
         className="bg-[#E2DDF4] text-black/50 pr-1 w-full pl-2 rounded-lg border-none outline-none focus:ring-0"
-        required
       />
       {meta.touched && meta.error ? (
         <div className="error text-sm text-red-500 mr-2">{meta.error}</div>
