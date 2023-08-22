@@ -149,7 +149,7 @@ const Committee = ({delegate}:{delegate: string}) => {
           className="w-full md:w-[49%] "
           name="accommodation"
         >
-          <option value="">Accommodation</option>
+          <option value="" aria-required>Accommodation</option>
           {['Yes', 'No'].map((a) => (
             <option key={a} value={a}>{a}</option>
           ))}
