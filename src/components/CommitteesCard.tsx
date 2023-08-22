@@ -27,10 +27,10 @@ const CommitteesCard = ({ imgAlt, imgSource, h1, h2, h2span, single, double}: co
                     width={500}
                     height={252}
                     quality={100}
-                    className="w-full h-[75%]"
+                    className="w-full h-[65%] md:h-[75%]"
                 ></Image>
             )}
-            <div className="bg-white py-5 px-4 md:px-8 lg:px-16 text-black group-hover:text-white group-hover:bg-committeeCard text-center rounded-b-3xl h-[25%] flex  flex-col items-center justify-center">
+            <div className="bg-white py-5 px-4 md:px-8 lg:px-16 text-black group-hover:text-white group-hover:bg-committeeCard text-center rounded-b-3xl h-[35%] md:h-[25%] flex  flex-col items-center justify-center">
                 <h1 className="font-extrabold text-xl xl:text-2xl">{ h1 }</h1>
                 <h2 className="text-lg xl:text-xl font-semibold">
                     { h2 }<br/>
@@ -42,7 +42,7 @@ const CommitteesCard = ({ imgAlt, imgSource, h1, h2, h2span, single, double}: co
         <div className={`absolute inset-0 w-full h-full bg-white bg-committeeCard flex items-center md:py-12 px-8 justify-center text-center rounded-3xl transition-opacity duration-700 cursor-pointer
             ${cardFlip ? "opacity-1" : "opacity-0"} 
         `}>
-            <div className="gap-8 flex flex-col ">
+            <div className="gap-3 md:gap-8 flex flex-col ">
                 <div>
                     <h1 className="font-extrabold text-2xl lg:text-4xl">{ h1 }</h1>
                     <h2 className="text-xl mt-4 md:text-3xl font-semibold">
@@ -55,7 +55,7 @@ const CommitteesCard = ({ imgAlt, imgSource, h1, h2, h2span, single, double}: co
                     {single}
                 </h2>
                 <div className="h-[1px] bg-white w-full"></div>
-                <h2 className="text-xl mt-4 md:text-3xl font-semibold">
+                <h2 className="text-xl md:mt-4 md:text-3xl font-semibold">
                     { double }
                 </h2>
             </div>
