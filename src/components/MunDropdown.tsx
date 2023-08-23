@@ -7,7 +7,7 @@ const navItems = [
   },
   {
     name: 'Executive Board', 
-    link: 'https://forms.gle/SW8YpWVvCaLrXRvC8'
+    link: '/mun'
   },
   {
     name: 'Downloads', 
