@@ -24,7 +24,7 @@ export const DelegateNum = ({ name }: delegateNumProps) => {
 }
 
 const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[], ipOne: boolean }) => {
-  const { values, setFieldValue } = useFormikContext<FormikValues>()
+  const { values, setFieldValue} = useFormikContext<FormikValues>()
 
   useEffect(() => {
     if (values[name] === '') {
@@ -32,9 +32,16 @@ const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[],
       setFieldValue(`${name}_countryTwo`, '')
       setFieldValue(`${name}_countryThree`, '')
     }
+
+    if (values[name] === 'IP') {
+      setFieldValue(`${name}_countryThree`, 'NA')
+    }
+    // console.log(values);
+    // console.log(values[name])
   }, [name, setFieldValue, values])
 
 
+  console.log(values);
   const One = `${name}_countryOne`
   const Two = `${name}_countryTwo`
   const Three = `${name}_countryThree`
@@ -65,15 +72,14 @@ const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[],
         ))}
       </Select>
     </div>
-    {ipOne ? <></> :
-      <Select icon={<BiWorld />}
-        className="w-full md:w-full"
-        name={`${name}_countryThree`}>
-        <option value="">Choose a Country</option>
-        {C1country3.map((n, index) => (
-          <option key={index} value={n}>{n}</option>
-        ))}
-      </Select>}
+    <Select icon={<BiWorld />}
+      className={`${ipOne ? 'hidden': 'w-full md:w-full'} `}    
+      name={`${name}_countryThree`}>
+      <option value="">Choose a Country</option>
+      {C1country3.map((n, index) => (
+        <option key={index} value={n}>{n}</option>
+      ))}
+    </Select>
   </div>)
 }
 
@@ -81,7 +87,7 @@ const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[],
 const CommitteeBlock = ({ name, delegate }: CommitteeBlockProps) => {
   const { values } = useFormikContext<FormikValues>()
 
-  const COMMITTEE = delegate === 'single' ? SINGLEDELEGATECOMMITTEE : delegate === 'double' ? DOUBLEDELEGATECOMMITTEE : [] 
+  const COMMITTEE = delegate === 'single' ? SINGLEDELEGATECOMMITTEE : delegate === 'double' ? DOUBLEDELEGATECOMMITTEE : []
 
   const committee1 = COMMITTEE.filter(v => v !== values.committeeTwo && v !== values.committeeThree)
   const committee2 = COMMITTEE.filter(v => v !== values.committeeOne && v !== values.committeeThree)
@@ -116,7 +122,7 @@ export type FormikValues = {
   accommodation: string
 }
 
-const Committee = ({delegate}:{delegate: string}) => {
+const Committee = ({ delegate }: { delegate: string }) => {
   const { values } = useFormikContext<FormikValues>()
 
   const countryOneMapper = whatToMapCommitteeOne(values)
@@ -130,16 +136,17 @@ const Committee = ({delegate}:{delegate: string}) => {
   return (
     <div className="lg:px-10 relative gap-8 pb-10 flex flex-col mt-6">
       <div className="flex flex-col md:flex-row gap-3 md:gap-6">
-        <CommitteeBlock name="committeeOne" delegate={delegate}/>
-         <CountryBlock name="committeeOne" ipOne={ipIsChosenOne} mapper={countryOneMapper} />
+        <CommitteeBlock name="committeeOne" delegate={delegate} />
+        <CountryBlock name="committeeOne" ipOne={ipIsChosenOne} mapper={countryOneMapper} />
+      </div>
+
+      <div className="flex flex-col md:flex-row gap-3 md:gap-6">
+        <CommitteeBlock name="committeeTwo" delegate={delegate} />
+        <CountryBlock name="committeeTwo" ipOne={ipIsChosenTwo} mapper={countryTwoMapper} />
       </div>
       <div className="flex flex-col md:flex-row gap-3 md:gap-6">
-        <CommitteeBlock name="committeeTwo" delegate={delegate}/>
-         <CountryBlock name="committeeTwo" ipOne={ipIsChosenTwo} mapper={countryTwoMapper} />
-      </div>
-      <div className="flex flex-col md:flex-row gap-3 md:gap-6">
-        <CommitteeBlock name="committeeThree" delegate={delegate}/>
-         <CountryBlock name="committeeThree" ipOne={ipIsChosenThree} mapper={countryThreeMapper} />
+        <CommitteeBlock name="committeeThree" delegate={delegate} />
+        <CountryBlock name="committeeThree" ipOne={ipIsChosenThree} mapper={countryThreeMapper} />
       </div>
 
       <DelegateNum name="Accommodation Details" />

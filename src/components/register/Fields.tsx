@@ -61,15 +61,7 @@ export const TextAreaField = ({ ...props }: TextAreaFieldProps) => {
 export const Select = ({ ...props }: SelectFieldProps) => {
   const [field, meta, helpers] = useField(props);
   const error = meta.touched && meta.error
-  // console.log(helpers);
-  // const { values } = useFormikContext<FormikValues>()
 
-  // const checkIfExist = () => {
-  //   console.log(values);
-  //   helpers.setError(values.committeeOne)
-  // }
-  // console.log(props)
-  // console.log(field)
   const { icon, className } = props
   return (
     <div className={` relative flex bg[#E2DDF4] rounded-lg items-center bg-[#E2DDF4] ${className} ${error ? 'border-2 border-red-500' : ''}`}>
@@ -89,17 +81,8 @@ export const Select = ({ ...props }: SelectFieldProps) => {
 export const SelectCommittee = ({ ...props }: SelectFieldProps) => {
   const [field, meta, helpers] = useField(props);
   const error = meta.touched && meta.error
-  // console.log(helpers);
-  // const { values } = useFormikContext<FormikValues>()
 
-  // const checkIfExist = () => {
-  //   console.log(values);
-  //   helpers.setError(values.committeeOne)
-  // }
-  // console.log(props)
-  // console.log(field)
   const { icon, className } = props
-  console.log(field, meta, helpers);
   return (
     <div className={` relative flex bg[#E2DDF4] rounded-lg items-center bg-[#E2DDF4] ${className} ${error ? 'border-2 border-red-500' : ''}`}>
       <span className={`text-black/50 pl-2`}>{icon}</span>
