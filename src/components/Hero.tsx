@@ -85,9 +85,9 @@ const Hero = () => {
       <div className="relative max-w-[1440px] md:-translate-y-[80px] lg:translate-y-0 mt-[70px] mx-auto  md:px-[5vw] xl:px-[100px] pt-8 text-3xl text-white first-letter">
         <div className="flex flex-col md:flex-row -translate-y-[60px] md:-translate-y-8 lg:-translate-y-0 items-center justify-between w-full lg:pr-[150px] md:pr-[100px] sm:pr-[50px] xl:pr-[200px] absolute top-0 md:top-10">
           <div className="w-[90%] md:w-[50%]">
-            <h1 className="text-[43px] md:text-3xl font-bold text-center">EXECUTIVE BOARD: </h1>
+            <h1 className="text-[43px] md:text-3xl font-bold text-center">WHO WE ARE:</h1>
             <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
-            An Executive Board is the one who knows the way, goes the way and shows the way. If the delegates are the heart of the committee, the Executive board becomes the mind. They regulate, nurture, evaluate and ensure a peaceful procedural course throughout the conference.
+            KIIT International Model United Nations emerges as a leading global United Nations simulation, spearheaded by the Secretariat, the committed student body of the Kalinga Institute of Industrial Technology. Since its inception in 2013, this conference has consistently surpassed expectations, establishing unprecedented benchmarks year after year. By fostering intellectual growth, nurturing youth leadership, and promoting global understanding, it stands as an exemplary platform for empowerment and enlightenment.
             </p>
             <div className="md:hidden flex gap-2 mt-2 text-lg font-bold justify-center md:justify-normal">
               See more about us
@@ -98,9 +98,9 @@ const Hero = () => {
               </Link>
             </div>
             <div className="flex justify-center md:justify-center">
-              <Link href="https://forms.gle/SW8YpWVvCaLrXRvC8" className="z-30" target="blank">
+              <Link href="/register" className="z-30" target="blank">
                 <button className="mt-12  md:mt-5 rounded-full border-none bg-buttonBackground px-10 py-1.5 text-base outline-none text-xl">
-                  EB Registration LIVE !!
+                  EARLY BIRD REGISTRATION LIVE !!
                 </button>
               </Link>
             </div>
