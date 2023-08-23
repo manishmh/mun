@@ -56,7 +56,7 @@ const Delegate = ({ delegate }: { delegate?: string }) => {
           className="w-[48%] md:w-[49%] lg:w-[30%]"
           name={`${delegateValue}country`}
         >
-          <option value="">Countries</option>
+          <option value="">Nationality</option>
           {COUNTRIES.map((c, index) => (
             <option key={index} value={c}>{c}</option>
           ))}
