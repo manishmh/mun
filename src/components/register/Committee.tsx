@@ -86,7 +86,7 @@ const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[],
       name={`${name}_countryThree`}>
       <option value="">Choose a country</option>
       {C1country3.map((n, index) => (
-        <option key={index} value={n === 'Choose a country' ? '' : n}>{n === 'Choose a country' ? 'Choose a country' : n}</option>
+        <option key={index} value={n}>{n}</option>
       ))}
     </Select>
   </div>)
