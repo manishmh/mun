@@ -2,7 +2,7 @@ import { Select, SelectCommittee } from "./Fields";
 import { BiWorld } from "react-icons/bi";
 import { TfiWorld } from "react-icons/tfi";
 import { useFormikContext } from "formik";
-import { SINGLEDELEGATECOMMITTEE, DOUBLEDELEGATECOMMITTEE, whatToMapCommitteeOne, whatToMapCommitteeThree, whatToMapCommitteeTwo } from "@/utils";
+import { SINGLEDELEGATECOMMITTEE, DOUBLEDELEGATECOMMITTEE, whatToMapCommitteeOne, whatToMapCommitteeThree, whatToMapCommitteeTwo, ip } from "@/utils";
 import { useEffect } from "react";
 
 type CommitteeBlockProps = {
@@ -26,6 +26,13 @@ export const DelegateNum = ({ name }: delegateNumProps) => {
 const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[], ipOne: boolean }) => {
   const { values, setFieldValue} = useFormikContext<FormikValues>()
 
+  const One = `${name}_countryOne`
+  const Two = `${name}_countryTwo`
+  const Three = `${name}_countryThree`
+  const C1country1 = mapper.filter(v => v !== values[Two] && v !== values[Three])
+  const C1country2 = mapper.filter(v => v !== values[One] && v !== values[Three])
+  const C1country3 = mapper.filter(v => v !== values[One] && v !== values[Two])
+
   useEffect(() => {
     if (values[name] === '') {
       setFieldValue(`${name}_countryOne`, '')
@@ -36,18 +43,20 @@ const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[],
     if (values[name] === 'IP') {
       setFieldValue(`${name}_countryThree`, 'NA')
     }
+
+    
+    // if (values[name] === 'IP' && !ip.includes(values[One])) {
+    //   setFieldValue(`${name}_countryThree`, 'NA')
+    //   setFieldValue(`${name}_countryOne`, '')
+    //   setFieldValue(`${name}_countryTwo`, '')
+    // }
     // console.log(values);
     // console.log(values[name])
   }, [name, setFieldValue, values])
 
 
   console.log(values);
-  const One = `${name}_countryOne`
-  const Two = `${name}_countryTwo`
-  const Three = `${name}_countryThree`
-  const C1country1 = mapper.filter(v => v !== values[Two] && v !== values[Three])
-  const C1country2 = mapper.filter(v => v !== values[One] && v !== values[Three])
-  const C1country3 = mapper.filter(v => v !== values[One] && v !== values[Two])
+
 
   return (<div className="w-full flex flex-col gap-3 lg:gap-6">
     <div>
@@ -66,7 +75,7 @@ const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[],
       <Select icon={<BiWorld />}
         className="w-full md:w-full"
         name={`${name}_countryTwo`}>
-        <option value="">Choose a Country</option>
+        <option value="">{values[One]=== '' ? 'Choose a Country' : <span>{values[One]}</span>}</option>
         {C1country2.map((n, index) => (
           <option key={index} value={n}>{n}</option>
         ))}
