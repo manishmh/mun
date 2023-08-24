@@ -16,17 +16,17 @@ export const initialValuesSingleDelegate = {
 	prevExp: "",
 	awards: "",
 	committeeOne: "", // committeee one
-	committeeOne_countryOne: "a",
-	committeeOne_countryTwo: "b",
-	committeeOne_countryThree: "c",
+	committeeOne_countryOne: "",
+	committeeOne_countryTwo: "",
+	committeeOne_countryThree: "",
 	committeeTwo: "", // committee two
-	committeeTwo_countryOne: "a",
-	committeeTwo_countryTwo: "b",
-	committeeTwo_countryThree: "c",
+	committeeTwo_countryOne: "",
+	committeeTwo_countryTwo: "",
+	committeeTwo_countryThree: "",
 	committeeThree: "", // committee three
-	committeeThree_countryOne: "a",
-	committeeThree_countryTwo: "b",
-	committeeThree_countryThree: "c",
+	committeeThree_countryOne: "",
+	committeeThree_countryTwo: "",
+	committeeThree_countryThree: "",
 	accommodation: "",
 	accommodation_type: "",
 }
@@ -59,17 +59,17 @@ export const initialValuesDoubleDelegate = {
 	s_awards: "",
 	d_awards: "",
 	committeeOne: "", // committeee one
-	committeeOne_countryOne: "a",
-	committeeOne_countryTwo: "b",
-	committeeOne_countryThree: "c",
+	committeeOne_countryOne: "",
+	committeeOne_countryTwo: "",
+	committeeOne_countryThree: "",
 	committeeTwo: "", // committee two
-	committeeTwo_countryOne: "a",
-	committeeTwo_countryTwo: "b",
-	committeeTwo_countryThree: "c",
+	committeeTwo_countryOne: "",
+	committeeTwo_countryTwo: "",
+	committeeTwo_countryThree: "",
 	committeeThree: "", // committee three
-	committeeThree_countryOne: "a",
-	committeeThree_countryTwo: "b",
-	committeeThree_countryThree: "c",
+	committeeThree_countryOne: "",
+	committeeThree_countryTwo: "",
+	committeeThree_countryThree: "",
 	accommodation: "",
 	accommodation_type: "",
 }

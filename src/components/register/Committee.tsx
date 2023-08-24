@@ -2,7 +2,7 @@ import { Select, SelectCommittee } from "./Fields";
 import { BiWorld } from "react-icons/bi";
 import { TfiWorld } from "react-icons/tfi";
 import { useFormikContext } from "formik";
-import { SINGLEDELEGATECOMMITTEE, DOUBLEDELEGATECOMMITTEE, whatToMapCommitteeOne, whatToMapCommitteeThree, whatToMapCommitteeTwo } from "@/utils";
+import { SINGLEDELEGATECOMMITTEE, DOUBLEDELEGATECOMMITTEE, whatToMapCommitteeOne, whatToMapCommitteeThree, whatToMapCommitteeTwo, ip } from "@/utils";
 import { useEffect } from "react";
 
 type CommitteeBlockProps = {
@@ -24,7 +24,14 @@ export const DelegateNum = ({ name }: delegateNumProps) => {
 }
 
 const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[], ipOne: boolean }) => {
-  const { values, setFieldValue} = useFormikContext<FormikValues>()
+  const { values, setFieldValue } = useFormikContext<FormikValues>()
+
+  const One = `${name}_countryOne`
+  const Two = `${name}_countryTwo`
+  const Three = `${name}_countryThree`
+  const C1country1 = mapper.filter(v => v !== values[Two] && v !== values[Three])
+  const C1country2 = mapper.filter(v => v !== values[One] && v !== values[Three])
+  const C1country3 = mapper.filter(v => v !== values[One] && v !== values[Two])
 
   useEffect(() => {
     if (values[name] === '') {
@@ -32,22 +39,24 @@ const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[],
       setFieldValue(`${name}_countryTwo`, '')
       setFieldValue(`${name}_countryThree`, '')
     }
-
     if (values[name] === 'IP') {
       setFieldValue(`${name}_countryThree`, 'NA')
     }
-    // console.log(values);
-    // console.log(values[name])
   }, [name, setFieldValue, values])
 
-
-  console.log(values);
-  const One = `${name}_countryOne`
-  const Two = `${name}_countryTwo`
-  const Three = `${name}_countryThree`
-  const C1country1 = mapper.filter(v => v !== values[Two] && v !== values[Three])
-  const C1country2 = mapper.filter(v => v !== values[One] && v !== values[Three])
-  const C1country3 = mapper.filter(v => v !== values[One] && v !== values[Two])
+  useEffect(() => {
+    if (!C1country1.includes(values[One]) && values[One]) {
+      setFieldValue(`${name}_countryOne`, '')
+    }
+    if (!C1country2.includes(values[Two]) && values[Two]) {
+      setFieldValue(`${name}_countryTwo`, '')
+    }
+    if (values[name] !== 'IP') {
+      if (!C1country3.includes(values[Three]) && values[Three]) {
+        setFieldValue(`${name}_countryThree`, '')
+      }
+    }
+  }, [C1country1, C1country2, C1country3, One, Three, Two, name, setFieldValue, values])
 
   return (<div className="w-full flex flex-col gap-3 lg:gap-6">
     <div>
@@ -56,7 +65,7 @@ const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[],
         className="w-full md:w-full"
         name={`${name}_countryOne`}
       >
-        <option value="">Choose a Country</option>
+        <option value="">Choose a country</option>
         {C1country1.map((n, index) => (
           <option key={index} value={n}>{n}</option>
         ))}
@@ -66,16 +75,16 @@ const CountryBlock = ({ name, mapper, ipOne }: { name: string, mapper: string[],
       <Select icon={<BiWorld />}
         className="w-full md:w-full"
         name={`${name}_countryTwo`}>
-        <option value="">Choose a Country</option>
+        <option value="">Choose a country</option>
         {C1country2.map((n, index) => (
           <option key={index} value={n}>{n}</option>
         ))}
       </Select>
     </div>
     <Select icon={<BiWorld />}
-      className={`${ipOne ? 'hidden': 'w-full md:w-full'} `}    
+      className={`${ipOne ? 'hidden' : 'w-full md:w-full'} `}
       name={`${name}_countryThree`}>
-      <option value="">Choose a Country</option>
+      <option value="">Choose a country</option>
       {C1country3.map((n, index) => (
         <option key={index} value={n}>{n}</option>
       ))}
@@ -123,7 +132,7 @@ export type FormikValues = {
 }
 
 const Committee = ({ delegate }: { delegate: string }) => {
-  const { values } = useFormikContext<FormikValues>()
+  const { values, setFieldValue } = useFormikContext<FormikValues>()
 
   const countryOneMapper = whatToMapCommitteeOne(values)
   const countryTwoMapper = whatToMapCommitteeTwo(values)

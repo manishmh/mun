@@ -32,12 +32,12 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row justify-around relative md:items-center h-full">
 
             <Image
-              src="/hero/HeroImage.png"
+              src="/hero/HeroImage1.png"
               alt=""
               width={1000}
               height={720}
               quality={100}
-              className="h-[50vh] w-[100%] mx-auto sm:w-[75%] md:w-[55%] sm:h-[500px] md:h-[510px] lg:h-[700px] flex-shrink-0 max-w-[700px]"
+              className="h-[50vh] w-[100%] mx-auto sm:w-[75%] md:w-[55%] sm:h-[500px] md:h-[510px] lg:h-[700px] flex-shrink-0 max-w-[650px]"
             ></Image>
             <div className="hidden md:block absolute max-w-[1440px] left-0 bottom-0 -translate-y-[5vh] md:-translate-y-[70px] translate-x-[30px] md:translate-x-[70px] z-10 text-white">
               <h1 className="text-lg lg:text-xl font-semibold leading-6">
