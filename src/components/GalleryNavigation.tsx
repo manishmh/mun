@@ -13,7 +13,7 @@ const GalleryNavigation = ({ activeLevel, handleActiveLevel}: galleryNavigationP
           className={`py-1 w-full text-center sm:w-auto m-2 lg:m-0 px-4 sm:px-6 md:px-8 rounded-lg cursor-pointer ${activeLevel.starNight? "bg-buttonBackground text-white" : "bg-[#D7E1E3]"}
           `}
             onClick={() => handleActiveLevel('starNight')} 
-          >STARTNIGHT
+          >STAR NIGHT
         </div>
         <div 
           className={`py-1 w-full text-center sm:w-auto m-2 lg:m-0 px-4 sm:px-6 md:px-8 rounded-lg cursor-pointer ${activeLevel.delegation? "bg-buttonBackground text-white" : "bg-[#D7E1E3]"}
@@ -31,13 +31,13 @@ const GalleryNavigation = ({ activeLevel, handleActiveLevel}: galleryNavigationP
           className={`py-1 w-full text-center sm:w-auto m-2 lg:m-0 px-4 sm:px-6 md:px-8 rounded-lg cursor-pointer ${activeLevel.topFive? "bg-buttonBackground text-white" : "bg-[#D7E1E3]"}
           `}
             onClick={() => handleActiveLevel('topFive')} 
-          >TOP 5
+          >CORE SECRETARIAT
         </div>
         <div 
           className={`py-1 w-full text-center sm:w-auto m-2 lg:m-0 px-4 sm:px-6 md:px-8 rounded-lg cursor-pointer ${activeLevel.winning? "bg-buttonBackground text-white" : "bg-[#D7E1E3]"}
           `}
             onClick={() => handleActiveLevel('winning')} 
-          >WINNNING
+          >VALEDICTORY CEREMONY
         </div>
         <div 
           className={`py-1 w-full text-center sm:w-auto m-2 lg:m-0 px-4 sm:px-6 md:px-8 rounded-lg cursor-pointer ${activeLevel.inaugration? "bg-buttonBackground text-white" : "bg-[#D7E1E3]"}
