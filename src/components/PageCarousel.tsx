@@ -17,21 +17,21 @@ const PageCarousel = () => {
 			title: 'Ayush Kumar Srivastav',
 			description: "Model United Nations has always held a special place in my heart and ever since I enrolled at KIIT, the thought of being a part of KIITMUN filled me with excitement and energy. From being a delegate to now hosting a conference, it has been an amazing journey and I sincerely hope that all participants of KIIT MUN 2023 will have as wonderful and enriching a learning experience as I have had throughout.",
 			position: 'Director General',
-			image: 'Ayush.png',
+			image: 'ayush1.png',
 			id: 2
 		},
 		{
 			title: 'Shubhadittya Roy',
 			description: "KIIT International Model United Nations has always been a conference par excellence that is awaited all year long. From delegating as a fresher to serving the conference as a part of the Core Secretariat, it has been a literal embodiment of life coming to a full circle. I hope this edition of KIIT MUN beckons MUN enthusiasts from all over the globe and succeeds in adding a page to the golden book of diplomacy and dialogue.",
 			position: 'Deputy Director General',
-			image: 'shubh.png',
+			image: 'shubh1.png',
 			id: 3
 		},
 		{
 			title: 'Shivram Krishna',
 			description: "KIITMUN stands tall as one of Asia's most prominent Model United Nations conferences. Since its inception in 2013, it has continually evolved and grown. This conference has been a catalyst for countless passionate and ambitious individuals, and I sincerely hope that in this edition, we can extend our reach to more young minds, ensuring a profoundly meaningful experience for all.",
 			position: "Charge D' Affairs",
-			image: 'shivram.png',
+			image: 'shivram1.png',
 			id: 4
 		},
 		{
