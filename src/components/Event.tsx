@@ -37,7 +37,7 @@ const Event = () => {
           </div>
           <div className="flex md:block justify-center">
             <Image 
-              src="/event/pic.png" 
+              src="/event/pic1.png" 
               alt="" 
               width={1920} 
               height={1080}
