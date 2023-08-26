@@ -122,6 +122,7 @@ const CommitteeBlock = ({ name, delegate }: CommitteeBlockProps) => {
 }
 
 export type FormikValues = {
+  accommodation_type: string;
   committeeOne_countryTwo: string;
   committeeOne_countryOne: string;
   committeeOne_countryThree: string;
@@ -133,6 +134,13 @@ export type FormikValues = {
 
 const Committee = ({ delegate }: { delegate: string }) => {
   const { values, setFieldValue } = useFormikContext<FormikValues>()
+
+  useEffect(() => {
+    if (values.accommodation === 'Yes') {
+      setFieldValue('accommodation_type', '3-bed AC')
+    }
+
+  }, [setFieldValue, values])
 
   const countryOneMapper = whatToMapCommitteeOne(values)
   const countryTwoMapper = whatToMapCommitteeTwo(values)
