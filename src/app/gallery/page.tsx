@@ -82,7 +82,7 @@ const Gallery = () => {
       "https://i.imgur.com/tb3nyi3.jpg",
       "https://i.imgur.com/ZocAhbW.jpg",
       "https://i.imgur.com/pGKpPjZ.jpg",
-      "https://i.imgur.com/oTUOafS.jpg/",
+      "https://i.imgur.com/oTUOafS.jpg",
       "https://i.imgur.com/V8AEmwj.jpg",
       "https://i.imgur.com/4J4dyrp.jpg",
       "https://i.imgur.com/1U2MT9Y.jpg",
