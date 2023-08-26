@@ -136,7 +136,7 @@ const Committee = ({ delegate }: { delegate: string }) => {
   const { values, setFieldValue } = useFormikContext<FormikValues>()
 
   useEffect(() => {
-    if (values.accommodation === 'Yes') {
+    if (values.accommodation === 'Yes' && values.accommodation_type !== '3-bed NON-AC') {
       setFieldValue('accommodation_type', '3-bed AC')
     }
 
