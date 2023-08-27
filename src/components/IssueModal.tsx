@@ -111,7 +111,7 @@ export default function IssueModal({ isOpenModal, closeModal }) {
 													/>
 													<TextField
 														icon={<BsBookFill />}
-														type="tel"
+														type="text"
 														placeholder="Subject"
 														className="w-3/4"
 														name='subject'
