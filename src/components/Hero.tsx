@@ -98,9 +98,9 @@ const Hero = () => {
               </Link>
             </div>
             <div className="flex justify-center md:justify-center">
-              <Link href="/register" className="z-30" target="blank">
+              <Link href="mun" className="z-30" target="blank">
                 <button className="mt-12  md:mt-5 rounded-full border-none bg-buttonBackground px-10 py-1.5 text-base outline-none text-xl">
-                  EARLY BIRD REGISTRATION LIVE !!
+                  EARLY BIRD REGISTRATION END !!
                 </button>
               </Link>
             </div>
