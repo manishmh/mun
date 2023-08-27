@@ -80,7 +80,7 @@ const doubleDelegatePost = async (values: any) => {
 }
 
 const ticketManage = async(values)=>{
-	const response = await fetch(`http://localhost:4000/api/tickets`, {
+	const response = await fetch(`${baseUrl}/api/tickets`, {
 		method: "POST",
 		body: JSON.stringify(values),
 		headers: {
