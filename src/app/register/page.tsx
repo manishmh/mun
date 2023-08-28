@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { initialValuesDoubleDelegate, initialValuesSingleDelegate } from "@/utils";
 import Image from "next/image";
 import Delegate from "@/components/register/Delegate";
@@ -56,10 +56,17 @@ const Register = () => {
     const [singleDelegate, setSingleDelegate] = useState(true)
     const [error, setError] = useState(null)
     const [load, setLoad] = useState(false)
+    const routerp = useRouter()
     const handleSingleDelegate = () => {
         setSingleDelegate(!singleDelegate);
         setError(null)
     };
+    
+
+ 
+    useEffect(() => {
+        routerp.push('/mun')
+    },  )
     
 	let [isOpenModal, setIsOpenModal] = useState(false)
 
