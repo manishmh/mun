@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { initialValuesDoubleDelegate, initialValuesSingleDelegate } from "@/utils";
 import Image from "next/image";
 import Delegate from "@/components/register/Delegate";
@@ -10,7 +10,9 @@ import { formValidationDoubleDelegate, formValidationSingleDelegate } from "./sc
 import backendService from '@/service'
 import { useRouter } from "next/navigation";
 import { DelegateNum } from "@/components/register/Committee";
-import IssueModal from "@/components/IssueModal";
+
+
+
 
 type headingProps = {
     delegateStatus: boolean;
@@ -56,33 +58,15 @@ const Register = () => {
     const [singleDelegate, setSingleDelegate] = useState(true)
     const [error, setError] = useState(null)
     const [load, setLoad] = useState(false)
-    const routerp = useRouter()
     const handleSingleDelegate = () => {
         setSingleDelegate(!singleDelegate);
         setError(null)
     };
-    
-
- 
-    useEffect(() => {
-        routerp.push('/mun')
-    },  )
-    
-	let [isOpenModal, setIsOpenModal] = useState(false)
-
-    function openModal(){
-		setIsOpenModal(true)
-    }
-	function closeModal() {
-		setIsOpenModal(false)
-	}
-
     const router = useRouter()
 
     return (
         <div className="overflow-x-hidden">
             <Navbar />
-            <IssueModal isOpenModal={isOpenModal} closeModal={closeModal}/>
             <div className="bg-RegisterationBG w-screen relative pt-[100px] md:pt-[120px] pb-[50px] md:pb-[100px] overflow-x-hidden">
                 <Image
                     src="/hero/GroupTop.png"
@@ -110,12 +94,9 @@ const Register = () => {
                             <Form>
                                 <Delegate />
                                 <DelegateNum name="Committee Details" />
-                                <Committee delegate="single"/>
+                                <Committee />
                                 {error && <div className="flex justify-center text-center my-4 text-red-500">{error} Please try Again.</div>}
-                                <div className="flex justify-center gap-4">
                                 <SubmitButton load={load} />
-                                <button type="button" disabled={load} onClick={openModal} className={`transition-all duration-300 hover:translate-y-2 py-1 font-bold text-lg border-none outline-none px-4 ${load ? 'opacity-50' : ''} bg-buttonBackground rounded-full`}>Had an issue?</button>
-                                </div>
                             </Form>
                         </Formik>
                     ) : (
@@ -140,12 +121,9 @@ const Register = () => {
                                 <DelegateNum name="Delegate 2" />
                                 <Delegate delegate="d_" />
                                 <DelegateNum name="Committee Details" />
-                                <Committee delegate="double"/>
+                                <Committee />
                                 {error && <div className="flex justify-center text-center my-4 text-red-500">{error} Please try Again.</div>}
-                                <div className="flex justify-center gap-4">
                                 <SubmitButton load={load} />
-                                <button type="button" disabled={load} onClick={openModal} className={`transition-all duration-300 hover:translate-y-2 py-1 font-bold text-lg border-none outline-none px-4 ${load ? 'opacity-50' : ''} bg-buttonBackground rounded-full`}>Had an issue?</button>
-                                </div>
                             </Form>
                         </Formik>
                     )
