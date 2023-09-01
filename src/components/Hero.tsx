@@ -88,8 +88,6 @@ const Hero = () => {
             <h1 className="text-[43px] md:text-3xl font-bold text-center">WHO WE ARE:</h1>
             <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
             KIIT International Model United Nations emerges as a leading global United Nations simulation, spearheaded by the Secretariat, the committed student body of the Kalinga Institute of Industrial Technology. Since its inception in 2013, this conference has consistently surpassed expectations, establishing unprecedented benchmarks year after year. By fostering intellectual growth, nurturing youth leadership, and promoting global understanding, it stands as an exemplary platform for empowerment and enlightenment.
-            <br /><br />
-              In case there is a discrepancy regarding the allotted committee, please fill out this form to apply for a CHANGE of COMMITTEE
             </p>
             <div className="md:hidden flex gap-2 mt-2 text-lg font-bold justify-center md:justify-normal">
               See more about us
@@ -99,13 +97,18 @@ const Hero = () => {
                 </span>
               </Link>
             </div>
+            
             <div className="flex justify-center md:justify-center">
+            <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
+              In case there is a discrepancy regarding the allotted committee,<br /> please fill out this form to apply for a <b>CHANGE of COMMITTEE</b>&emsp;
+            </p> 
               <Link href="https://forms.gle/vRZPrNXAaa4Yq7GbA" className="z-30" target="blank">
-                <button className="mt-12  md:mt-5 rounded-full border-none bg-buttonBackground px-10 py-1.5 text-base outline-none text-xl">
-                  Form for Committee Change
+                <button className="mt-12  md: mt-6 rounded-full border-none bg-buttonBackground px-2 py-1 text-base outline-none text-l">
+                  Form for Change
                 </button>
               </Link>
             </div>
+            
           </div>
           <div className="flex text-[40px] z-30 mt-6 md:mt-4">
             <Link href="/">
