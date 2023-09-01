@@ -97,10 +97,9 @@ const Hero = () => {
                 </span>
               </Link>
             </div>
-            
             <div className="flex justify-center md:justify-center">
             <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
-              In case there is a discrepancy regarding the allotted committee,<br /> please fill out this form to apply for a <b>CHANGE of COMMITTEE</b>&emsp;
+              In case there is a discrepancy regarding the alloted committee,<br /> please fill out this form to apply for a <b>CHANGE of COMITTEE</b>&emsp;
             </p> 
               <Link href="https://forms.gle/vRZPrNXAaa4Yq7GbA" className="z-30" target="blank">
                 <button className="mt-12  md: mt-6 rounded-full border-none bg-buttonBackground px-2 py-1 text-base outline-none text-l">
@@ -108,7 +107,6 @@ const Hero = () => {
                 </button>
               </Link>
             </div>
-            
           </div>
           <div className="flex text-[40px] z-30 mt-6 md:mt-4">
             <Link href="/">
