@@ -211,7 +211,7 @@ const Committees = () => {
 
             <div className="flex justify-center md:justify-center">
             <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
-              In case there is a discrepancy regarding the allotted committee, please fill out this form to apply for a <b>CHANGE of COMMITTEE</b>&emsp;
+              For any Queries or Upgradation Requests, kindly <b>Fill out the Form</b>&emsp;
             </p> 
               <Link href="https://forms.gle/vRZPrNXAaa4Yq7GbA" className="z-30" target="blank">
                 <button className="mt-12  md: mt-3 rounded-full border-none bg-buttonBackground px-2 py-1 text-base outline-none text-l">
