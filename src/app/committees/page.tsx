@@ -1,8 +1,6 @@
 'use client'
 
 import CommitteesCard from "@/components/CommitteesCard";
-import Link from "next/link";
-import { FaArrowRight, FaImage, FaRegCalendarAlt } from "react-icons/fa";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
@@ -202,24 +200,12 @@ const Committees = () => {
                   imgAlt="card 3" 
                   imgSource= "/committees/ADHOC@4x.png"
                   h1= 'AD HOC'
-                  h2= 'Ad Hoc Committee
+                  h2= 'Ad Hoc Committee'
                   single = "Single Delegate"
                   double = "EB: T.B.A."
                 />
               </div>
             )}
-
-{/*             <div className="flex justify-center md:justify-center">
-            <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
-              In case there is a discrepancy regarding the allotted committee, please fill out this form to apply for a <b>CHANGE of COMMITTEE</b>&emsp;
-            </p> 
-              <Link href="https://forms.gle/vRZPrNXAaa4Yq7GbA" className="z-30" target="blank">
-                <button className="mt-12  md: mt-3 rounded-full border-none bg-buttonBackground px-2 py-1 text-base outline-none text-l">
-                  Form for Change
-                </button>
-              </Link>
-            </div> */}
-            
           </div>
       </div>
       <Footer />
