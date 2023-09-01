@@ -209,7 +209,7 @@ const Committees = () => {
               </div>
             )}
 
-            <div className="flex justify-center md:justify-center">
+{/*             <div className="flex justify-center md:justify-center">
             <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
               In case there is a discrepancy regarding the allotted committee, please fill out this form to apply for a <b>CHANGE of COMMITTEE</b>&emsp;
             </p> 
@@ -218,7 +218,7 @@ const Committees = () => {
                   Form for Change
                 </button>
               </Link>
-            </div>
+            </div> */}
             
           </div>
       </div>
