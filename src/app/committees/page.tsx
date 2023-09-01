@@ -202,7 +202,7 @@ const Committees = () => {
                   imgAlt="card 3" 
                   imgSource= "/committees/ADHOC@4x.png"
                   h1= 'AD HOC'
-                  h2= 'Ad Hoc Committee'
+                  h2= 'Ad Hoc Committee
                   single = "Single Delegate"
                   double = "EB: T.B.A."
                 />
@@ -211,7 +211,7 @@ const Committees = () => {
 
             <div className="flex justify-center md:justify-center">
             <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
-              In case there is a discrepancy regarding the alloted committee, please fill out this form to apply for a <b>CHANGE of COMITTEE</b>&emsp;
+              In case there is a discrepancy regarding the allotted committee, please fill out this form to apply for a <b>CHANGE of COMMITTEE</b>&emsp;
             </p> 
               <Link href="https://forms.gle/vRZPrNXAaa4Yq7GbA" className="z-30" target="blank">
                 <button className="mt-12  md: mt-3 rounded-full border-none bg-buttonBackground px-2 py-1 text-base outline-none text-l">
