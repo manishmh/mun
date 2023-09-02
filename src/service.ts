@@ -78,5 +78,16 @@ const doubleDelegatePost = async (values: any) => {
 	})
 	return await response.json()
 }
+
+const ticketManage = async(values)=>{
+	const response = await fetch(`${baseUrl}/api/tickets`, {
+		method: "POST",
+		body: JSON.stringify(values),
+		headers: {
+			"Content-Type": 'application/json'
+		}
+	})
+	return await response.json()
+}
 // eslint-disable-next-line import/no-anonymous-default-export
-export default { singleDelegatePost, doubleDelegatePost }
+export default { singleDelegatePost, doubleDelegatePost, ticketManage}
