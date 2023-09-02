@@ -98,9 +98,12 @@ const Hero = () => {
               </Link>
             </div>
             <div className="flex justify-center md:justify-center">
-              <Link href="mun" className="z-30" target="blank">
-                <button className="mt-12  md:mt-5 rounded-full border-none bg-buttonBackground px-10 py-1.5 text-base outline-none text-xl">
-                  EARLY BIRD REGISTRATION END !!
+            <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
+              For any Queries or Upgradation Requests, kindly <b>Fill out the Form</b>&emsp;
+            </p> 
+              <Link href="https://forms.gle/vRZPrNXAaa4Yq7GbA" className="z-30" target="blank">
+                <button className="mt-12  md: mt-2 rounded-full border-none bg-buttonBackground px-2 py-1 text-base outline-none text-l">
+                  Form for Change
                 </button>
               </Link>
             </div>
