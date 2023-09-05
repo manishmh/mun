@@ -95,14 +95,14 @@ const Hero = () => {
                 <span className="inline-block rounded-full bg-white px-1 py-1 text-xs text-black">
                   <FaArrowRight></FaArrowRight>
                 </span>
-              </Link>
+            </Link>
             </div>
-            <div className="flex justify-center md:justify-center">
-            <p className="text-sm leading-5 mt-4 break-words whitespace-pre-line text-justify">
+            <div className="flex flex-col md:flex-row justify-center md:justify-center">
+            <p className="text-sm leading-5 mt-2 md:mt-4 break-words whitespace-pre-line text-justify">
               For any Queries or Upgradation Requests, kindly <b>Fill out the Form</b>&emsp;
             </p> 
               <Link href="https://forms.gle/vRZPrNXAaa4Yq7GbA" className="z-30" target="blank">
-                <button className="mt-12  md: mt-2 rounded-full border-none bg-buttonBackground px-2 py-1 text-base outline-none text-l">
+                <button className="rounded-full border-none bg-buttonBackground px-2 py-1 text-base outline-none text-l">
                   Form for Change
                 </button>
               </Link>

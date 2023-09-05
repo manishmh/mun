@@ -41,7 +41,7 @@ const Navbar = () => {
             <MunDropdown />
           </div>
           <Link href='/gallery'>Gallery</Link>
-          <Link href="mun" target="blank">
+          <Link href="/register" target="blank">
             <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
               REGISTER NOW!
             </button></Link>
@@ -57,12 +57,12 @@ const Navbar = () => {
           </div>
           <div className={`text-base flex-col gap-4 text-center ${showMun ? "flex" : "hidden"}`}>
             <Link href="/committees">Committees</Link>
-            <Link href="/">Executive Board</Link>
-            <Link href="/">Downloads</Link>
+            <Link href="/mun">Executive Board</Link>
+            <Link href="/mun">Downloads</Link>
           </div>
         </div>
         <Link href='/gallery'>Gallery</Link>
-        <Link href="mun" target="blank">
+        <Link href="/register" target="blank">
           <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
               REGISTER NOW!
           </button></Link>
