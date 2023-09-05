@@ -15,12 +15,12 @@ export default function MyModal() {
 		setIsOpenModal(false)
 	}
 
-	// removing modal since registrations are over
-	// useEffect(() => {
-	// 	setTimeout(() => {
-	// 		setIsOpenModal(true)
-	// 	}, 2000)
-	// }, [])
+	// remove modal when registrations are not active
+	useEffect(() => {
+		setTimeout(() => {
+			setIsOpenModal(true)
+		}, 2000)
+	}, [])
 
 	return (
 		<>
@@ -52,10 +52,10 @@ export default function MyModal() {
 								<Dialog.Panel className=" text-white max-w-md md:max-w-xl lg:max-w-3xl transform overflow-hidden rounded-2xl bg-ModalBg border-4 border-white p-6  text-left align-middle relative shadow-xl transition-all">
 									<AiOutlineClose className='w-6 h-6 absolute right-1 top-1 hover:cursor-pointer' onClick={closeModal} />
 									<div className="mt-2">
-										<Image src="/early.png" alt="modal" height={400} width={800} className='rounded-xl' />
+										<Image src="/frameforsignup.jpg" alt="modal" height={400} width={800} className='rounded-xl' />
 									</div>
 									<div>
-										<p className='pt-4 text-center'>The EARLY BIRD REGISTRATIONS of KiiT International MUN 2023 is officially LIVE!!!
+										<p className='pt-4 text-center'>The REGISTRATIONS of KiiT International MUN 2023 is officially LIVE!!!
 											.</p>
 									</div>
 									<div className="mt-4 w-full mx-auto flex justify-center">
