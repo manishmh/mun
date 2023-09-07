@@ -1,5 +1,5 @@
 'use client'
-import React, {  useState } from "react";
+import React, {  useState,useEffect } from "react";
 import { initialValuesDoubleDelegate, initialValuesSingleDelegate } from "@/utils";
 import Image from "next/image";
 import Delegate from "@/components/register/Delegate";
@@ -56,14 +56,10 @@ const Register = () => {
     const [singleDelegate, setSingleDelegate] = useState(true)
     const [error, setError] = useState(null)
     const [load, setLoad] = useState(false)
-    const routerp = useRouter()
     const handleSingleDelegate = () => {
         setSingleDelegate(!singleDelegate);
         setError(null)
     };
-    
-
-
     
 	let [isOpenModal, setIsOpenModal] = useState(false)
 
@@ -73,8 +69,11 @@ const Register = () => {
 	function closeModal() {
 		setIsOpenModal(false)
 	}
-
+ //line 77-80 triggers rerender if someone tries to go to /register uncomment when active
     const router = useRouter()
+    useEffect(() => {
+        router.push('/mun')
+    },  )
 
     return (
         <div className="overflow-x-hidden">

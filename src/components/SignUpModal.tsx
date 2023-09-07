@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useEffect } from 'react'
+import { Fragment } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose } from "react-icons/ai";
@@ -16,11 +16,11 @@ export default function MyModal() {
 	}
 
 	// remove modal when registrations are not active
-	useEffect(() => {
-		setTimeout(() => {
-			setIsOpenModal(true)
-		}, 2000)
-	}, [])
+	// useEffect(() => {
+	// 	setTimeout(() => {
+	// 		setIsOpenModal(true)
+	// 	}, 2000)
+	// }, [])
 
 	return (
 		<>
