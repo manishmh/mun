@@ -71,9 +71,9 @@ const Register = () => {
 	}
  //line 77-80 triggers rerender if someone tries to go to /register uncomment when active
     const router = useRouter()
-    useEffect(() => {
-        router.push('/mun')
-    },  )
+    // useEffect(() => {
+    //     router.push('/mun')
+    // },  )
 
     return (
         <div className="overflow-x-hidden">

@@ -41,7 +41,7 @@ const Navbar = () => {
             <MunDropdown />
           </div>
           <Link href='/gallery'>Gallery</Link>
-          <Link href="/mun">
+          <Link href="/register">
             <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
               REGISTER NOW!
             </button></Link>
@@ -62,10 +62,11 @@ const Navbar = () => {
           </div>
         </div>
         <Link href='/gallery'>Gallery</Link>
-        <Link href="/mun">
+        <Link href="/register">
           <button className="rounded-full border-none bg-buttonBackground px-4 py-1 outline-none">
               REGISTER NOW!
-          </button></Link>
+          </button>
+        </Link>
       </ul>}
     </div>
   )

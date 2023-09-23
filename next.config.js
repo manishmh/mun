@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ["s3-alpha-sig.figma.com"],
-        domains: ["i.imgur.com"],
+        domains: ["i.imgur.com", "s3-alpha-sig.figma.com"],
     },
 };
 

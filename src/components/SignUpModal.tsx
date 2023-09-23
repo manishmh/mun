@@ -9,7 +9,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 export default function MyModal() {
 
-	let [isOpenModal, setIsOpenModal] = useState(false)
+	let [isOpenModal, setIsOpenModal] = useState(true)
 
 	function closeModal() {
 		setIsOpenModal(false)

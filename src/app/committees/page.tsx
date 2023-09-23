@@ -214,7 +214,7 @@ const Committees = () => {
               For any Queries or Upgradation Requests, kindly <b>Fill out the Form</b>&emsp;
             </p> 
               <Link href="https://forms.gle/vRZPrNXAaa4Yq7GbA" className="z-30" target="blank">
-                <button className="mt-12  md: mt-3 rounded-full border-none bg-buttonBackground px-2 py-1 text-base outline-none text-l">
+                <button className="mt-12  md:mt-3 rounded-full border-none bg-buttonBackground px-2 py-1 text-base outline-none text-l">
                   Form for Change
                 </button>
               </Link>
